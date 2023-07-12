@@ -27,7 +27,7 @@ in
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".device = "/dev/disk/by-uuid/93e656e6-7c35-4c9e-9de4-0192c77c1b2c";
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".keyFile = "/crypto_keyfile.bin";
 
-  networking.hostName = "nixosmain"; # Define your hostname.
+  networking.hostName = "mainsys"; # Define your hostname.
   
   # Enable networking
   networking.networkmanager.enable = true;
