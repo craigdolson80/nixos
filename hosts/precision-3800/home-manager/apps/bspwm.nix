@@ -2,7 +2,7 @@
   #BSPWM
   xsession.windowManager.bspwm.enable = true;
   xsession.windowManager.bspwm.monitors	= {
-  LVDS-1 = [
+  DP-1 = [
       "1"
       "2"
       "3"
@@ -44,7 +44,7 @@
 
   xsession.windowManager.bspwm.startupPrograms = [
     #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    "hosts/thinkpad-t430/scripts/screen.sh"
+    "hosts/precision-3800/scripts/screen.sh"
     "nitrogen --restore"
     "/home/craig/.config/polybar/launch.sh"
     "picom"
