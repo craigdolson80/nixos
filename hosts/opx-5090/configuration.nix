@@ -7,10 +7,10 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      modules/fonts.nix
-      modules/vm.nix
-      modules/polkit.nix
-      modules/syspkgs.nix
+      ../../modules/sys/fonts.nix
+      ../../modules/sys/vm.nix
+      ../../modules/sys/polkit.nix
+      ../../modules/sys/syspkgs.nix
     ];
 
   # Bootloader.
