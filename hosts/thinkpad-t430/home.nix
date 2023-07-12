@@ -3,14 +3,14 @@
 {
   
   imports = [
-    home-manager/apps/zsh.nix
+    ../../modules/hm/zsh.nix
+    ../../modules/hm/kitty.nix
+    ../../modules/hm/github.nix
+    ../../modules/hm/programs.nix
+    ../../modules/hm/ssh.nix
+    ../../modules/hm/vscode.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
-    home-manager/apps/kitty.nix
-    home-manager/apps/github.nix
-    home-manager/apps/programs.nix
-    home-manager/apps/ssh.nix
-    home-manager/apps/vscode.nix
   ];
 
   home.username = "craig";
@@ -34,22 +34,22 @@
 #DOTFILE IMPORTS
   #qtile
      home.file.".config/qtile" = {
-     source = /home/craig/nix-flakes/home-manager/dotfiles/qtile;
+     source = home-manager/dotfiles/qtile;
      recursive = true;
      };
   #polybar
      home.file.".config/polybar" = {
-     source = /home/craig/nix-flakes/home-manager/dotfiles/polybar;
+     source = home-manager/dotfiles/polybar;
      recursive = true;
      executable = true;
      };
    #picom
      home.file.".config/picom" = {
-     source = /home/craig/nix-flakes/home-manager/dotfiles/picom;
+     source = ../../modules/hm/commonfiles/picom;
      };
   #rofi
      home.file.".config/rofi" = {
-     source = /home/craig/nix-flakes/home-manager/dotfiles/rofi;
+     source = ../../modules/hm/commonfiles/rofi;
      recursive = true;
      executable = true;
      };

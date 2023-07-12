@@ -7,10 +7,10 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      modules/fonts.nix
-      modules/vm.nix
-      modules/polkit.nix
-      modules/syspkgs.nix
+      ../../modules/sys/fonts.nix
+      ../../modules/sys/vm.nix
+      ../../modules/sys/polkit.nix
+      ../../modules/sys/syspkgs.nix
     ];
 
   # Bootloader.
@@ -26,18 +26,18 @@ in
   boot.initrd.luks.devices."luks-2f12955b-0817-49e4-a5f6-6c5583f02c2e".device = "/dev/disk/by-uuid/2f12955b-0817-49e4-a5f6-6c5583f02c2e";
   boot.initrd.luks.devices."luks-2f12955b-0817-49e4-a5f6-6c5583f02c2e".keyFile = "/crypto_keyfile.bin";
 
-  networking.hostName = "nixlaptop"; # Define your hostname.
+  networking.hostName = "thinkpad-t430"; # Define your hostname.
  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 
   # Enable networking
   networking.networkmanager.enable = true;
   networking.hosts = {
-  "10.0.1.2" = [ "synology" ];
+  "172.17.2.25" = [ "qnap" ];
   };
   
-  fileSystems."/home/${user}/nfs" = {
-    device = "synology:/volume1/${user}";
+  fileSystems."/home/craig/nfs" = {
+    device = "qnap:/craig";
     fsType = "nfs";
     options = [ "x-systemd.automount" "noauto" ];
   };
