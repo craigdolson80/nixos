@@ -35,6 +35,7 @@
      ranger
      rofi
      signal-desktop
+     teams
      telegram-desktop
      tor
      tor-browser-bundle-bin
