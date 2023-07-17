@@ -17,6 +17,7 @@
       alias ls="exa -la --group-directories-first"
       alias cat="bat"
       alias rm="trash"
+      alias nixgen="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
     '';
   };
 }
