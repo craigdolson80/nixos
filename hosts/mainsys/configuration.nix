@@ -71,7 +71,6 @@ in
   
   # MISC Services to enable
   services.pcscd.enable = true;
-  services.gnome.gnome-keyring.enable = true;
   programs.dconf.enable = true;
   services.trezord.enable = true;
   services.flatpak.enable = true;

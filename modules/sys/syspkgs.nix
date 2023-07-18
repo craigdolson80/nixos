@@ -9,7 +9,6 @@ in
     vim
     wget
     pavucontrol
-    protonmail-bridge
     neofetch
     neovim
     killall
