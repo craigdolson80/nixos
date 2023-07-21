@@ -1,7 +1,7 @@
 {
   #BSPWM
   xsession.windowManager.bspwm.enable = true;
-  xsession.windowManager.bspwm.monitors	= {
+  xsession.windowManager.bspwm.monitors = {
   DP-1 = [
       "1"
       "2"
@@ -37,7 +37,7 @@
       state = "floating";
     };
 	"firefox" = {
-      desktop = "^2";
+     desktop = "^2";
       follow = true;
       };
 	};
