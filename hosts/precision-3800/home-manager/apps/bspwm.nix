@@ -44,7 +44,7 @@
 
   xsession.windowManager.bspwm.startupPrograms = [
     #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    "hosts/precision-3800/scripts/screen.sh"
+    "../../scripts/screen.sh"
     "nitrogen --restore"
     "/home/craig/.config/polybar/launch.sh"
     "picom"
