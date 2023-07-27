@@ -2,7 +2,7 @@
 
 {
   # Fonts
-  fonts.fonts = with pkgs; [    
+  fonts.packages = with pkgs; [    
     font-awesome
     font-awesome_5
     font-awesome_4
