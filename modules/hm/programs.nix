@@ -35,7 +35,6 @@
      ranger
      rofi
      signal-desktop
-     teams
      telegram-desktop
      thunderbird
      tor
