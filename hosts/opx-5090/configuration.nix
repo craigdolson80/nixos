@@ -68,7 +68,8 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
-  
+  services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+
   # MISC Services to enable
   services.pcscd.enable = true;
   programs.dconf.enable = true;
