@@ -32,6 +32,7 @@ in
     pcsctools
     ccid
     trezor-udev-rules
+    python311Packages.keyring
     
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''
