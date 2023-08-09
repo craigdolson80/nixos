@@ -101,13 +101,12 @@ keys = [
    #Custom Key Combinations
     Key([mod], "b", lazy.spawn("firefox"), desc="Launch Firefox"),
     Key([mod], "g", lazy.spawn("geany"), desc="Launch Geany"),
-    Key([mod], "f", lazy.spawn("thunar"), desc="Launch PCManFM"),
-
-       
+    Key([mod], "f", lazy.spawn("pcmanfm"), desc="Launch PCManFM"),
+   
    #Custom DMENU Launcher
    Key([mod, "control"], "Return", lazy.run_extension(extension.DmenuRun(
         dmenu_prompt="$",
-        background = colors[23],
+        background = colors[0],
         dmenu_font="JetBrainsMono Nerd Font Mono-13",
       ))),
 ]
@@ -205,35 +204,35 @@ groups.append(
 
 layouts = [
      layout.MonadTall(
-                     border_focus = colors[3],
-                     border_normal = colors[23],
+                     border_focus = colors[5],
+                     border_normal = colors[0],
                      border_width = 1,
                      margin = 10
                      ),
      layout.Columns(
-                    border_focus = colors[3],
-                    border_normal = colors[23],
+                    border_focus = colors[5],
+                    border_normal = colors[0],
                     border_width = 1,
                     margin = 10
                     ),
      layout.Max(),
     # Try more layouts by unleashing below layouts.
      layout.Stack(
-                  border_focus = colors[3],
-                  border_normal = colors[23],
+                  border_focus = colors[5],
+                  border_normal = colors[0],
                   border_width = 1,
                   margin = 10,
                   num_stacks=2
                   ),
 	 layout.Bsp(
-	            border_focus = colors[3],
-                border_normal = colors[23],
+	            border_focus = colors[5],
+                border_normal = colors[0],
                 border_width = 1,
                 margin = 10
 	            ),
      layout.Floating(
-                     border_focus = colors[3],
-                     border_normal = colors[23],
+                     border_focus = colors[5],
+                     border_normal = colors[0],
                      border_width = 0,
                      margin = 10
                      ), 
@@ -251,9 +250,9 @@ layouts = [
 widget_defaults = dict(
     font="Ubuntu Semi-Bold",
     fontsize = 13,
-    padding = 1,
-    background = colors[23],
-    foreground = colors[26]
+    padding = 2,
+    background = colors[0],
+    foreground = colors[3]
     )
 extension_defaults = widget_defaults.copy()
 
@@ -277,13 +276,11 @@ screens = [
                            padding = 8,
                            ), 
                  widget.GroupBox(
-                                highlight_color = colors[3],
+                                highlight_color = colors[8],
                                 highlight_method = "line",
-                                #block_highlight_text_color = colors[9],
-                                other_screen_border = colors[4],
-                                active = colors[26], #group numbers
-                                inactive = colors[21], #group numbers
-                                #hide_unused = True,
+                                other_screen_border = colors[6],
+                                active = colors[12],
+                                inactive = colors[1],
                                 margin_y = 4,
                                 margin_x = 0,
                                 padding_y = 5,
@@ -315,33 +312,31 @@ screens = [
                 widget.Sep(
                            linewidth = 2,
                            padding = 10,
-                           #foreground = colors[4],
+                           foreground = colors[12],
                            size_percent = 60
                            ),
                 widget.TextBox(
                                text = '',
-                               background = colors[23],
+                               background = colors[0],
 						       foreground = colors[6],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
 						       padding = 3
                                ),            
                 widget.CPU(
-                           background = colors[23],
-						   foreground = colors[6],
+                           background = colors[0],
+						   foreground = colors[12],
 						   mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' -e glances')},
 						   padding = 5,
 						   format = '{load_percent}%'
                            ),
                 widget.Sep(
-                           linewidth = 2,
-                           padding = 10,
-                           #foreground = colors[4],
-                           size_percent = 60
-                           ),
+                           linewidth = 0,
+                           padding = 6,
+                           ), 
                 widget.TextBox(
                                text = '',
-                               background = colors[23],
+                               background = colors[0],
 						       foreground = colors[7],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
@@ -349,20 +344,18 @@ screens = [
                                ),
                 widget.Memory(
                               measure_mem='G',
-                              background = colors[23],
-						      foreground = colors[7],
+                              background = colors[0],
+						      foreground = colors[12],
 						      padding = 5,
 						      format = '{MemUsed:.0f}{mm}'
                               ),
                 widget.Sep(
-                           linewidth = 2,
-                           padding = 10,
-                           #foreground = colors[4],
-                           size_percent = 60
+                           linewidth = 0,
+                           padding = 6,
                            ),              
                 widget.TextBox(
                                text = '',
-                               background = colors[23],
+                               background = colors[0],
 						       foreground = colors[8],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
@@ -371,28 +364,26 @@ screens = [
                 widget.Net(
 						   #interface = "enp0s31f6",	
 						   prefix = "M",
-						   background = colors[23],
-						   foreground = colors[8],
+						   background = colors[0],
+						   foreground = colors[12],
 						   padding = 5
 						   ),
 				widget.Sep(
-                           linewidth = 2,
-                           padding = 10,
-                           #foreground = colors[4],
-                           size_percent = 60
-                           ),		   
+                           linewidth = 0,
+                           padding = 6,
+                           ), 		   
                 widget.TextBox(
                                text = '',
-                               background = colors[23],
-						       foreground = colors[3],
+                               background = colors[0],
+						       foreground = colors[9],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
 						       padding = 3
                                ),
                 widget.Clock(
                              format="%m-%d-%Y %H:%M",
-                             background = colors[23],
-						     foreground = colors[3],
+                             background = colors[0],
+						     foreground = colors[12],
 						     padding = 5,
                              ),
   			  		         
@@ -423,8 +414,8 @@ cursor_warp = False
 
 # Floating Rules
 floating_layout = layout.Floating(
-                     border_focus = colors[3],
-                     border_normal = colors[23],
+                     border_focus = colors[10],
+                     border_normal = colors[0],
                      border_width = 0,
                      margin = 10,
 
