@@ -48,7 +48,7 @@
      vlc
      volumeicon
      yubikey-agent
-     yubikey-manager
+     #yubikey-manager
      yubioath-flutter
 
  #Themes
