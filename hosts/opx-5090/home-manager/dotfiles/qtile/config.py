@@ -154,7 +154,12 @@ groups = [
     matches=[
             Match(wm_class=["thunderbird"]),
         ]),
- ]
+
+    Group("8", label="8"),
+  
+    Group("9", label="9"),
+
+  ]
 
 
 for i in groups:
