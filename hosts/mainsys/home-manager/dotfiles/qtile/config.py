@@ -131,7 +131,7 @@ groups = [
 
     Group("5", label="5",
         matches=[
-            Match(wm_class=["Geany","vscode"]),
+            Match(wm_class=["Geany","code"]),
         ]
           ),
 
