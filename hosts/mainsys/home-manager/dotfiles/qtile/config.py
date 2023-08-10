@@ -105,39 +105,44 @@ def show_window(window):
      window.group.cmd_toscreen()
 
 groups = [
-    Group("1", label="",
+    Group("1", label="1",
         matches=[
-            Match(wm_class=["kitty"]),
+            Match(wm_class=["Alacritty", "kitty"]),
         ]
           ),
                
-    Group("2", label=" ",
+    Group("2", label="2",
         matches=[
             Match(wm_class=["firefox","Google-chrome"]),
         ]
           ),
-    Group("3", label=" ",
+
+    Group("3", label="3",
         matches=[
             Match(wm_class=["Virt-manager"]),
         ]
           ),
 
-    Group("4", label=""),
-    Group("5", label=""),
-    Group("6", label=" ",
+    Group("4", label="4",
         matches=[
-            Match(wm_class=["Geany","code-oss"]),
+            Match(wm_class=["Yubico Authenticator","Galculator"]),
         ]
           ),
 
-    Group("7", label=" ",
+    Group("5", label="5",
         matches=[
-            Match(wm_class=["pcmanfm", "Thunar"]),
+            Match(wm_class=["Geany","vscode"]),
         ]
           ),
-    Group("8", label="  "),
-    Group("9", label="  "),
-    
+
+    Group("6", label="6",
+        matches=[
+            Match(wm_class=["pcmanfm"]),
+        ]
+          ),
+    Group("7", label="7"),
+    Group("8", label="8"),
+    Group("9", label="9"),
 ]
 
 
