@@ -107,7 +107,7 @@ def show_window(window):
 groups = [
     Group("1", label="1",
         matches=[
-            Match(wm_class=["Alacritty"]),
+            Match(wm_class=["Alacritty","kitty"]),
         ]
           ),
                
@@ -133,13 +133,10 @@ groups = [
 
     Group("6", label="6",
         matches=[
-            Match(wm_class=["pcmanfm", "Thunar"]),
+            Match(wm_class=["pcmanfm"]),
         ]
           ),
-    Group("7", label="7",
-    matches=[
-            Match(wm_class=["thunderbird"]),
-        ]),
+    Group("7", label="7"),
 
     Group("8", label="8"),
   
