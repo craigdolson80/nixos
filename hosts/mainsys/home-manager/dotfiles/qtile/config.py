@@ -140,7 +140,11 @@ groups = [
             Match(wm_class=["pcmanfm"]),
         ]
           ),
-    Group("7", label="7"),
+    Group("7", label="7",
+        matches=[
+            Match(wm_class=["signal"]),
+        ]
+          ),
     Group("8", label="8"),
     Group("9", label="9"),
 ]
