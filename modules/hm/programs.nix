@@ -47,9 +47,9 @@
      viewnior
      vlc
      volumeicon
-     yubikey-agent
-     yubikey-manager
-     yubioath-flutter
+     #yubikey-agent
+     #yubikey-manager
+     #yubioath-flutter
 
  #Themes
      dracula-theme
