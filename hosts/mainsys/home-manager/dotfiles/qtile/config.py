@@ -13,7 +13,7 @@ mod1 = "control"
 mod3 = "alt"
 terminal = "kitty"
 mybrowser = "firefox"
-myeditor = "geany"
+myeditor = "code"
 mymenu = "/home/craig/.config/rofi/launchers/type-3/launcher.sh"
 powermenu = "/home/craig/.config/rofi/powermenu/type-2/powermenu.sh"
 
@@ -131,7 +131,7 @@ groups = [
 
     Group("5", label="5",
         matches=[
-            Match(wm_class=["Geany","Code"]),
+            Match(wm_class=["Geany","code"]),
         ]
           ),
 
