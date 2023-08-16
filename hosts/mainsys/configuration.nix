@@ -70,6 +70,8 @@ in
   services.xserver.windowManager.qtile.enable = true;
   
   # MISC Services to enable
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
   services.pcscd.enable = true;
   programs.dconf.enable = true;
   services.trezord.enable = true;
