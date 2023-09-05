@@ -67,11 +67,7 @@ in
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
-  services.xserver.windowManager.qtile = {
-    enable = true;
-    package = pkgs.stable.qtile;
-  };
-  
+  #services.xserver.windowManager.qtile.enable = true;
 
   # MISC Services to enable
   hardware.bluetooth.enable = true;
