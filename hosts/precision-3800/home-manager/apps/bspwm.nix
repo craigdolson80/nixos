@@ -2,7 +2,7 @@
   #BSPWM
   xsession.windowManager.bspwm.enable = true;
   xsession.windowManager.bspwm.monitors = {
-  DP-1 = [
+  eDP-1 = [
       "1"
       "2"
       "3"
