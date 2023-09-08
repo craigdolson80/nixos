@@ -73,6 +73,8 @@ in
   # MISC Services to enable
   services.pcscd.enable = true;
   programs.dconf.enable = true;
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
   services.flatpak.enable = true;
   xdg.portal = {
      enable = true;
