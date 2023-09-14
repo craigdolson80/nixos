@@ -8,7 +8,9 @@
      brave
      btop
      cowsay
+     discord
      feh
+     firefox
      flameshot
      font-manager 
      galculator
@@ -19,6 +21,7 @@
      hplipWithPlugin
      htop
      keepassxc
+     imagemagick
      libreoffice
      lxappearance
      meld
@@ -33,19 +36,20 @@
      rofi
      signal-desktop
      telegram-desktop
+     thunderbird
      tor
      tor-browser-bundle-bin
      torsocks
      udiskie
      udisks
+     variety
      veracrypt
      viewnior
+     vlc
      volumeicon
-     yubikey-agent
-     yubikey-agent
-     yubikey-manager
-     yubikey-manager
-     yubioath-flutter
+     #yubikey-agent
+     #yubikey-manager
+     #yubioath-flutter
 
  #Themes
      dracula-theme

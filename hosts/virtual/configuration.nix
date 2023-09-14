@@ -1,8 +1,13 @@
+# Edit this configuration file to define what should be installed on
+# your system.  Help is available in the configuration.nix(5) man page
+# and in the NixOS manual (accessible by running ‘nixos-help’).
+
 { config, pkgs, ... }:
 
 let
   user="craig";
 in
+
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -17,30 +22,25 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Setup keyfile
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
-  };
+  networking.hostName = "virtual"; # Define your hostname.
+  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Enable swap on luks
-  boot.initrd.luks.devices."luks-d64fa5d6-bcbc-4582-97f4-2362aabb7a72".device = "/dev/disk/by-uuid/d64fa5d6-bcbc-4582-97f4-2362aabb7a72";
-  boot.initrd.luks.devices."luks-d64fa5d6-bcbc-4582-97f4-2362aabb7a72".keyFile = "/crypto_keyfile.bin";
-
-  networking.hostName = "nixos"; # Define your hostname.
-
+  # Configure network proxy if necessary
+  # networking.proxy.default = "http://user:password@proxy:port/";
+  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
   networking.networkmanager.enable = true;
   networking.hosts = {
   "172.17.2.25" = [ "qnap" ];
   };
-  
+
   fileSystems."/home/craig/nfs" = {
     device = "qnap:/craig";
     fsType = "nfs";
     options = [ "x-systemd.automount" "noauto" ];
   };
-    
+
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
@@ -58,7 +58,6 @@ in
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-  
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -67,8 +66,8 @@ in
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
-  services.xserver.windowManager.qtile.enable = true;
-  
+  #services.xserver.windowManager.qtile.enable = true;
+
   # MISC Services to enable
   services.pcscd.enable = true;
   programs.dconf.enable = true;
@@ -115,12 +114,12 @@ in
     shell = pkgs.zsh;
   };
 
- 
+
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   programs.zsh.enable = true;
-  
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
@@ -128,9 +127,9 @@ in
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
-  
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 ### HOME MANAGER MODULE - MOVED TO FLAKE ###
-  
+
 }

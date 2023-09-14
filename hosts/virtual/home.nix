@@ -17,6 +17,16 @@
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
   
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Dracula";
+      package = pkgs.dracula-theme;
+    };
+    cursorTheme.name = "Dracula-cursors";
+    iconTheme.name = "Dracula";
+    };
+  
  
 #Services 
   services.dunst.enable = true;

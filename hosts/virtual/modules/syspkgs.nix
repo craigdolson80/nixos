@@ -4,11 +4,15 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
+    bat
+    trash-cli
     vim
     wget
+    pavucontrol
     neofetch
     neovim
-    exa
+    killall
+    eza
     vimPlugins.dracula-vim
     vimPlugins.dracula-nvim
     vimPlugins.catppuccin-vim
@@ -21,7 +25,16 @@ in
     win-virtio
     win-spice
 ##-------------------------##
-
+    pciutils
+    usbutils
+    lm_sensors
+    pcsclite
+    pcsctools
+    ccid
+    trezor-udev-rules
+    #python311Packages.keyring
+    distrobox
+    
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''
    appimage-run "/home/${user}/Applications/Ledger.AppImage";

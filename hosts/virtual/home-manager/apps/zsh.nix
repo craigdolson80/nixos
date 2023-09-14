@@ -14,7 +14,7 @@
       bindkey '^f' autosuggest-accept
       neofetch
       alias vim="nvim"
-      alias ls="exa -la --group-directories-first"
+      alias ls="eza -la --group-directories-first"
       alias cat="bat"
       alias rm="trash"
     '';

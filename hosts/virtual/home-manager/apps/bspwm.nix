@@ -2,7 +2,7 @@
   #BSPWM
   xsession.windowManager.bspwm.enable = true;
   xsession.windowManager.bspwm.monitors	= {
-  Virtual-1 = [
+  Virtual1 = [
       "1"
       "2"
       "3"
@@ -24,7 +24,7 @@
       presel_feedback_color = "#6272a4";
       pointer_follows_focus = false;
       focus_follows_pointer = true;
-      split_ratio = 0.55;
+      split_ratio = 0.50;
       borderless_monocle = true;
       gapless_monocle = true;
 	};
@@ -44,7 +44,7 @@
 
   xsession.windowManager.bspwm.startupPrograms = [
     #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    "/home/craig/nix-flakes/scripts/screen.sh"
+    "/home/craig/nixos/hosts/virtual/scripts/screen.sh"
     "nitrogen --restore"
     "/home/craig/.config/polybar/launch.sh"
     "picom"

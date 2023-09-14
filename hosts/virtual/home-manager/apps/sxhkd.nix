@@ -6,7 +6,7 @@
  keybindings = {
   # Custom
     "super + Return" = "kitty";
-    "super + b" = "firefox";
+    "super + b" = "brave";
     "super + @space" = "$HOME/.config/rofi/launchers/type-3/launcher.sh";
     "super + Escape" = "pkill -USR1 -x sxhkd";
 
@@ -50,11 +50,11 @@
     "super + {grave,Tab}" = "bspc {node,desktop} -f last";
     # default config - replaced by "# KeyChord Focus / Send to desktiop on given monitor -- reddit post - IT WORKS"
   # focus or send to the given desktop
-    "super + {_,shift + } {1,2} ; {1-9,0}" = "bspc {desktop -f, node -d} \"^{1,2}:^{1-9,10}\" --follow";
+    "super + {_,shift + }{1-9,0}" = "bspc {desktop -f,node -d} '^{1-9,10}' --follow";
   # Change focused monitor
     "super + alt + {Left,Right}" = "bspc monitor -f {west,east}";
   # move and switch windows between monitors
     "super + {_,shift +} {comma, period}" = "bspc {monitor --focus,node --to-monitor} {prev,next} --follow";
-		};
-	 };
+    };
+ };
 }
