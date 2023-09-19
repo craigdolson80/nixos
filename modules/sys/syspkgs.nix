@@ -12,7 +12,7 @@ in
     neofetch
     neovim
     killall
-    exa
+    eza
     vimPlugins.dracula-vim
     vimPlugins.dracula-nvim
     vimPlugins.catppuccin-vim
