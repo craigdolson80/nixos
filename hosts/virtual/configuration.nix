@@ -72,9 +72,9 @@ in
   services.pcscd.enable = true;
   programs.dconf.enable = true;
   services.flatpak.enable = true;
-  #xdg.portal = {
-  #   enable = true;
-  #   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal = {
+     enable = true;
+     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   
 
   # Configure keymap in X11
