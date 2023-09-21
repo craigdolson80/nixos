@@ -6,7 +6,7 @@
  keybindings = {
   # Custom
     "super + Return" = "kitty";
-    "super + b" = "brave";
+    "super + b" = "firefox";
     "super + @space" = "$HOME/.config/rofi/launchers/type-3/launcher.sh";
     "super + Escape" = "pkill -USR1 -x sxhkd";
 
