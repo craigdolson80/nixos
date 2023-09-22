@@ -12,6 +12,7 @@ in
       ../../modules/sys/vm.nix
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
+      ../modules/hyprland/hyprland.nix
       ];
 
   # Bootloader.
@@ -123,7 +124,13 @@ in
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
+  #Set shell
   programs.zsh.enable = true;
+
+  #Enable Hyprland & Supporting Apps
+  programs.hyprland.enable = true;
+  programs.waybar.enable = true;
+  programs.hyprland.xwayland.enable = true;
   
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
