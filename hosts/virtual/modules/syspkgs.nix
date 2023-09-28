@@ -34,6 +34,8 @@ in
     trezor-udev-rules
     #python311Packages.keyring
     distrobox
+##-------------------------##
+    gnome.gnome-tweaks    
     
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''
