@@ -34,6 +34,7 @@ in
     trezor-udev-rules
     #python311Packages.keyring
     distrobox
+    pywlroots
 ##-------------------------##
     gnome.gnome-tweaks    
     
