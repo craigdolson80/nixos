@@ -80,7 +80,6 @@ in
   xdg.portal = {
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
-     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
   # Configure keymap in X11
