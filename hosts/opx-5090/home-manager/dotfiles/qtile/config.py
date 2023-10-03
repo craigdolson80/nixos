@@ -251,7 +251,7 @@ screens = [
                            padding = 6,
                            ),
                 widget.Image(
-                             filename = "~/.config/qtile/icons/green_python.png",
+                             filename = "~/.config/qtile/icons/python.png",
                              mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(mymenu)},
                              scale = "True"
                             ),
