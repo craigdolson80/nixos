@@ -9,4 +9,3 @@ nitrogen --restore &
 volumeicon &
 udiskie -t &
 flameshot &
-dunst &
