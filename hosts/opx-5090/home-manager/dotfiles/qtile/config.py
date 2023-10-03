@@ -260,7 +260,7 @@ screens = [
                            padding = 8,
                            ), 
                  widget.GroupBox(
-                                highlight_color = colors[9],
+                                highlight_color = colors[8],
                                 highlight_method = "line",
                                 other_screen_border = colors[6],
                                 active = colors[12],
