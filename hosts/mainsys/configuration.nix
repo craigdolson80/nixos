@@ -64,10 +64,11 @@ in
   services.xserver.enable = true;
 
   # Enable the Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
-  #services.xserver.windowManager.qtile.enable = true;
+  services.xserver.windowManager.qtile.enable = true;
 
   # MISC Services to enable
   hardware.bluetooth.enable = true;
@@ -78,7 +79,7 @@ in
   services.flatpak.enable = true;
   xdg.portal = {
      enable = true;
-     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+     extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
   };
 
   # Configure keymap in X11
@@ -122,7 +123,13 @@ in
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
+  #Set shell
   programs.zsh.enable = true;
+
+  #Enable Hyprland & Supporting Apps
+  programs.hyprland.enable = true;
+  programs.waybar.enable = true;
+  programs.hyprland.xwayland.enable = true;
   
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
