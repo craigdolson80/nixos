@@ -34,7 +34,6 @@ in
     trezor-udev-rules
     #python311Packages.keyring
     distrobox
-    podman
 ##-------------------------##    
     gnome.gnome-tweaks
 
