@@ -32,7 +32,7 @@ in
     pcsctools
     ccid
     trezor-udev-rules
-    python310Packages.qtile-extras
+    #python310Packages.qtile-extras
     
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''
