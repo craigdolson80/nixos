@@ -262,8 +262,8 @@ screens = [
                  widget.GroupBox(
                                 highlight_color = colors[6],
                                 highlight_method = "line",
-                                ##other_screen_border = colors[6],
-                                ##block_highlight_text_color = colors[9],
+                                #other_screen_border = colors[6],
+                                #block_highlight_text_color = colors[9],
                                 active = colors[12],
                                 inactive = colors[1],
                                 margin_y = 4,
