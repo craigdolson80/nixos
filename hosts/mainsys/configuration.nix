@@ -69,7 +69,7 @@ in
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
-  #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+  services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
   hardware.bluetooth.enable = true;
