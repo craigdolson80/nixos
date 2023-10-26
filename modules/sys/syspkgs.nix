@@ -32,7 +32,6 @@ in
     pcsctools
     ccid
     trezor-udev-rules
-    #python311Packages.keyring
     distrobox
 ##-------------------------##    
     gnome.gnome-tweaks
