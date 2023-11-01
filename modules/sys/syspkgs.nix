@@ -32,7 +32,6 @@ in
     pcsctools
     ccid
     trezor-udev-rules
-    distrobox
 ##-------------------------##    
     gnome.gnome-tweaks
 

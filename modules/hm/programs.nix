@@ -7,7 +7,6 @@
      bitwarden
      brave
      btop
-     cowsay
      discord
      feh
      firefox
@@ -32,17 +31,14 @@
      picom
      polkit_gnome
      polybar
-     ranger
      rofi
      signal-desktop
      telegram-desktop
-     thunderbird
      tor
      tor-browser-bundle-bin
      torsocks
      udiskie
      udisks
-     variety
      veracrypt
      viewnior
      vlc
