@@ -37,7 +37,7 @@
      tor
      tor-browser-bundle-bin
      torsocks
-#     udiskie
+     udiskie
      udisks
      veracrypt
      viewnior
