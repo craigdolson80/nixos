@@ -44,7 +44,7 @@
      recursive = true;
      executable = true;
      };
-   #picom
+  #picom
      home.file.".config/picom" = {
      source = ../../modules/hm/commonfiles/picom;
      };
@@ -54,4 +54,10 @@
      recursive = true;
      executable = true;
      };
+  #hyprland
+     home.file.".config/hypr" = {
+     source = home-manager/dotfiles/hypr;
+     recursive = true;
+     executable = true;
+     };   
 }
