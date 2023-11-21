@@ -9,7 +9,8 @@ in
     swaylock
     hyprpaper
     xdg-desktop-portal-hyprland
-    
+    wofi
+    bemenu
 
   ];
 }
