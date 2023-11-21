@@ -36,6 +36,13 @@ in
     distrobox
 ##-------------------------##
     gnome.gnome-tweaks    
+
+##-- Hyprland Environment Packages --##
+    waybar
+    hyprpaper
+    swaylock
+    foot
+
     
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''

@@ -78,6 +78,11 @@ in
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
+  # Hyprland
+  programs.hyprland.enable = true;
+
+
+
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
@@ -111,6 +116,7 @@ in
     extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" ];
     packages = with pkgs; [
       firefox
+      xdg-desktop-portal-hyprland
     ];
     shell = pkgs.zsh;
   };
