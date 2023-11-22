@@ -12,6 +12,7 @@ in
     wofi
     nwg-look
     wlogout
+    rofi-wayland
 
   ];
 }
