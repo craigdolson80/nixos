@@ -191,7 +191,7 @@ tooltip {
     border-radius: 10px 0px 0px 10px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    border-right: 0px solid transparent;
+    border-right: 10px solid transparent;
     border-left: 0px solid transparent;
 }
 
@@ -203,7 +203,7 @@ tooltip {
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     border-right: 0px solid transparent;
-    border-left: 0px solid transparent;
+    border-left: 10px solid transparent;
 }
 
 #custom-cycle_wall {
