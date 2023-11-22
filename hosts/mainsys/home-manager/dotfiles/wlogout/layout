@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "swaylock -i ~/github/wallpaper/096.jpg",
     "text" : "Lock",
     "keybind" : "l"
 }
