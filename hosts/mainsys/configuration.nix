@@ -72,6 +72,7 @@ in
   services.xserver.windowManager.qtile.enable = true;
   programs.hyprland.enable  = true;
   programs.hyprland.xwayland.enable = true;
+  programs.sway.enable = true;
   #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
