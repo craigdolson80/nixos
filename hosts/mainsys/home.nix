@@ -72,6 +72,12 @@
      recursive = true;
      executable = true;
      }; 
+   #swayidle
+     home.file."swaylock" = {
+     source = home-manager/dotfiles/swaylock;
+     recursive = true;
+     executable = true;
+     };  
   #wlogout
      home.file.".config/wlogout" = {
      source = home-manager/dotfiles/wlogout;
