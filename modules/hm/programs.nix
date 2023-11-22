@@ -31,7 +31,7 @@
      picom
      polkit_gnome
      polybar
-     rofi
+     #rofi
      signal-desktop
      telegram-desktop
      tor
