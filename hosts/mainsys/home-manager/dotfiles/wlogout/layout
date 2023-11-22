@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock -i ~/github/wallpaper/096.jpg",
+    "action" : "~/swayidle/lockscreen_fast",
     "text" : "Lock",
     "keybind" : "l"
 }
