@@ -67,7 +67,7 @@
      executable = true;
      };   
   #swaylock
-     home.file.".config/swaylock" = {
+     home.file.".swaylock/config" = {
      source = home-manager/dotfiles/swaylock;
      recursive = true;
      executable = true;
