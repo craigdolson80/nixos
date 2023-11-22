@@ -10,7 +10,7 @@ in
     hyprpaper
     xdg-desktop-portal-hyprland
     wofi
-    
+    nwg-look
 
   ];
 }
