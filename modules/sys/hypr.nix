@@ -11,6 +11,7 @@ in
     xdg-desktop-portal-hyprland
     wofi
     nwg-look
+    wlogout
 
   ];
 }
