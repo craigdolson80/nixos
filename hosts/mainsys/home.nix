@@ -72,5 +72,11 @@
      recursive = true;
      executable = true;
      }; 
+  #wlogout
+     home.file.".config/wlogout" = {
+     source = home-manager/dotfiles/wlogout;
+     recursive = true;
+     executable = true;
+     };    
     
 }
