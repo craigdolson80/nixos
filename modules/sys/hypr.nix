@@ -7,6 +7,8 @@ in
     waybar
     sway
     swaylock
+    swaylock-effects
+    swayidle
     hyprpaper
     xdg-desktop-portal-hyprland
     wofi
