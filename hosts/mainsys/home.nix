@@ -67,14 +67,14 @@
      executable = true;
      };   
   #swaylock
-     home.file.".swaylock/config" = {
+     home.file.".swaylock/" = {
      source = home-manager/dotfiles/swaylock;
      recursive = true;
      executable = true;
      }; 
    #swayidle
-     home.file."swaylock" = {
-     source = home-manager/dotfiles/swaylock;
+     home.file."swayidle/" = {
+     source = home-manager/dotfiles/swayidle;
      recursive = true;
      executable = true;
      };  
