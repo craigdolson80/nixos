@@ -189,7 +189,7 @@
     },
     "custom/launcher": {
         "format": "",
-        "on-click": "/home/craig/.config/rofi/launchers/type-3/launcher.sh"
+        "on-click": "wlogout"
    },
 }
 
