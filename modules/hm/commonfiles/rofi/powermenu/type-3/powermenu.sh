@@ -21,7 +21,7 @@ host=`hostname`
 shutdown=''
 reboot=''
 lock=''
-suspend=''
+#suspend=''
 logout=''
 yes=''
 no=''
@@ -65,7 +65,7 @@ run_cmd() {
 			amixer set Master mute
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			if [[ "$DESKTOP_SESSION" == 'hyprland' ]]; then
+			if [[ "$DESKTOP_SESSION" == 'hyprwm' ]]; then
 				hyprctl dispatch exit
 			elif [[ "$DESKTOP_SESSION" == 'bspwm' ]]; then
 				bspc quit
