@@ -15,6 +15,8 @@ in
     nwg-look
     wlogout
     rofi-wayland
+    grim
+    slurp
 
   ];
 }
