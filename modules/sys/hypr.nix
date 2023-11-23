@@ -18,6 +18,7 @@ in
     grim
     grimblast
     slurp
+    wl-clipboard
 
   ];
 }
