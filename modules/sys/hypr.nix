@@ -16,6 +16,7 @@ in
     wlogout
     rofi-wayland
     grim
+    grimblast
     slurp
 
   ];
