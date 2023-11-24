@@ -12,7 +12,7 @@
                     //"idle_inhibitor", 
                     "custom/cycle_wall",
                     "pulseaudio", 
-                    "network", 
+                    //"network", 
                     "cpu", 
                     "memory",
                     "disk", 
