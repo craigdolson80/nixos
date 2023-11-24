@@ -117,7 +117,7 @@
         
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% 󰟜"
     },
     "disk": {
         "interval": 30,
