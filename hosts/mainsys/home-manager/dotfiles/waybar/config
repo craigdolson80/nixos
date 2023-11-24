@@ -10,6 +10,7 @@
     "modules-right": [
                     //"mpd", 
                     //"idle_inhibitor", 
+                    "custom/cycle_wall",
                     "pulseaudio", 
                     "network", 
                     "cpu", 
