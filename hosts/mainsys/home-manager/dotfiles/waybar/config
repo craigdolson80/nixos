@@ -199,5 +199,10 @@
         "format": "",
         "on-click": "wlogout"
    },
+   "custom/cycle_wall":{
+    "format":" ",
+    "on-click": "~/.config/hypr/scripts/changeWallpaper",
+    "tooltip-format": "Change wallpaper"
+    },  
 }
 

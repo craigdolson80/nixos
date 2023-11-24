@@ -21,6 +21,7 @@ in
     wl-clipboard
     pywal
     wttrbar
+    swaybg
 
   ];
 }
