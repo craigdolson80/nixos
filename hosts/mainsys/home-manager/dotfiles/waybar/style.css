@@ -25,31 +25,31 @@ tooltip {
     color: #686868;
     background: transparent;
     margin-right: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #workspaces button.active {
     color: #ffffff;
     background: rgba(37, 150, 190, 1);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #workspaces button.focused {
     color: #a6adc8;
     background: rgba(25, 25, 25, 0.65);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #workspaces button.urgent {
     color: #11111b;
     background: rgba(190, 37, 120, 1);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #workspaces button:hover {
     background: rgba(37, 150, 190, 1);
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #custom-language,
@@ -76,20 +76,10 @@ tooltip {
     border: 1px solid #181825;
 }
 
-#tray {
-    border-radius: 10px;
-    margin-right: 5px;
-    background: rgba(25, 25, 25, 0.65);
-    border-top: 0px solid transparent;
-    border-bottom: 0px solid transparent;
-    border-right: 0px solid transparent;
-    border-left: 0px solid transparent;
-}
-
 #custom-launcher {
     color: #89dceb;
     font-size: 15px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
     background: rgba(25, 25, 25, 0.65);
     margin-left: 5px;
     padding-right: 10px;
@@ -102,7 +92,7 @@ tooltip {
 
 #workspaces {
     background: rgba(25, 25, 25, 0.65);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 5px 5px 0px;
     padding-right: 0px;
     padding-top: 2px;
     padding-left: 5px;
@@ -114,9 +104,9 @@ tooltip {
 
 #custom-caffeine {
     color: #89dceb;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
     border-right: 0px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #custom-language {
@@ -128,7 +118,7 @@ tooltip {
 #custom-updates {
     color: #f5c2e7;
     background: rgba(25, 25, 25, 0.65);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
     border-left: 0px;
     border-right: 0px;
     border-top: 0px solid transparent;
@@ -138,7 +128,7 @@ tooltip {
 }
 
 #window {
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 5px;
     margin-right: 60px;
     border-top: 0px solid transparent;
@@ -150,7 +140,7 @@ tooltip {
 
 #clock {
     color: #fab387;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     background: rgba(25, 25, 25, 0.65);
     margin-right: 10px;
     border-top: 0px solid transparent;
@@ -162,7 +152,7 @@ tooltip {
 
 #network {
     color: #f9e2af;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     background: rgba(25, 25, 25, 0.65);
     margin-right: 10px;
     border-top: 0px solid transparent;
@@ -174,7 +164,7 @@ tooltip {
 #pulseaudio {
     color: #89b4fa;
     background: rgba(25, 25, 25, .65);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     margin-right: 10px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
@@ -184,13 +174,13 @@ tooltip {
 
 #battery {
     color: #a6e3a1;
-    border-radius: 0px 10px 10px 0;
+    border-radius: 0px 5px 5px 0;
     margin-right: 10px;
     border-left: 0px;
 }
 
 #custom-weather {
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 5px 5px;
     background: rgba(25, 25, 25, 0.65);
     margin-right: 5px;
     border-top: 0px solid transparent;
@@ -202,7 +192,7 @@ tooltip {
 #cpu {
     color: #cba6f7;
     background: rgba(25, 25, 25, 0.65);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     border-right: 0px solid transparent;
@@ -221,7 +211,7 @@ tooltip {
 #disk {
     color: #cba6f7;
     background: rgba(25, 25, 25, 0.65);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 5px 5px 0px;
     margin-right: 10px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
@@ -230,8 +220,8 @@ tooltip {
 }
 
 #custom-cycle_wall {
-    border-radius: 10px 10px 10px 10px;
     background: rgba(25, 25, 25, 0.65);
+    border-radius: 5px 5px 5px 5px;
     margin-right: 5px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
@@ -239,4 +229,13 @@ tooltip {
     border-left: 0px solid transparent;
 }
 
+#tray {
+    border-radius: 5px;
+    margin-right: 5px;
+    background: rgba(25, 25, 25, 0.65);
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
 
