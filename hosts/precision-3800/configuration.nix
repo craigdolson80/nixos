@@ -70,8 +70,11 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
-  programs.hyprland.enable  = true;
-  programs.hyprland.xwayland.enable = true;
+  programs.hyprland = {
+  enable = true;
+  nvidiaPatches = true;
+  xwayland.enable = true;
+  };
   programs.sway.enable = true;
   #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
@@ -85,7 +88,10 @@ in
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
-
+  hardware = {
+    opengl.enable = true;
+    nvidia.modesetting.enable = true;
+  };
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
