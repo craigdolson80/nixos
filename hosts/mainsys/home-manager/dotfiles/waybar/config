@@ -13,7 +13,8 @@
                     "pulseaudio", 
                     "network", 
                     "cpu", 
-                    "memory", 
+                    "memory",
+                    "disk", 
                     //"temperature", 
                     //"backlight", 
                     //"keyboard-state", 
@@ -118,6 +119,12 @@
     "memory": {
         "format": "{}% "
     },
+    "disk": {
+        "interval": 30,
+        "format": "Only {percentage_free}% remaining on {path}",
+        "path": "/"
+    },
+    
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
