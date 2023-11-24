@@ -19,6 +19,8 @@ in
     grimblast
     slurp
     wl-clipboard
+    pywal
+    wttrbar
 
   ];
 }
