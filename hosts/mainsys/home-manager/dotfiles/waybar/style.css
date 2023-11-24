@@ -30,7 +30,7 @@ tooltip {
 
 #workspaces button.active {
     color: #ffffff;
-    background: rgba(166, 227, 161, 0.70);
+    background: rgba(37, 150, 190, 1);
     border-radius: 10px;
 }
 
@@ -42,12 +42,12 @@ tooltip {
 
 #workspaces button.urgent {
     color: #11111b;
-    background: rgba(25, 25, 25, 0.65);
+    background: rgba(190, 37, 120, 1);
     border-radius: 10px;
 }
 
 #workspaces button:hover {
-    background: rgba(166, 227, 161, 0.70);
+    background: rgba(37, 150, 190, 1);
     color: #ffffff;
     border-radius: 10px;
 }
