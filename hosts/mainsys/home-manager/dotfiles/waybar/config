@@ -121,10 +121,10 @@
     },
     "disk": {
         "interval": 30,
-        "format": "Only {percentage_free}% remaining on {path}",
+        "format": "{percentage_used}% on {path}",
         "path": "/"
     },
-    
+
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
