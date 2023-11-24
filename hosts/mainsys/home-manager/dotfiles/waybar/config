@@ -11,7 +11,7 @@
                     //"mpd", 
                     //"idle_inhibitor", 
                     "custom/cycle_wall",
-                    "custom/weather",
+                    //"custom/weather",
                     "pulseaudio", 
                     //"network", 
                     "cpu", 
@@ -212,6 +212,6 @@
         "interval" : 30,
         "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
         "return-type" : "json"
-    }      
+    },      
 }
 
