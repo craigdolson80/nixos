@@ -229,6 +229,27 @@ tooltip {
     border-left: 0px solid transparent;
 }
 
+#custom-cycle_wall {
+    background: rgba(25, 25, 25, 0.65);
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 5px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+#custom-weather {
+    background: rgba(25, 25, 25, 0.65);
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 5px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+
 #tray {
     border-radius: 5px;
     margin-right: 5px;

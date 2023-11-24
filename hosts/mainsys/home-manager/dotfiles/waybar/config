@@ -11,6 +11,7 @@
                     //"mpd", 
                     //"idle_inhibitor", 
                     "custom/cycle_wall",
+                    "custom/weather",
                     "pulseaudio", 
                     //"network", 
                     "cpu", 
@@ -204,6 +205,13 @@
     "format":" ",
     "on-click": "~/.config/hypr/scripts/changeWallpaper",
     "tooltip-format": "Change wallpaper"
-    },  
+    },
+    "custom/weather" : {
+        "tooltip" : true,
+        "format" : "{}",
+        "interval" : 30,
+        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type" : "json"
+    },      
 }
 
