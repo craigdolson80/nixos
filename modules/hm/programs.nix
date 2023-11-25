@@ -33,6 +33,7 @@
      polybar
      #rofi
      signal-desktop
+     steam
      telegram-desktop
      tor
      tor-browser-bundle-bin
