@@ -11,6 +11,7 @@ in
       ../../modules/sys/vm.nix
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
+      ../../modules/sys/hypr.nix
     ];
 
   # Bootloader.
@@ -69,7 +70,14 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
-  
+  programs.hyprland = {
+  enable = true;
+  nvidiaPatches = true;
+  xwayland.enable = true;
+  };
+  programs.sway.enable = true;
+  #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+
   # MISC Services to enable
   services.pcscd.enable = true;
   programs.dconf.enable = true;
@@ -80,7 +88,10 @@ in
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
-
+  hardware = {
+    opengl.enable = true;
+    nvidia.modesetting.enable = true;
+  };
   # Configure keymap in X11
   services.xserver = {
     layout = "us";

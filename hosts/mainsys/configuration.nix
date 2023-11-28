@@ -12,6 +12,7 @@ in
       ../../modules/sys/vm.nix
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
+      ../../modules/sys/hypr.nix
       ];
 
   # Bootloader.
@@ -31,6 +32,7 @@ in
   
   # Enable networking
   networking.networkmanager.enable = true;
+  #networking.wireless.enable = true;
   networking.hosts = {
   "10.0.1.2" = [ "synology" ];
   };
@@ -64,11 +66,14 @@ in
   services.xserver.enable = true;
 
   # Enable the Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.desktopManager.plasma5.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
+  programs.hyprland.enable  = true;
+  programs.hyprland.xwayland.enable = true;
+  programs.sway.enable = true;
   #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
@@ -80,7 +85,7 @@ in
   services.flatpak.enable = true;
   xdg.portal = {
      enable = true;
-     extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
   # Configure keymap in X11

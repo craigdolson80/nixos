@@ -11,6 +11,7 @@ in
       ../../modules/sys/vm.nix
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
+      ../../modules/sys/hypr.nix
     ];
 
   # Bootloader.
@@ -68,7 +69,10 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
- # services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+  programs.hyprland.enable  = true;
+  programs.hyprland.xwayland.enable = true;
+  programs.sway.enable = true;
+  #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
   services.pcscd.enable = true;
