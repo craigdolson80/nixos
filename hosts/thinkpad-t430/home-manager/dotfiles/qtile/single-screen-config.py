@@ -13,7 +13,7 @@ mod1 = "control"
 mod3 = "alt"
 terminal = "kitty"
 mybrowser = "firefox"
-myeditor = "code"
+myeditor = "geany"
 mymenu = "/home/craig/.config/rofi/launchers/type-3/launcher.sh"
 powermenu = "/home/craig/.config/rofi/powermenu/type-2/powermenu.sh"
 
@@ -25,20 +25,33 @@ def start_once():
 
 #CUSTOM COLORS - Dracula#
 def init_colors():
-	return [["#1c1d26", "#1c1d26"], #color 0 Background
-			["#44475a", "#44475a"], #color 1 Current Line
-			["#44475a", "#44475a"], #color 2 Selection
-			["#f8f8f2", "#f8f8f2"], #color 3 Foreground
-			["#6272a4", "#6272a4"], #color 4 Comment
-			["#8be9fd", "#8be9fd"], #color 5 Cyan
-			["#50fa7b", "#50fa7b"], #color 6 Green
-			["#ffb86c", "#ffb86c"], #color 7 Orange
-			["#ff79c6", "#ff79c6"], #color 8 Pink
-			["#bd93f9", "#bd93f9"], #color 9 Purple
-			["#ff5555", "#ff5555"], #color 10 Red
-			["#f1fa8c", "#f1fa8c"], #color 11 Yellow
-			["#FFFFFF", "#FFFFFF"], #color 12 White
-            ["#000000", "#000000"], #color 13 Black
+	return [["#f5e0dc", "#f5e0dc"], #color 0 Rosewater 
+            ["#f2cdcd", "#f2cdcd"], #color 1 Flamingo 		
+            ["#f5c2e7", "#f5c2e7"],	#color 2 Pink 	 	
+            ["#cba6f7", "#cba6f7"],	#color 3 Mauve 	 	
+            ["#f38ba8", "#f38ba8"], #color 4 Red 	 	
+            ["#eba0ac", "#eba0ac"], #color 5 Maroon 	 	
+            ["#fab387", "#fab387"], #color 6 Peach 	 	
+            ["#f9e2af", "#f9e2af"], #color 7 Yellow 	 	
+            ["#a6e3a1", "#a6e3a1"], #color 8 Green 	 	
+            ["#94e2d5", "#94e2d5"], #color 9 Teal 	 	
+            ["#89dceb", "#89dceb"], #color 10 Sky 	 	
+            ["#74c7ec", "#74c7ec"], #color 11 Sapphire 	 	
+            ["#89b4fa", "#89b4fa"], #color 12 Blue 	 	
+            ["#b4befe", "#b4befe"],	#color 13 Lavender 	 	
+            ["#cdd6f4", "#cdd6f4"], #color 14 Text 	 	
+            ["#bac2de", "#bac2de"], #color 15 Subtext1 	 	
+            ["#a6adc8", "#a6adc8"], #color 16 Subtext0 	 	
+            ["#9399b2", "#9399b2"], #color 17 Overlay2 	 	
+            ["#7f849c", "#7f849c"], #color 18 Overlay1 	 	
+            ["#6c7086", "#6c7086"], #color 19 Overlay0 	 	
+            ["#585b70", "#585b70"], #color 20 Surface2 	 	
+            ["#45475a", "#45475a"], #color 21 Surface1 	 	
+            ["#313244", "#313244"], #color 22 Surface0 	 	
+            ["#1e1e2e", "#1e1e2e"], #color 23 Base 	 	
+            ["#181825", "#181825"], #color 24 Mantle 	 	
+            ["#11111b", "#11111b"],	#color 25 Crust
+            ["#FFFFFF", "#FFFFFF"], #color 26 White
 			]
 
 colors = init_colors()			
@@ -88,12 +101,13 @@ keys = [
    #Custom Key Combinations
     Key([mod], "b", lazy.spawn("firefox"), desc="Launch Firefox"),
     Key([mod], "g", lazy.spawn("geany"), desc="Launch Geany"),
-    Key([mod], "f", lazy.spawn("pcmanfm"), desc="Launch PCManFM"),
-   
+    Key([mod], "f", lazy.spawn("thunar"), desc="Launch PCManFM"),
+
+       
    #Custom DMENU Launcher
    Key([mod, "control"], "Return", lazy.run_extension(extension.DmenuRun(
         dmenu_prompt="$",
-        background = colors[0],
+        background = colors[23],
         dmenu_font="JetBrainsMono Nerd Font Mono-13",
       ))),
 ]
@@ -107,7 +121,7 @@ def show_window(window):
 groups = [
     Group("1", label="1",
         matches=[
-            Match(wm_class=["Alacritty", "kitty"]),
+            Match(wm_class=["Alacritty"]),
         ]
           ),
                
@@ -123,11 +137,7 @@ groups = [
         ]
           ),
 
-    Group("4", label="4",
-        matches=[
-            Match(wm_class=["Yubico Authenticator","Galculator"]),
-        ]
-          ),
+    Group("4", label="4"),
 
     Group("5", label="5",
         matches=[
@@ -137,17 +147,14 @@ groups = [
 
     Group("6", label="6",
         matches=[
-            Match(wm_class=["pcmanfm"]),
+            Match(wm_class=["pcmanfm", "Thunar"]),
         ]
           ),
     Group("7", label="7",
-        matches=[
-            Match(wm_class=["signal"]),
-        ]
-          ),
-    Group("8", label="8"),
-    Group("9", label="9"),
-]
+    matches=[
+            Match(wm_class=["thunderbird"]),
+        ]),
+ ]
 
 
 for i in groups:
@@ -193,38 +200,38 @@ groups.append(
 
 layouts = [
      layout.MonadTall(
-                     border_focus = colors[5],
-                     border_normal = colors[0],
+                     border_focus = colors[3],
+                     border_normal = colors[23],
                      border_width = 1,
                      margin = 10
                      ),
      layout.Columns(
-                    border_focus = colors[5],
-                    border_normal = colors[0],
+                    border_focus = colors[3],
+                    border_normal = colors[23],
                     border_width = 1,
                     margin = 10
                     ),
      layout.Max(),
     # Try more layouts by unleashing below layouts.
      layout.Stack(
-                  border_focus = colors[5],
-                  border_normal = colors[0],
+                  border_focus = colors[3],
+                  border_normal = colors[23],
                   border_width = 1,
                   margin = 10,
                   num_stacks=2
                   ),
 	 layout.Bsp(
-	            border_focus = colors[5],
-                border_normal = colors[0],
+	            border_focus = colors[3],
+                border_normal = colors[23],
                 border_width = 1,
                 margin = 10
 	            ),
      layout.Floating(
-                     border_focus = colors[5],
-                     border_normal = colors[0],
+                     border_focus = colors[3],
+                     border_normal = colors[23],
                      border_width = 0,
                      margin = 10
-                     ),           
+                     ), 
     # layout.Matrix(),
     # layout.MonadWide(),
     # layout.RatioTile(),
@@ -239,9 +246,9 @@ layouts = [
 widget_defaults = dict(
     font="Ubuntu Semi-Bold",
     fontsize = 13,
-    padding = 2,
-    background = colors[0],
-    foreground = colors[3]
+    padding = 1,
+    background = colors[23],
+    foreground = colors[26]
     )
 extension_defaults = widget_defaults.copy()
 
@@ -251,162 +258,27 @@ screens = [
     Screen(
         top=bar.Bar(
             [            
-                 widget.Sep(
+                widget.Sep(
                            linewidth = 0,
                            padding = 6,
                            ),
                 widget.Image(
-                             filename = "~/.config/qtile/icons/python.png",
+                             filename = "~/.config/qtile/icons/nixos_logo_icon_blue.png",
                              mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(mymenu)},
-                             scale = "False"
+                             scale = "True"
                             ),
                 widget.Sep(
                            linewidth = 0,
                            padding = 8,
                            ), 
                  widget.GroupBox(
-                                highlight_color = colors[6],
+                                highlight_color = colors[3],
                                 highlight_method = "line",
-                                other_screen_border = colors[8],
-                                active = colors[12],
-                                inactive = colors[1],
-                                margin_y = 4,
-                                margin_x = 0,
-                                padding_y = 5,
-                                padding_x = 2,
-                                spacing = 2
-                                ),
-                widget.Sep(
-                           linewidth = 2,
-                           padding = 12,
-                           size_percent = 60
-                           #foreground = colors[2],
-                           ),                 
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                             ),
-              
-				widget.CurrentLayout(),
-				widget.CurrentLayoutIcon(),
-				widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ), 
-                #widget.Systray(),
-                #widget.Sep(
-                #           linewidth = 2,
-                #           padding = 10,
-                #           foreground = colors[4],
-                #           size_percent = 60
-                #           ),
-                widget.TextBox(
-                               text = '',
-                               background = colors[0],
-						       foreground = colors[6],
-						       fontsize = 12,
-                               font = 'Font Awesome 6 Free',
-						       padding = 3
-                               ),            
-                widget.CPU(
-                           background = colors[0],
-						   foreground = colors[12],
-						   mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' -e glances')},
-						   padding = 5,
-						   format = '{load_percent}%'
-                           ),
-                widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ), 
-                widget.TextBox(
-                               text = '',
-                               background = colors[0],
-						       foreground = colors[7],
-						       fontsize = 12,
-                               font = 'Font Awesome 6 Free',
-						       padding = 3
-                               ),
-                widget.Memory(
-                              measure_mem='G',
-                              background = colors[0],
-						      foreground = colors[12],
-						      padding = 5,
-						      format = '{MemUsed:.0f}{mm}'
-                              ),
-                widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ),             
-                widget.TextBox(
-                               text = '',
-                               background = colors[0],
-						       foreground = colors[8],
-						       fontsize = 12,
-                               font = 'Font Awesome 6 Free',
-						       padding = 3
-                               ),
-                widget.Net(
-						   #interface = "enp0s31f6",	
-						   prefix = "M",
-						   background = colors[0],
-						   foreground = colors[12],
-						   padding = 5
-						   ),
-				widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ), 		   
-                widget.TextBox(
-                               text = '',
-                               background = colors[0],
-						       foreground = colors[9],
-						       fontsize = 12,
-                               font = 'Font Awesome 6 Free',
-						       padding = 3
-                               ),
-                widget.Clock(
-                             format="%m-%d-%Y %H:%M",
-                             background = colors[0],
-						     foreground = colors[12],
-						     padding = 5,
-                             ),
-            ],
-            
-            24,
-            
-            opacity = 0.85       
-            
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
-    ),
-    
-Screen(
-        top=bar.Bar(
-            [            
-                 widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ),
-                widget.Image(
-                             filename = "~/.config/qtile/icons/python.png",
-                             mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(mymenu)},
-                             scale = "False"
-                            ),
-                widget.Sep(
-                           linewidth = 0,
-                           padding = 8,
-                           ), 
-                 widget.GroupBox(
-                                highlight_color = colors[8],
-                                highlight_method = "line",
-                                other_screen_border = colors[6],
-                                active = colors[12],
-                                inactive = colors[1],
+                                #block_highlight_text_color = colors[9],
+                                other_screen_border = colors[4],
+                                active = colors[26], #group numbers
+                                inactive = colors[21], #group numbers
+                                #hide_unused = True,
                                 margin_y = 4,
                                 margin_x = 0,
                                 padding_y = 5,
@@ -434,34 +306,37 @@ Screen(
                            padding = 6,
                            ), 
                 widget.Systray(),
+                
                 widget.Sep(
                            linewidth = 2,
                            padding = 10,
-                           foreground = colors[12],
+                           #foreground = colors[4],
                            size_percent = 60
                            ),
                 widget.TextBox(
                                text = '',
-                               background = colors[0],
+                               background = colors[23],
 						       foreground = colors[6],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
 						       padding = 3
                                ),            
                 widget.CPU(
-                           background = colors[0],
-						   foreground = colors[12],
+                           background = colors[23],
+						   foreground = colors[6],
 						   mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' -e glances')},
 						   padding = 5,
 						   format = '{load_percent}%'
                            ),
                 widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ), 
+                           linewidth = 2,
+                           padding = 10,
+                           #foreground = colors[4],
+                           size_percent = 60
+                           ),
                 widget.TextBox(
                                text = '',
-                               background = colors[0],
+                               background = colors[23],
 						       foreground = colors[7],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
@@ -469,18 +344,20 @@ Screen(
                                ),
                 widget.Memory(
                               measure_mem='G',
-                              background = colors[0],
-						      foreground = colors[12],
+                              background = colors[23],
+						      foreground = colors[7],
 						      padding = 5,
 						      format = '{MemUsed:.0f}{mm}'
                               ),
                 widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
+                           linewidth = 2,
+                           padding = 10,
+                           #foreground = colors[4],
+                           size_percent = 60
                            ),              
                 widget.TextBox(
                                text = '',
-                               background = colors[0],
+                               background = colors[23],
 						       foreground = colors[8],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
@@ -489,26 +366,28 @@ Screen(
                 widget.Net(
 						   #interface = "enp0s31f6",	
 						   prefix = "M",
-						   background = colors[0],
-						   foreground = colors[12],
+						   background = colors[23],
+						   foreground = colors[8],
 						   padding = 5
 						   ),
 				widget.Sep(
-                           linewidth = 0,
-                           padding = 6,
-                           ), 		   
+                           linewidth = 2,
+                           padding = 10,
+                           #foreground = colors[4],
+                           size_percent = 60
+                           ),		   
                 widget.TextBox(
                                text = '',
-                               background = colors[0],
-						       foreground = colors[9],
+                               background = colors[23],
+						       foreground = colors[3],
 						       fontsize = 12,
                                font = 'Font Awesome 6 Free',
 						       padding = 3
                                ),
                 widget.Clock(
                              format="%m-%d-%Y %H:%M",
-                             background = colors[0],
-						     foreground = colors[12],
+                             background = colors[23],
+						     foreground = colors[3],
 						     padding = 5,
                              ),
   			  		         
@@ -521,7 +400,7 @@ Screen(
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
-    ),    
+    ),
 ]
 
 # Drag floating layouts.
@@ -539,8 +418,8 @@ cursor_warp = False
 
 # Floating Rules
 floating_layout = layout.Floating(
-                     border_focus = colors[10],
-                     border_normal = colors[0],
+                     border_focus = colors[3],
+                     border_normal = colors[23],
                      border_width = 0,
                      margin = 10,
 
@@ -552,8 +431,7 @@ floating_layout = layout.Floating(
     Match(title='Confirmation'),      # tastyworks exit box
     Match(title='Yubico Authenticator'), # Yubioath Desktop
     Match(wm_class='Galculator'),       # Galculator
-    Match(wm_class='pinentry-gtk-2'),   # gpg auth screen
-    Match(wm_class='Nm-connection-editor'), #Network Manager Editor
+    Match(wm_class='pinentry-gtk-2')   # gpg auth screen
 ])
 
 
