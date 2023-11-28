@@ -9,7 +9,6 @@
      btop
      discord
      feh
-     etcher
      firefox
      flameshot
      font-manager 
