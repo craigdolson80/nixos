@@ -70,7 +70,9 @@ in
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
   programs.hyprland.enable  = true;
- # services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+  programs.hyprland.xwayland.enable = true;
+  programs.sway.enable = true;
+  #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
   services.pcscd.enable = true;
