@@ -72,7 +72,7 @@ in
   services.xserver.windowManager.qtile.enable = true;
   programs.hyprland = {
   enable = true;
-  nvidiaPatches = true;
+  enableNvidiaPatches = true;
   xwayland.enable = true;
   };
   programs.sway.enable = true;
