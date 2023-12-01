@@ -31,7 +31,7 @@
      picom
      polkit_gnome
      polybar
-     #rofi
+    #rofi
      signal-desktop
      telegram-desktop
      tor
@@ -46,6 +46,7 @@
      #yubikey-agent
      #yubikey-manager
      #yubioath-flutter
+     zsh-powerlevel10k
 
  #Themes
      dracula-theme
