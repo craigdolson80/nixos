@@ -8,7 +8,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "ssh-agent" "git" ];
-      theme = "michelebologna";
+      theme = "robbyrussell";
     };
     initExtra = ''
       bindkey '^f' autosuggest-accept
