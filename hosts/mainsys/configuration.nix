@@ -131,6 +131,7 @@ in
   
   #Set shell
   programs.zsh.enable = true;
+  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
   #Enable Hyprland & Supporting Apps
   #programs.hyprland.enable = true;
