@@ -13,6 +13,7 @@ in
     neovim
     killall
     eza
+    zsh-powerlevel10k
     vimPlugins.dracula-vim
     vimPlugins.dracula-nvim
     vimPlugins.catppuccin-vim
