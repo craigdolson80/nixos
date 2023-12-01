@@ -8,8 +8,9 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "ssh-agent" "git" ];
-      theme = "sorin";
+      theme = "powerlevel10k";
     };
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     initExtra = ''
       bindkey '^f' autosuggest-accept
       neofetch
