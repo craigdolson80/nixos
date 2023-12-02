@@ -126,6 +126,7 @@ in
   nixpkgs.config.allowUnfree = true;
 
   programs.zsh.enable = true;
+  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
   
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
