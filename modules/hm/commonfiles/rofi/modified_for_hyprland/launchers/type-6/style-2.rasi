@@ -58,7 +58,7 @@ mainbox {
 }
 
 imagebox {
-    padding:                     200px;
+    padding:                     20px;
     background-color:            transparent;
     background-image:            url("~/.config/rofi/images/nixos_dracula.png", height);
     orientation:                 vertical;
