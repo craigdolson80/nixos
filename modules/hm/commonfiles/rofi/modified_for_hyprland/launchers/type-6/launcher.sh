@@ -10,7 +10,7 @@
 ## style-1     style-2     style-3     style-4     style-5
 ## style-6     style-7     style-8     style-9     style-10
 
-dir="$HOME/.config/rofi/launchers/type-6"
+dir="$HOME/.config/rofi/modified_for_hyprland/launchers/type-6"
 theme='style-2'
 
 ## Run
