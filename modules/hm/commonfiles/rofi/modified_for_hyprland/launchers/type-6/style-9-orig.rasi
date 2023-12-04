@@ -22,12 +22,12 @@ configuration {
 /*****----- Global Properties -----*****/
 * {
     font:                        "JetBrains Mono Nerd Font 10";
-    background:                 #1E1F29FF;
-    background-alt:             #282A36FF;
-    foreground:                 #FFFFFFFF;
-    selected:                   #BD93F9FF;
-    active:                     #50FA7BFF;
-    urgent:                     #FF5555FF;
+    background:                  #131D1F;
+    background-alt:              #183A43;
+    foreground:                  #FFFFFF;
+    selected:                    #649094;
+    active:                      #E9CC9D;
+    urgent:                      #FEA861;
 }
 
 /*****----- Main Window -----*****/
@@ -60,7 +60,7 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/.config/rofi/images/i.jpg", height);
+    background-image:            url("~/.config/rofi/images/b.png", height);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
