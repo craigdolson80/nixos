@@ -119,8 +119,7 @@ in
       xdg-desktop-portal-hyprland
     ];
     shell = pkgs.zsh;
-    programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-
+    
   };
 
 
@@ -128,7 +127,7 @@ in
   nixpkgs.config.allowUnfree = true;
 
   programs.zsh.enable = true;
-    programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
 
   # This value determines the NixOS release from which the default
