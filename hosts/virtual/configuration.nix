@@ -119,6 +119,8 @@ in
       xdg-desktop-portal-hyprland
     ];
     shell = pkgs.zsh;
+    programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+
   };
 
 
