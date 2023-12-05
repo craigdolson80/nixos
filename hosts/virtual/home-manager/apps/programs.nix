@@ -50,6 +50,7 @@
      #yubikey-agent
      #yubikey-manager
      #yubioath-flutter
+     zsh-powerlevel10k
 
  #Themes
      dracula-theme
