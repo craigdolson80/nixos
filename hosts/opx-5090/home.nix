@@ -41,7 +41,7 @@
       "application/x-extension-shtml" = ["firefox.desktop"];
       "application/xhtml+xml" = ["firefox.desktop"];
       "application/x-extension-xhtml" = ["firefox.desktop"];
-      "application/x-extension-xht" = ["firefox.desktop"];
+      "application/x-extension-xht" = ["firefox.desktop"]
     };
     defaultApplications = {
       "application/pdf" = ["okularApplication_pdf.desktop"];
@@ -58,7 +58,7 @@
       "x-scheme-handler/about" = ["firefox.desktop"];
       "x-scheme-handler/unknown" = ["firefox.desktop"];
       "x-scheme-handler/sgnl" = ["signal-desktop.desktop"];
-      "x-scheme-handler/signalcaptcha" = ["signal-desktop.desktop"];
+      "x-scheme-handler/signalcaptcha" = ["signal-desktop.desktop"]
     };
   };  
  
