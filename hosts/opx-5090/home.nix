@@ -42,7 +42,7 @@
       "application/xhtml+xml" = ["firefox.desktop"];
       "application/x-extension-xhtml" = ["firefox.desktop"];
       "application/x-extension-xht" = ["firefox.desktop"];
-      "inode/directory" = ["org.kde.dolphin.desktop"];
+      "inode/directory" = ["PCManFM.desktop"];
     };
     defaultApplications = {
       "application/pdf" = ["okularApplication_pdf.desktop"];
@@ -60,7 +60,7 @@
       "x-scheme-handler/unknown" = ["firefox.desktop"];
       "x-scheme-handler/sgnl" = ["signal-desktop.desktop"];
       "x-scheme-handler/signalcaptcha" = ["signal-desktop.desktop"];
-      "inode/directory" = ["org.kde.dolphin.desktop"];
+      "inode/directory" = ["PCManFM.desktop"];
     };
   };  
  
