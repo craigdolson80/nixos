@@ -11,6 +11,7 @@
       theme = "powerlevel10k";
     };
     initExtra = ''
+    [[ ! -f $HOME/nixos/modules/hm/commonfiles/p10k/.p10k.zsh ]] || source $HOME/nixos/modules/hm/commonfiles/p10k/.p10k.zsh
       bindkey '^f' autosuggest-accept
       neofetch
       alias vim="nvim"
