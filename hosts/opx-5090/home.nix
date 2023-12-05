@@ -31,10 +31,10 @@
   xdg.mimeApps = {
     enable = true;
     associations.added = {
-      "application/pdf" = ["Okular.desktop"];
+      "application/pdf" = ["okularApplication_pdf.desktop"];
     };
     defaultApplications = {
-      "application/pdf" = ["Okular.desktop"];
+      "application/pdf" = ["okularApplication_pdf.desktop"];
     };
   };  
  
