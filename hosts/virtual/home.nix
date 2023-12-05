@@ -54,4 +54,10 @@
      recursive = true;
      executable = true;
      };
+  #neofetch
+     home.file.".config/neofetch" = {
+     source = home-manager/dotfiles/neofetch;
+     recursive = true;
+     executable = true;
+     };     
 }
