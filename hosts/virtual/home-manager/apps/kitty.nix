@@ -1,5 +1,5 @@
 {
-  #KITTY
+  #KITTY - DEFAULT TERMINAL
   programs.kitty = {
   enable = true;
   font.name = "meslo-lgs-nf";
