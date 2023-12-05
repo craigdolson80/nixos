@@ -8,7 +8,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "docker-compose" "docker" "ssh-agent" "git" ];
-      theme = "michelebologna";
+      theme = "powerlevel10k";
     };
     initExtra = ''
       bindkey '^f' autosuggest-accept
