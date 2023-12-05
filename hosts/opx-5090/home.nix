@@ -32,9 +32,13 @@
     enable = true;
     associations.added = {
       "application/pdf" = ["okularApplication_pdf.desktop"];
+      "x-scheme-handler/http" = ["firefox.desktop"];
+      "text/html" = ["firefox.desktop"];
     };
     defaultApplications = {
       "application/pdf" = ["okularApplication_pdf.desktop"];
+      "x-scheme-handler/http" = ["firefox.desktop"];
+      "text/html" = ["firefox.desktop"];
     };
   };  
  
