@@ -36,7 +36,7 @@
     defaultApplications = {
       "application/pdf" = ["okular.desktop"];
     };
-  }  
+  };  
  
 #Services 
   services.dunst.enable = true;
