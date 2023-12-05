@@ -26,7 +26,17 @@
     cursorTheme.name = "Dracula-cursors";
     iconTheme.name = "Dracula";
     };
-  
+
+#Default MIME Types
+  xdg.mimeApps = {
+    enable = true;
+    associations.added = {
+      "application/pdf" = ["okular.desktop"];
+    };
+    defaultApplications = {
+      "application/pdf" = ["okular.desktop"];
+    };
+  }  
  
 #Services 
   services.dunst.enable = true;
