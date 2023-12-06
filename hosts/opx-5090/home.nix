@@ -67,11 +67,11 @@
   xdg.desktopEntries.Ledger = {
      name = "Ledger Live";
      genericName = "Ledger Live";
-     exec = "appimage-run $HOME/Applications/Ledger.AppImage";
+     exec = "appimage-run" "$HOME/Applications/Ledger.AppImage";
      icon = "$HOME/Applications/Ledger.png";
      terminal = false;
      type = "Application";
-     categories = [ "Crypto" ];
+     categories = [ "Web" ];
   };  
  
 #Services 
