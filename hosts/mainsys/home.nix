@@ -26,7 +26,59 @@
     cursorTheme.name = "Dracula-cursors";
     iconTheme.name = "Dracula";
     };
-  
+
+#Default MIME Types
+  xdg.mimeApps = {
+    enable = true;
+    associations.added = {
+      "application/pdf" = ["firefox.desktop"];
+      "x-scheme-handler/http" = ["firefox.desktop"];
+      "text/html" = ["firefox.desktop"];
+      "x-scheme-handler/https" = ["firefox.desktop"];
+      "x-scheme-handler/chrome" = ["firefox.desktop"];
+      "application/x-extension-htm" = ["firefox.desktop"];
+      "application/x-extension-html" = ["firefox.desktop"];
+      "application/x-extension-shtml" = ["firefox.desktop"];
+      "application/xhtml+xml" = ["firefox.desktop"];
+      "application/x-extension-xhtml" = ["firefox.desktop"];
+      "application/x-extension-xht" = ["firefox.desktop"];
+      "inode/directory" = "pcmanfm.desktop";
+    };
+    defaultApplications = {
+      "application/pdf" = ["firefox.desktop"];
+      "x-scheme-handler/http" = ["firefox.desktop"];
+      "text/html" = ["firefox.desktop"];
+      "x-scheme-handler/https" = ["firefox.desktop"];
+      "x-scheme-handler/chrome" = ["firefox.desktop"];
+      "application/x-extension-htm" = ["firefox.desktop"];
+      "application/x-extension-html" = ["firefox.desktop"];
+      "application/x-extension-shtml" = ["firefox.desktop"];
+      "application/xhtml+xml" = ["firefox.desktop"];
+      "application/x-extension-xhtml" = ["firefox.desktop"];
+      "application/x-extension-xht" = ["firefox.desktop"];
+      "x-scheme-handler/about" = ["firefox.desktop"];
+      "x-scheme-handler/unknown" = ["firefox.desktop"];
+      "x-scheme-handler/sgnl" = ["signal-desktop.desktop"];
+      "x-scheme-handler/signalcaptcha" = ["signal-desktop.desktop"];
+      "inode/directory" = "pcmanfm.desktop";
+    };
+  };
+
+#Creating Desktop Entries Rofi can present
+  xdg.desktopEntries.Ledger = {
+     name = "Ledger Live";
+     genericName = "Ledger Live";
+     exec = "ledger.sh";
+     icon = "/home/craig/Applications/Ledger.png";
+     terminal = false;
+  };
+   xdg.desktopEntries.Trezor = {
+     name = "Trezor Suite";
+     genericName = "Trezor Suite";
+     exec = "trezor.sh";
+     icon = "/home/craig/Applications/Trezor.png";
+     terminal = false;
+  };   
  
 #Services 
   services.dunst.enable = true;

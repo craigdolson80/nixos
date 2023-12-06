@@ -64,6 +64,7 @@
     };
   };
 
+#Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
      name = "Ledger Live";
      genericName = "Ledger Live";
