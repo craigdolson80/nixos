@@ -70,9 +70,14 @@
      exec = "ledger.sh";
      icon = "/home/craig/Applications/Ledger.png";
      terminal = false;
-     #type = "Application";
-     #categories = [ "Web" ];
-  };  
+  };
+   xdg.desktopEntries.Trezor = {
+     name = "Trezor Suite";
+     genericName = "Trezor Suite";
+     exec = "trezor.sh";
+     icon = "/home/craig/Applications/Trezor.png";
+     terminal = false;
+  };   
  
 #Services 
   services.dunst.enable = true;
