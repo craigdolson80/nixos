@@ -69,14 +69,14 @@
      name = "Ledger Live";
      genericName = "Ledger Live";
      exec = "ledger.sh";
-     icon = "/home/craig/Applications/Ledger.png";
+     icon = "/home/craig/nixos/modules/icons/Ledger.png";
      terminal = false;
   };
    xdg.desktopEntries.Trezor = {
      name = "Trezor Suite";
      genericName = "Trezor Suite";
      exec = "trezor.sh";
-     icon = "/home/craig/Applications/Trezor.png";
+     icon = "/home/craig/nixos/modules/icons/Trezor.png";
      terminal = false;
   };   
  
