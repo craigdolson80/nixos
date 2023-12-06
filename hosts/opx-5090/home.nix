@@ -68,10 +68,10 @@
      name = "Ledger Live";
      genericName = "Ledger Live";
      exec = "ledger.sh";
-     icon = "$HOME/Applications/Ledger.png";
+     icon = "/home/craig/Applications/Ledger.png";
      terminal = false;
-     type = "Application";
-     categories = [ "Web" ];
+     #type = "Application";
+     #categories = [ "Web" ];
   };  
  
 #Services 
