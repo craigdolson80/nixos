@@ -23,6 +23,7 @@ in
     wttrbar
     swaybg
     wlr-randr
+    wdisplays
 
   ];
 }
