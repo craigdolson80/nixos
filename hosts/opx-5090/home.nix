@@ -31,7 +31,7 @@
   xdg.mimeApps = {
     enable = true;
     associations.added = {
-      "application/pdf" = ["okularApplication_pdf.desktop"];
+      "application/pdf" = ["firefox.desktop"];
       "x-scheme-handler/http" = ["firefox.desktop"];
       "text/html" = ["firefox.desktop"];
       "x-scheme-handler/https" = ["firefox.desktop"];
@@ -45,7 +45,7 @@
       "inode/directory" = "pcmanfm.desktop";
     };
     defaultApplications = {
-      "application/pdf" = ["okularApplication_pdf.desktop"];
+      "application/pdf" = ["firefox.desktop"];
       "x-scheme-handler/http" = ["firefox.desktop"];
       "text/html" = ["firefox.desktop"];
       "x-scheme-handler/https" = ["firefox.desktop"];
