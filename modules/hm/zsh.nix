@@ -24,6 +24,8 @@
       alias ga="git add ."
       alias gc="git commit"
       alias gp="git push origin main"
+      alias pl="git pull"
+      alias aliases="cat $HOME/nixos/modules/hm/zsh.nix"
     '';
   };
 }
