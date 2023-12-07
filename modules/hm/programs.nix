@@ -8,7 +8,6 @@
      brave
      btop
      discord
-     exodus
      feh
      firefox
      flameshot
