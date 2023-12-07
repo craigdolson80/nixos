@@ -21,6 +21,9 @@
       alias rm="trash"
       alias nixgen="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
       alias reload="hyprctl reload"
+      alias ga="git add ."
+      alias gc="git commit"
+      alias gp="git push origin main"
     '';
   };
 }
