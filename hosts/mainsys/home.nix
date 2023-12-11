@@ -78,7 +78,17 @@
      exec = "trezor.sh";
      icon = "/home/craig/nixos/modules/icons/Trezor.png";
      terminal = false;
-  };   
+  };
+
+# Programs with options (removed from programs.nix)
+
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = "dracula";
+      vim_keys = true;
+    };
+  };
  
 #Services 
   services.dunst.enable = true;
