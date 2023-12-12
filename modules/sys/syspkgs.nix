@@ -17,6 +17,8 @@ in
     vimPlugins.dracula-nvim
     vimPlugins.catppuccin-vim
     vimPlugins.catppuccin-nvim
+    traceroute
+    inetutils
 ## Virtual Support Packages ##
     virt-manager
     virt-viewer
