@@ -26,6 +26,18 @@
     cursorTheme.name = "Dracula-cursors";
     iconTheme.name = "Dracula";
     };
+
+# Programs with options (removed from programs.nix)
+
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = "dracula";
+      vim_keys = true;
+      theme_background = false;
+      show_uptime = true;
+    };
+  };
      
 #Services 
   services.dunst.enable = true;
