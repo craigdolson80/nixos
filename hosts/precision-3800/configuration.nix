@@ -99,7 +99,9 @@ in
     layout = "us";
     xkbVariant = "";
   };
+  # Enable Tailscale
 
+  services.tailscale.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
