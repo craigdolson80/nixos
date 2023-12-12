@@ -38,7 +38,7 @@ in
 
    # Enable Tailscale
   services.tailscale.enable = true;
-  services.tailscale.useRoutingFeatures = "both";
+  services.tailscale.useRoutingFeatures = "client";
   networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
   networking.search = [ "tail72594.ts.net" ];
   
