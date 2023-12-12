@@ -102,6 +102,7 @@ in
   # Enable Tailscale
 
   services.tailscale.enable = true;
+  services.tailscale.useRoutingFeatures = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
