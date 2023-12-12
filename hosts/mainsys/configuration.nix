@@ -93,6 +93,7 @@ in
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
+  services.onedrive.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
