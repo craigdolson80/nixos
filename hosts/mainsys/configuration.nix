@@ -68,7 +68,6 @@ in
     LC_TIME = "en_US.UTF-8";
   };
   
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
