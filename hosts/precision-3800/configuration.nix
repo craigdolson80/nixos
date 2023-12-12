@@ -102,7 +102,10 @@ in
   # Enable Tailscale
 
   services.tailscale.enable = true;
-  services.tailscale.useRoutingFeatures = true;
+  services.tailscale.useRoutingFeatures = "both";
+  networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
+  networking.search = [ "tail72594.ts.net" ];
+
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
