@@ -89,7 +89,7 @@
       vim_keys = true;
       theme_background = false;
       show_uptime = true;
-      temp_scale = "fahrenheit"
+      temp_scale = "fahrenheit";
     };
   };
  
