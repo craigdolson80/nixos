@@ -36,6 +36,13 @@ in
   networking.hosts = {
   "10.0.1.2" = [ "synology" ];
   };
+
+ # Enable Tailscale
+
+  services.tailscale.enable = true;
+  services.tailscale.useRoutingFeatures = "both";
+  networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
+  networking.search = [ "tail72594.ts.net" ];
   
   fileSystems."/home/${user}/nfs" = {
     device = "synology:/volume1/${user}";
