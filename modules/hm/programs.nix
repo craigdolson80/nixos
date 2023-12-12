@@ -6,7 +6,7 @@
      betterlockscreen
      bitwarden
      brave
-     btop
+     #btop
      discord
      feh
      firefox
