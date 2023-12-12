@@ -35,6 +35,12 @@ in
   networking.hosts = {
   "172.17.2.25" = [ "qnap" ];
   };
+
+   # Enable Tailscale
+  services.tailscale.enable = true;
+  services.tailscale.useRoutingFeatures = "both";
+  networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
+  networking.search = [ "tail72594.ts.net" ];
   
   fileSystems."/home/craig/nfs" = {
     device = "qnap:/craig";
@@ -60,7 +66,6 @@ in
     LC_TIME = "en_US.UTF-8";
   };
   
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -105,11 +110,8 @@ in
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  
+  # User Config
   users.users.craig = {
     isNormalUser = true;
     description = "${user}";
@@ -120,21 +122,13 @@ in
     shell = pkgs.zsh;
   };
 
- 
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   programs.zsh.enable = true;
-    programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
-  
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.05"; # Did you read the comment?
+  system.stateVersion = "23.05";
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

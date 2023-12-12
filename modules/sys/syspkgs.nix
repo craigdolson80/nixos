@@ -35,7 +35,6 @@ in
     ccid
     trezor-udev-rules
 ##-------------------------##    
-    gnome.gnome-tweaks
 
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''
