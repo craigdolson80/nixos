@@ -84,6 +84,18 @@
   services.dunst.enable = true;
   nixpkgs.config.allowUnfree = true;
 
+  # Programs with options (removed from programs.nix)
+
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = "dracula";
+      vim_keys = true;
+      theme_background = false;
+      show_uptime = true;
+    };
+  };
+
 #DOTFILE IMPORTS
   #qtile
      home.file.".config/qtile" = {
