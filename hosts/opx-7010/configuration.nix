@@ -4,10 +4,18 @@
 
 { config, pkgs, ... }:
 
+let
+  user="craig";
+in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/sys/fonts.nix
+      ../../modules/sys/vm.nix
+      ../../modules/sys/polkit.nix
+      ../../modules/sys/syspkgs.nix
+      ../../modules/sys/hypr.nix
     ];
 
   # Bootloader.

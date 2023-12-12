@@ -35,6 +35,19 @@
           }
         ];
       };
+      opx-7010 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          hosts/opx-7010/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.craig = import hosts/opx-7010/home.nix;
+
+          }
+        ];
+      };
       virtual = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
