@@ -76,7 +76,7 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   #services.xserver.desktopManager.gnome.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
-  services.xserver.windowManager.qtile.enable = true;
+  #services.xserver.windowManager.qtile.enable = true;
   programs.hyprland.enable  = true;
   programs.hyprland.xwayland.enable = true;
   programs.sway.enable = true;
