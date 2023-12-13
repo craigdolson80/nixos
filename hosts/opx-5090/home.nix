@@ -10,7 +10,7 @@
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
     ../../modules/hm/mime.nix
-    #../../modules/hm/dotfiles.nix
+    ../../modules/hm/dotfiles.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];
@@ -64,10 +64,10 @@
 
   #DOTFILE IMPORTS
   #qtile
-     home.file.".config/qtile" = {
-     source = home-manager/dotfiles/qtile;
-     recursive = true;
-     };
+  #   home.file.".config/qtile" = {
+  #   source = home-manager/dotfiles/qtile;
+  #   recursive = true;
+  #   };
   #polybar
      home.file.".config/polybar" = {
      source = home-manager/dotfiles/polybar;
