@@ -6,8 +6,8 @@
      betterlockscreen
      bitwarden
      brave
-     #btop
      discord
+     element-desktop
      feh
      firefox
      flameshot
@@ -31,7 +31,6 @@
      picom
      polkit_gnome
      polybar
-    #rofi
      signal-desktop
      telegram-desktop
      tor
