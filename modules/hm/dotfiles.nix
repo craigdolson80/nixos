@@ -21,11 +21,11 @@ in
      };
    #picom
      home.file.".config/picom" = {
-     source = .commonfiles/picom;
+     source = commonfiles/picom;
      };
   #rofi
      home.file.".config/rofi" = {
-     source = .commonfiles/rofi;
+     source = commonfiles/rofi;
      recursive = true;
      executable = true;
      };
