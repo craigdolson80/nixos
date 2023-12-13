@@ -93,7 +93,8 @@ in
     opengl.enable = true;
     nvidia.modesetting.enable = true;
   };
-
+  services.onedrive.enable = true;
+  
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
