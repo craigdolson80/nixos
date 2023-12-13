@@ -9,6 +9,7 @@
     ../../modules/hm/programs.nix
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
+    ../../modules/hm/mime.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];

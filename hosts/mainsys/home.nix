@@ -9,6 +9,7 @@
     ../../modules/hm/programs.nix
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
+    ../../modules/hm/mime.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];
@@ -26,43 +27,6 @@
     cursorTheme.name = "Dracula-cursors";
     iconTheme.name = "Dracula";
     };
-
-#Default MIME Types
-  xdg.mimeApps = {
-    enable = true;
-    associations.added = {
-      "application/pdf" = ["firefox.desktop"];
-      "x-scheme-handler/http" = ["firefox.desktop"];
-      "text/html" = ["firefox.desktop"];
-      "x-scheme-handler/https" = ["firefox.desktop"];
-      "x-scheme-handler/chrome" = ["firefox.desktop"];
-      "application/x-extension-htm" = ["firefox.desktop"];
-      "application/x-extension-html" = ["firefox.desktop"];
-      "application/x-extension-shtml" = ["firefox.desktop"];
-      "application/xhtml+xml" = ["firefox.desktop"];
-      "application/x-extension-xhtml" = ["firefox.desktop"];
-      "application/x-extension-xht" = ["firefox.desktop"];
-      "inode/directory" = "pcmanfm.desktop";
-    };
-    defaultApplications = {
-      "application/pdf" = ["firefox.desktop"];
-      "x-scheme-handler/http" = ["firefox.desktop"];
-      "text/html" = ["firefox.desktop"];
-      "x-scheme-handler/https" = ["firefox.desktop"];
-      "x-scheme-handler/chrome" = ["firefox.desktop"];
-      "application/x-extension-htm" = ["firefox.desktop"];
-      "application/x-extension-html" = ["firefox.desktop"];
-      "application/x-extension-shtml" = ["firefox.desktop"];
-      "application/xhtml+xml" = ["firefox.desktop"];
-      "application/x-extension-xhtml" = ["firefox.desktop"];
-      "application/x-extension-xht" = ["firefox.desktop"];
-      "x-scheme-handler/about" = ["firefox.desktop"];
-      "x-scheme-handler/unknown" = ["firefox.desktop"];
-      "x-scheme-handler/sgnl" = ["signal-desktop.desktop"];
-      "x-scheme-handler/signalcaptcha" = ["signal-desktop.desktop"];
-      "inode/directory" = "pcmanfm.desktop";
-    };
-  };
 
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
