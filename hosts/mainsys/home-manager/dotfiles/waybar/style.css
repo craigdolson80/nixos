@@ -9,8 +9,8 @@
 }
 
 window#waybar {
-    background-color: shade(@mantle, 0.9);
-    color: @green;
+    background-color: @mantle;
+    color: @text;
     padding: 0;
     margin: 0;
 }
