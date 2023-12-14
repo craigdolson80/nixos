@@ -10,7 +10,7 @@
 
 window#waybar {
     background-color: shade(@mantle, 0.9);
-    color: @surface1;
+    color: @green;
     padding: 0;
     margin: 0;
 }
