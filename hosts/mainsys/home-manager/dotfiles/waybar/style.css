@@ -1,4 +1,4 @@
-@import "~/.config/waybar/themes/mocha.css$ ";
+@import "themes/mocha.css";
 * {
     border: none;
     border-radius: 0;
