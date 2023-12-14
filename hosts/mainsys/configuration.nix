@@ -32,6 +32,7 @@ in
   
   # Enable networking
   networking.networkmanager.enable = true;
+  services.sshd.enable = true;
   #networking.wireless.enable = true;
   networking.hosts = {
   "10.0.1.2" = [ "synology" ];
