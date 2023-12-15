@@ -21,10 +21,8 @@
 
       gtk = {
     enable = true;
-    cursorTheme.name = "macOS-Monterey-White";
-    cursorTheme.package = pkgs.apple-cursor;
-    iconTheme.name = "Papirus-Dark";
-    iconTheme.package = pkgs.papirus-icon-theme;
+    cursorTheme.name = "Dracula-cursors";
+    iconTheme.name = "Dracula";
     theme.name = "Catppuccin-Mocha-Standard-Lavender-dark";
     theme.package = pkgs.catppuccin-gtk.override {
       accents = [ "lavender" ];
