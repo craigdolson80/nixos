@@ -18,15 +18,21 @@
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
   
+
+
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin";
-      package = pkgs.catppuccin-gtk;
+      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "lavender" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
+        variant = "mocha";
+      };
     };
-    cursorTheme.name = "catppuccin-cursors";
-    iconTheme.name = "catppuccin-papirus-folders";
-    };
+  };
+
 
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
@@ -118,6 +124,17 @@
      source = home-manager/dotfiles/neofetch;
      recursive = true;
      executable = true;
-     };       
+     };   
+
+#Removed from config due to theme change
+#  gtk = {
+#    enable = true;
+#    theme = {
+#      name = "Dracula";
+#      package = pkgs.dracula-theme;
+#    };
+#    cursorTheme.name = "Dracula-cursors";
+#    iconTheme.name = "Dracula";
+#    };    
     
 }
