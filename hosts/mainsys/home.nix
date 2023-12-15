@@ -29,7 +29,8 @@
         variant = "mocha";
       };
     };
-    iconTheme.name = "catppuccin-papirus-folders";
+    iconTheme = "catppuccin-papirus-folders";
+    iconTheme.package = "pkgs.catppuccin-papirus-folders";
   };
 
 
