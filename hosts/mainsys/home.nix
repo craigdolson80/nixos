@@ -21,12 +21,16 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
+      name = "Catppuccin-Mocha-Standard-Pink-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "pink" ];
+        size = "standard";
+        tweaks = [ "rimless" "black" ];
+        variant = "mocha";
+      };
     };
-    cursorTheme.name = "Dracula-cursors";
-    iconTheme.name = "Dracula";
-    }; 
+  };
+
 
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
