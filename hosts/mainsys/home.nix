@@ -26,7 +26,7 @@
     iconTheme.name = "Papirus-Dark";
     iconTheme.package = pkgs.papirus-icon-theme;
     theme.name = "Catppuccin-Mocha-Standard-Lavender-dark";
-    theme.package = pkgs.unstable.catppuccin-gtk.override {
+    theme.package = pkgs.catppuccin-gtk.override {
       accents = [ "lavender" ];
       size = "standard";
       variant = "mocha";
