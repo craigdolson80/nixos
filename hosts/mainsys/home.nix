@@ -18,17 +18,15 @@
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
   
-  
- 
-  gtk = {
+gtk = {
     enable = true;
     theme = {
       name = "Catppuccin-Macchiato-Compact-Pink-Dark";
       package = pkgs.catppuccin-gtk.override {
-        accents = [ "lavender" ];
+        accents = [ "pink" ];
         size = "compact";
         tweaks = [ "rimless" "black" ];
-        variant = "mocha";
+        variant = "macchiato";
       };
     };
   };
