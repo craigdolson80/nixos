@@ -50,11 +50,11 @@
  #Themes
      dracula-theme
      dracula-icon-theme
-     catppuccin-gtk 
+     #catppuccin-gtk 
      catppuccin-kde
      catppuccin-cursors
      catppuccin-papirus-folders 
-     catppuccin
+     #catppuccin
  
    ];
 }
