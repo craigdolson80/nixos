@@ -21,11 +21,11 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Mocha-Standard-Pink-Dark";
+      name = "Catppuccin-Mocha-Compact-Pink-Dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "pink" ];
-        size = "standard";
-        #tweaks = [ "rimless" "black" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
         variant = "mocha";
       };
     };
