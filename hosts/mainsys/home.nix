@@ -18,15 +18,20 @@
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
   
-  gtk = {
+
+      gtk = {
     enable = true;
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
+    cursorTheme.name = "macOS-Monterey-White";
+    cursorTheme.package = pkgs.apple-cursor;
+    iconTheme.name = "Papirus-Dark";
+    iconTheme.package = pkgs.papirus-icon-theme;
+    theme.name = "Catppuccin-Mocha-Standard-Lavender-dark";
+    theme.package = pkgs.unstable.catppuccin-gtk.override {
+      accents = [ "lavender" ];
+      size = "standard";
+      variant = "mocha";
     };
-    cursorTheme.name = "Dracula-cursors";
-    iconTheme.name = "Dracula";
-    }; 
+  };
 
 
 #Creating Desktop Entries Rofi can present
