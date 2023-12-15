@@ -21,12 +21,12 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Latte-Compact-Pink-Dark";
+      name = "Catppuccin-Frappe-Compact-Pink-Dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "pink" ];
         size = "compact";
         tweaks = [ "normal" ];
-        variant = "latte";
+        variant = "frappe";
       };
     };
   };
