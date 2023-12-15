@@ -21,15 +21,12 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        size = "compact";
-        tweaks = [ "rimless" "black" ];
-        variant = "mocha";
-      };
+      name = "Dracula";
+      package = pkgs.dracula-theme;
     };
-  };
+    cursorTheme.name = "Dracula-cursors";
+    iconTheme.name = "Dracula";
+    }; 
 
 
 #Creating Desktop Entries Rofi can present
