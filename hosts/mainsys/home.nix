@@ -30,7 +30,7 @@
       };
     };
     iconTheme = "catppuccin-papirus-folders";
-    iconTheme.package = "pkgs.catppuccin-papirus-folders";
+    #iconTheme.package = "pkgs.catppuccin-papirus-folders";
   };
 
 
