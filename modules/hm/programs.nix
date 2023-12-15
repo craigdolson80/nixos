@@ -54,5 +54,7 @@
      catppuccin-kde
      catppuccin-cursors
      catppuccin-papirus-folders 
+     catppuccin
+ 
    ];
 }

@@ -10,6 +10,7 @@
         pkgs.vscode-extensions.jnoortheen.nix-ide
         pkgs.vscode-extensions.dracula-theme.theme-dracula
         pkgs.vscode-extensions.catppuccin.catppuccin-vsc
+        pkgs.vscode-extensions.catppuccin.catppuccin-vsc-icons
          ];
      programs.vscode.userSettings = {
         "editor.fontFamily" = "'Droid Sans Mono', 'monospace', monospace, 'FontAwesome'";

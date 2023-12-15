@@ -21,11 +21,11 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
+      name = "Catppuccin";
+      package = pkgs.catppuccin-gtk;
     };
-    cursorTheme.name = "Dracula-cursors";
-    iconTheme.name = "Dracula";
+    cursorTheme.name = "catppuccin-cursors";
+    iconTheme.name = "catppuccin-papirus-folders";
     };
 
 #Creating Desktop Entries Rofi can present
