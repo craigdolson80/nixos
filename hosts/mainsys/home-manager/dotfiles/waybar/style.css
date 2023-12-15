@@ -10,7 +10,7 @@
 
 window#waybar {
     background: rgba(25, 25, 25, 0);
-    color: #cdd6f4;
+    color: @text;
     padding: 0;
     margin: 0;
 }
@@ -25,14 +25,14 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #686868;
+    color: @text;
     background: transparent;
     margin-right: 5px;
     border-radius: 5px;
 }
 
 #workspaces button.active {
-    color: #ffffff;
+    color: @text;
     background: @green;
     border-radius: 5px;
 }
@@ -45,12 +45,12 @@ tooltip {
 
 #workspaces button.urgent {
     color: #11111b;
-    background: rgba(190, 37, 120, 1);
+    background: @flamingo;
     border-radius: 5px;
 }
 
 #workspaces button:hover {
-    background: rgba(37, 150, 190, 1);
+    background: @sky;
     color: #ffffff;
     border-radius: 5px;
 }
