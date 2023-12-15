@@ -9,10 +9,11 @@
 	pkgs.vscode-extensions.ms-python.python
         pkgs.vscode-extensions.jnoortheen.nix-ide
         pkgs.vscode-extensions.dracula-theme.theme-dracula
+        pkgs.vscode-extensions.catppuccin.catppuccin-vsc
          ];
      programs.vscode.userSettings = {
         "editor.fontFamily" = "'Droid Sans Mono', 'monospace', monospace, 'FontAwesome'";
-        "workbench.colorTheme" = "Dracula";
+        "workbench.colorTheme": "Catppuccin Mocha";
         "security.workspace.trust.untrustedFiles" = "open";
         "workbench.startupEditor" = "none";
         "git.openRepositoryInParentFolders" = "always";
