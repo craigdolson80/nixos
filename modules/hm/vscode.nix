@@ -13,7 +13,7 @@
          ];
      programs.vscode.userSettings = {
         "editor.fontFamily" = "'Droid Sans Mono', 'monospace', monospace, 'FontAwesome'";
-        "workbench.colorTheme": "Catppuccin Mocha";
+        "workbench.colorTheme" = "Catppuccin Mocha";
         "security.workspace.trust.untrustedFiles" = "open";
         "workbench.startupEditor" = "none";
         "git.openRepositoryInParentFolders" = "always";
