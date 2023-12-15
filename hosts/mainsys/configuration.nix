@@ -90,10 +90,10 @@ in
   programs.dconf.enable = true;
   services.trezord.enable = true;
   services.flatpak.enable = true;
-  xdg.portal = {
-     enable = true;
-     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  };
+  #xdg.portal = {
+  #   enable = true;
+  #   extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  #};
   services.onedrive.enable = true;
 
   # Configure keymap in X11
