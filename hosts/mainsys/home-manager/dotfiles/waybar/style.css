@@ -32,7 +32,7 @@ tooltip {
 }
 
 #workspaces button.active {
-    color: @text;
+    color: @base;
     background: @green;
     border-radius: 5px;
 }
