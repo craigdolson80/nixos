@@ -34,8 +34,7 @@
          package = pkgs.catppuccin-papirus-folders.override {
           accent = [ "green" ];
           flavor = "mocha";
-         }
-
+         };
     };
     #iconTheme.package = "pkgs.catppuccin-papirus-folders";
   };
