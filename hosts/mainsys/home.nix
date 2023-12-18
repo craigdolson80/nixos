@@ -10,6 +10,7 @@
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
     ../../modules/hm/mime.nix
+    ../../modules/hm/gtk-theme.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];
@@ -17,33 +18,6 @@
   home.username = "craig";
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
-  
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Catppuccin-Mocha-Compact-Green-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "green" ];
-        size = "compact";
-        tweaks = [ "black" "rimless" ];
-        variant = "mocha";
-      };
-    };
-    iconTheme = {
-         name = "Papirus-Dark";
-         package = pkgs.catppuccin-papirus-folders.override {
-          accent = "sapphire";
-          flavor = "mocha";
-         };
-    };
-  };
-    home = {
-    pointerCursor = {
-        name = "Catppuccin-Mocha-Dark-Cursors";
-        package = pkgs.catppuccin-cursors.mochaDark;
-        size = 16;
-    };
-  };
   
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
@@ -137,15 +111,4 @@
      executable = true;
      };   
 
-#Removed from config due to theme change
-#  gtk = {
-#    enable = true;
-#    theme = {
-#      name = "Dracula";
-#      package = pkgs.dracula-theme;
-#    };
-#    cursorTheme.name = "Dracula-cursors";
-#    iconTheme.name = "Dracula";
-#    };    
-    
 }
