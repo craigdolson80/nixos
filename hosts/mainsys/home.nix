@@ -36,7 +36,6 @@
           flavor = "mocha";
          };
     };
-    #iconTheme.package = "pkgs.catppuccin-papirus-folders";
   };
 
 
