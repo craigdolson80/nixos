@@ -29,7 +29,14 @@
         variant = "mocha";
       };
     };
-    iconTheme.name = "Papirus-Dark";
+    iconTheme = {
+         name = = "Papirus-Dark";
+         package = pkgs.catppuccin-papirus-folders.override {
+          accent = [ "green" ];
+          flavor = "mocha";
+         }
+
+    };
     #iconTheme.package = "pkgs.catppuccin-papirus-folders";
   };
 
