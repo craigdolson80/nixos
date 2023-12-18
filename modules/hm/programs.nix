@@ -52,7 +52,7 @@
      dracula-icon-theme
      catppuccin-gtk 
      catppuccin-kde
-     catppuccin-cursors
+     catppuccin-cursors.MochaDark
      catppuccin
  
    ];
