@@ -36,9 +36,9 @@
           flavor = "mocha";
          };
     };
+     cursorTheme.name = "catppuccin-cursors.mochaDark";
   };
-
-
+  
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
      name = "Ledger Live";
