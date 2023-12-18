@@ -60,7 +60,7 @@
   programs.btop = {
     enable = true;
     settings = {
-      color_theme = "dracula";
+      color_theme = "catppuccin_mocha";
       vim_keys = true;
       theme_background = false;
       show_uptime = true;
