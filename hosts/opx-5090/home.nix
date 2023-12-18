@@ -10,6 +10,7 @@
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
     ../../modules/hm/mime.nix
+    ../../modules/hm/gtk-theme.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];
@@ -17,16 +18,6 @@
   home.username = "craig";
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
-  
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
-    };
-    cursorTheme.name = "Dracula-cursors";
-    iconTheme.name = "Dracula";
-    };
 
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
@@ -53,7 +44,7 @@
   programs.btop = {
     enable = true;
     settings = {
-      color_theme = "dracula";
+      color_theme = "catppuccin_mocha";
       vim_keys = true;
       theme_background = false;
       show_uptime = true;
