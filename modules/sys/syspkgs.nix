@@ -36,7 +36,6 @@ in
     pcsctools
     ccid
     trezor-udev-rules
-    unifi8
 ##-------------------------##    
 
 #Ledger Live
