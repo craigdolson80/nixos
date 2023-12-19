@@ -7,6 +7,7 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      # Include modules
       ../../modules/sys/fonts.nix
       ../../modules/sys/vm.nix
       ../../modules/sys/polkit.nix
@@ -126,7 +127,8 @@ in
 
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
+  
+  #Set shell
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
