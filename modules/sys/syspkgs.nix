@@ -27,6 +27,7 @@ in
     win-virtio
     win-spice
     distrobox
+    podman-desktop
 ##-------------------------##
     pciutils
     usbutils
