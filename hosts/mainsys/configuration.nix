@@ -95,6 +95,7 @@ in
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
   services.onedrive.enable = true;
+  virtualisation.podman.enable = true;
 
   # Configure keymap in X11
   services.xserver = {

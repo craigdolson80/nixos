@@ -83,6 +83,7 @@ in
   services.pcscd.enable = true;
   programs.dconf.enable = true;
   services.flatpak.enable = true;
+  services.unifi.enable = true;
   xdg.portal = {
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
