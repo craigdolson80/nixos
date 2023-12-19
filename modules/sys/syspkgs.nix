@@ -26,6 +26,7 @@ in
     spice-protocol
     win-virtio
     win-spice
+    distrobox
 ##-------------------------##
     pciutils
     usbutils
