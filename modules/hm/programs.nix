@@ -15,7 +15,7 @@
      galculator
      geany
      gimp-with-plugins
-     github-desktop
+     #github-desktop
      glances
      google-chrome
      hplipWithPlugin
