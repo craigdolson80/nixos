@@ -45,6 +45,7 @@
       theme_background = false;
       show_uptime = true;
       temp_scale = "fahrenheit";
+      net_iface = "enp5s0";
     };
   };
  

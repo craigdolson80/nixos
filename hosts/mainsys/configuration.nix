@@ -96,9 +96,7 @@ in
   };
   services.onedrive.enable = true;
   virtualisation.podman.enable = true;
-  services.unifi.enable = true;
-  #services.unifi.unifiPackage = [ pkgs.unifi6 ];
-
+  
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
