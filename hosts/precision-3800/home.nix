@@ -10,6 +10,7 @@
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
     ../../modules/hm/mime.nix
+    ../../modules/hm/gtk-theme.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];
