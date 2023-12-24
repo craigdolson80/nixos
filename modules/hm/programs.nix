@@ -7,6 +7,7 @@
      bitwarden
      brave
      discord
+     electrum
      element-desktop
      feh
      firefox
