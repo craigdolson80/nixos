@@ -33,6 +33,7 @@
      picom
      polkit_gnome
      polybar
+     remmina
      signal-desktop
      telegram-desktop
      tor
