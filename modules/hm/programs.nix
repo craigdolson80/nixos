@@ -48,6 +48,7 @@
      #yubikey-agent
      #yubikey-manager
      #yubioath-flutter
+     xfce.thunar
      zsh-powerlevel10k
 
  #Themes
