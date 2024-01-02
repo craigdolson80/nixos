@@ -49,6 +49,9 @@
      #yubikey-manager
      #yubioath-flutter
      xfce.thunar
+     xfce.thunar-volman
+     xfce.thunar-archive-plugin
+     xfce.thunar-dropbox-plugin
      zsh-powerlevel10k
 
  #Themes
