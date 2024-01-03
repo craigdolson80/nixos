@@ -6,8 +6,9 @@
      betterlockscreen
      bitwarden
      brave
-     btop
      discord
+     electrum
+     element-desktop
      feh
      firefox
      flameshot
@@ -15,6 +16,7 @@
      galculator
      geany
      gimp-with-plugins
+     #github-desktop
      glances
      google-chrome
      hplipWithPlugin
@@ -31,7 +33,7 @@
      picom
      polkit_gnome
      polybar
-    #rofi
+     remmina
      signal-desktop
      telegram-desktop
      tor
@@ -46,6 +48,10 @@
      #yubikey-agent
      #yubikey-manager
      #yubioath-flutter
+     xfce.thunar
+     xfce.thunar-volman
+     xfce.thunar-archive-plugin
+     xfce.thunar-dropbox-plugin
      zsh-powerlevel10k
 
  #Themes
@@ -53,7 +59,8 @@
      dracula-icon-theme
      catppuccin-gtk 
      catppuccin-kde
-     catppuccin-cursors
-     catppuccin-papirus-folders 
+     catppuccin
+     catppuccin-cursors.mochaDark
+ 
    ];
 }

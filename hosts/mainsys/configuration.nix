@@ -32,11 +32,19 @@ in
   
   # Enable networking
   networking.networkmanager.enable = true;
+  services.sshd.enable = true;
   #networking.wireless.enable = true;
   networking.hosts = {
   "10.0.1.2" = [ "synology" ];
   };
+
+ # Enable Tailscale
+  services.tailscale.enable = true;
+  services.tailscale.useRoutingFeatures = "both";
+  networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
+  networking.search = [ "tail72594.ts.net" ];
   
+  # NAS Connect
   fileSystems."/home/${user}/nfs" = {
     device = "synology:/volume1/${user}";
     fsType = "nfs";
@@ -61,7 +69,6 @@ in
     LC_TIME = "en_US.UTF-8";
   };
   
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -70,7 +77,7 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   #services.xserver.desktopManager.gnome.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
-  services.xserver.windowManager.qtile.enable = true;
+  #services.xserver.windowManager.qtile.enable = true;
   programs.hyprland.enable  = true;
   programs.hyprland.xwayland.enable = true;
   programs.sway.enable = true;
@@ -87,7 +94,9 @@ in
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
-
+  services.onedrive.enable = true;
+  virtualisation.podman.enable = true;
+  
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
@@ -97,7 +106,7 @@ in
   # Enable CUPS to print documents.
   services.printing.enable = true;
   services.avahi.enable = true;
-  services.avahi.nssmdns = true;
+  services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
   # Enable sound with pipewire.

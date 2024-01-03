@@ -22,6 +22,8 @@ in
     pywal
     wttrbar
     swaybg
+    wlr-randr
+    wdisplays
 
   ];
 }

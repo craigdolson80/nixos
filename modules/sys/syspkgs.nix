@@ -6,6 +6,7 @@ in
   environment.systemPackages = with pkgs; [
     bat
     trash-cli
+    gvfs
     vim
     wget
     pavucontrol
@@ -13,11 +14,12 @@ in
     neovim
     killall
     eza
-    #zsh-powerlevel10k
     vimPlugins.dracula-vim
     vimPlugins.dracula-nvim
     vimPlugins.catppuccin-vim
     vimPlugins.catppuccin-nvim
+    traceroute
+    inetutils
 ## Virtual Support Packages ##
     virt-manager
     virt-viewer
@@ -25,6 +27,8 @@ in
     spice-protocol
     win-virtio
     win-spice
+    distrobox
+    podman-desktop
 ##-------------------------##
     pciutils
     usbutils
@@ -34,7 +38,6 @@ in
     ccid
     trezor-udev-rules
 ##-------------------------##    
-    gnome.gnome-tweaks
 
 #Ledger Live
  (writeShellScriptBin "ledger.sh" ''

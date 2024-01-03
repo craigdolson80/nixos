@@ -17,6 +17,7 @@ in
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Setup keyfile
   boot.initrd.secrets = {
@@ -72,7 +73,6 @@ in
   services.xserver.windowManager.qtile.enable = true;
   programs.hyprland = {
   enable = true;
-  enableNvidiaPatches = true;
   xwayland.enable = true;
   };
   programs.sway.enable = true;
@@ -92,16 +92,25 @@ in
     opengl.enable = true;
     nvidia.modesetting.enable = true;
   };
+  services.onedrive.enable = true;
+  
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
     xkbVariant = "";
   };
+  # Enable Tailscale
+
+  services.tailscale.enable = true;
+  services.tailscale.useRoutingFeatures = "both";
+  networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
+  networking.search = [ "tail72594.ts.net" ];
+
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
   services.avahi.enable = true;
-  services.avahi.nssmdns = true;
+  services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
   # Enable sound with pipewire.

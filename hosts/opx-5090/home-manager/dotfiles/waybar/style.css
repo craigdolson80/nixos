@@ -1,3 +1,4 @@
+@import "themes/mocha.css";
 * {
     border: none;
     border-radius: 0;
@@ -10,6 +11,8 @@
 window#waybar {
     background: rgba(25, 25, 25, 0);
     color: #cdd6f4;
+    padding: 0;
+    margin: 0;
 }
 
 tooltip {
@@ -17,20 +20,20 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: @mantle;
 }
 
 #workspaces button {
     padding: 5px;
-    color: #686868;
+    color: @text;
     background: transparent;
     margin-right: 5px;
     border-radius: 5px;
 }
 
 #workspaces button.active {
-    color: #ffffff;
-    background: rgba(37, 150, 190, 1);
+    color: @base;
+    background: @green;
     border-radius: 5px;
 }
 
@@ -42,12 +45,12 @@ tooltip {
 
 #workspaces button.urgent {
     color: #11111b;
-    background: rgba(190, 37, 120, 1);
+    background: @flamingo;
     border-radius: 5px;
 }
 
 #workspaces button:hover {
-    background: rgba(37, 150, 190, 1);
+    background: @sky;
     color: #ffffff;
     border-radius: 5px;
 }
@@ -139,7 +142,7 @@ tooltip {
 }
 
 #clock {
-    color: #fab387;
+    color: @peach;
     border-radius: 5px 5px 5px 5px;
     background: rgba(25, 25, 25, 0.65);
     margin-right: 10px;
@@ -162,7 +165,7 @@ tooltip {
 }
 
 #pulseaudio {
-    color: #89b4fa;
+    color: @teal;
     background: rgba(25, 25, 25, .65);
     border-radius: 5px 5px 5px 5px;
     margin-right: 10px;
@@ -190,7 +193,7 @@ tooltip {
 }
 
 #cpu {
-    color: #cba6f7;
+    color: @mauve;
     background: rgba(25, 25, 25, 0.65);
     border-radius: 5px 0px 0px 5px;
     border-top: 0px solid transparent;
@@ -200,7 +203,7 @@ tooltip {
 }
 
 #memory {
-    color: #cba6f7;
+    color: @mauve;
     background: rgba(25, 25, 25, 0.65);
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
@@ -209,7 +212,7 @@ tooltip {
 }
 
 #disk {
-    color: #cba6f7;
+    color: @mauve;
     background: rgba(25, 25, 25, 0.65);
     border-radius: 0px 5px 5px 0px;
     margin-right: 10px;

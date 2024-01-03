@@ -9,6 +9,8 @@
     ../../modules/hm/programs.nix
     ../../modules/hm/ssh.nix
     ../../modules/hm/vscode.nix
+    ../../modules/hm/mime.nix
+    ../../modules/hm/gtk-theme.nix
     home-manager/apps/bspwm.nix
     home-manager/apps/sxhkd.nix
   ];
@@ -17,15 +19,17 @@
   home.homeDirectory = "/home/craig";
   home.stateVersion = "23.05";
   
-  gtk = {
+# Programs with options (removed from programs.nix)
+
+  programs.btop = {
     enable = true;
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
+    settings = {
+      color_theme = "dracula";
+      vim_keys = true;
+      theme_background = false;
+      show_uptime = true;
     };
-    cursorTheme.name = "Dracula-cursors";
-    iconTheme.name = "Dracula";
-    };
+  };
      
 #Services 
   services.dunst.enable = true;
