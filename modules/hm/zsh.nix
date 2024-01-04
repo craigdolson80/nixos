@@ -22,7 +22,7 @@
       alias nixgen="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
       alias reload="hyprctl reload"
       alias aliases="cat $HOME/nixos/modules/hm/zsh.nix"
-      alias tsup="sudo tailscale up"
+      alias tsup="sudo tailscale up --accept-routes --exit-node=100.84.38.63"
       alias tsdn="sudo tailscale down"
       alias tsstat="tailscale status"
     '';
