@@ -7,6 +7,7 @@
      bitwarden
      brave
      discord
+     dmenu #optional for ytfzf
      electrum
      element-desktop
      feh
@@ -39,12 +40,15 @@
      tor
      tor-browser-bundle-bin
      torsocks
+     ueberzugpp #required for ytfzf
      udiskie
      udisks
      veracrypt
      viewnior
      vlc
      volumeicon
+     yt-dlp #optional for ytfzf
+     ytfzf
      #yubikey-agent
      #yubikey-manager
      #yubioath-flutter
