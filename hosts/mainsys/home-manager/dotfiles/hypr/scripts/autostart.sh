@@ -27,11 +27,7 @@ workspace=DP-2,0
 
 # Execute your favorite apps at launch
 
-exec-once = waybar &
-exec-once = nm-applet &
-exec-once = ~/swayidle/lockscreen.sh &
-exec-once = hyprpaper &
-exec-once = udiskie -t &
+exec-once = ~/.config/hypr/scripts/autostart.sh &
 
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
