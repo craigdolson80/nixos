@@ -3,8 +3,8 @@
 {
   
   imports = [
-    #inputs.hyprland.homeManagerModules.default
-    #./nix/hypr # points to ./nix/hypr/default.nix
+    inputs.hyprland.homeManagerModules.default
+    ./nix/hypr # points to ./nix/hypr/default.nix
     ../../modules/hm/zsh.nix
     ../../modules/hm/kitty.nix
     ../../modules/hm/github.nix
