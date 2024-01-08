@@ -138,13 +138,13 @@ bind = $mainMod, Q, killactive,
 bind = $mainMod, F, exec, pcmanfm
 bind = $mainMod, B, exec, firefox
 bind = $mainMod, V, togglefloating, 
-bind = $mainMod, space, exec, wofi --show drun,
+#bind = $mainMod, space, exec, wofi --show drun,
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod ALT, Q, exec, swaylock -i ~/github/wallpaper/096.jpg
 bind = $mainMod CTRL, Q, exec, wlogout
 bind = $mainMod CTRL, R, exec, hyprctl reload
-#bind = $mainMod, space, exec, $HOME/nixos/modules/hm/commonfiles/rofi/modified_for_hyprland/launchers/type-7/launcher.sh
+bind = $mainMod, space, exec, $HOME/nixos/modules/hm/commonfiles/rofi/modified_for_hyprland/launchers/type-7/launcher.sh
 
 # Move focus with mainMod + arrow keys
 bind = $mainMod, left, workspace, e-1
