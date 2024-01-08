@@ -12,8 +12,7 @@ in
       ../../modules/sys/vm.nix
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
-      ../../modules/sys/hypr.nix
-      ];
+    ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
