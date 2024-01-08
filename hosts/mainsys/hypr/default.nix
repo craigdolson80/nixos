@@ -3,7 +3,7 @@
 {
   wayland.windowManager.hyprland = {
     enable = true;
-    systemdIntegration = true;
+    systemd.ebable = true;
     extraConfig = ''
 
 source=~/.config/hypr/themes/mocha.conf
