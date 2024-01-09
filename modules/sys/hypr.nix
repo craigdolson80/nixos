@@ -4,7 +4,7 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    waybar
+    #waybar
     sway
     swaylock
     swaylock-effects

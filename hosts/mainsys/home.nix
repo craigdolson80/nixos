@@ -5,6 +5,7 @@
   imports = [
     inputs.hyprland.homeManagerModules.default
     ./nix/hypr # points to ./nix/hypr/default.nix
+    ./nix/waybar/waybar.nix
     ../../modules/hm/zsh.nix
     ../../modules/hm/kitty.nix
     ../../modules/hm/github.nix
