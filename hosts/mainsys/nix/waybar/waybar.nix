@@ -17,8 +17,7 @@
         modules-center = ["hyprland/window"];
         modules-right = ["custom/cycle_wall" "pulseaudio" "cpu" "memory" "disk" "clock" "tray"];
       };
-    };  
-
+    
      "hyprland/workspaces" = {
          "disable-scroll" = "true";
          "all-outputs" = "true";
@@ -95,7 +94,7 @@
         "format-charging" = "{capacity}% ";
         "format-plugged" = "{capacity}% ";
         "format-alt" = "{time} {icon}";
-        "format-icons" = ["", "", "", "", ""];
+        "format-icons" = ["" "" "" "" ""];
     };
     
     "network" = {
@@ -121,7 +120,7 @@
             "phone" = "";
             "portable" = "";
             "car" = "";
-            "default" = ["", "", ""];
+            "default" = ["" "" ""];
         };
         "on-click" = "pavucontrol";
     };
