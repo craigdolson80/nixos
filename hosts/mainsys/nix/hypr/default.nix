@@ -63,8 +63,8 @@ general {
     gaps_in = 5
     gaps_out = 10
     border_size = 2
-    col.active_border = 0xffcba6f7 0xfff5c2e7 90deg
-    col.inactive_border = 0xff1e1e2e
+    col.active_border = $mauve $pink 90deg
+    col.inactive_border = $base
 
     layout = dwindle
 }
