@@ -166,20 +166,20 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: @mantle;
+    border-color: #181825;
 }
 
 #workspaces button {
     padding: 5px;
-    color: @text;
+    color: #cdd6f4;
     background: transparent;
     margin-right: 5px;
     border-radius: 5px;
 }
 
 #workspaces button.active {
-    color: @base;
-    background: @green;
+    color: #1e1e2e;
+    background: #a6e3a1;
     border-radius: 5px;
 }
 
@@ -191,12 +191,12 @@ tooltip {
 
 #workspaces button.urgent {
     color: #11111b;
-    background: @flamingo;
+    background: #f2cdcd;
     border-radius: 5px;
 }
 
 #workspaces button:hover {
-    background: @sky;
+    background: #89dceb;
     color: #ffffff;
     border-radius: 5px;
 }
@@ -311,7 +311,7 @@ tooltip {
 }
 
 #pulseaudio {
-    color: @teal;
+    color: #94e2d5;
     background: rgba(25, 25, 25, .65);
     border-radius: 5px 5px 5px 5px;
     margin-right: 10px;
@@ -339,7 +339,7 @@ tooltip {
 }
 
 #cpu {
-    color: @mauve;
+    color: #cba6f7;
     background: rgba(25, 25, 25, 0.65);
     border-radius: 5px 0px 0px 5px;
     border-top: 0px solid transparent;
@@ -349,7 +349,7 @@ tooltip {
 }
 
 #memory {
-    color: @mauve;
+    color: #cba6f7;
     background: rgba(25, 25, 25, 0.65);
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
@@ -358,7 +358,7 @@ tooltip {
 }
 
 #disk {
-    color: @mauve;
+    color: #cba6f7;
     background: rgba(25, 25, 25, 0.65);
     border-radius: 0px 5px 5px 0px;
     margin-right: 10px;
@@ -412,6 +412,5 @@ tooltip {
 '';
 };
 };
+};
 }
-#just a text note
-#another test note
