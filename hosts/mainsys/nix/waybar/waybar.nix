@@ -4,10 +4,10 @@
   programs.waybar = {
     enable = true;
     package = pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true"] ;} );
-#    systemd = {
-#      enable = false;
-#      target = "graphical-session.target";
-#    };
+    systemd = {
+      enable = false;
+      target = "graphical-session.target";
+    };
     
     settings = {
       mainBar = {
@@ -397,7 +397,6 @@ tooltip {
     border-right: 0px solid transparent;
     border-left: 0px solid transparent;
 }
-
 
 #tray {
     border-radius: 5px;

@@ -1,3 +1,4 @@
+# hyprland.conf created in extra config
 # default.nix
 { config, inputs, pkgs, ... }:
 {
@@ -69,6 +70,10 @@ general {
     layout = dwindle
 }
 
+misc {
+  disable_hyprland_logo = true
+} 
+
 decoration {
     # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
@@ -124,6 +129,7 @@ device:epic-mouse-v1 {
 windowrule = float, ^(galculator)$
 windowrule = float, ^(pavucontrol)$
 windowrule = float, ^(virt-manager)$
+windowrule = float, ^(waypaper)$
 
 # Example windowrule v2
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
@@ -140,7 +146,6 @@ bind = $mainMod, Q, killactive,
 bind = $mainMod, F, exec, pcmanfm
 bind = $mainMod, B, exec, firefox
 bind = $mainMod, V, togglefloating, 
-#bind = $mainMod, space, exec, wofi --show drun,
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
 bind = $mainMod ALT, Q, exec, swaylock -i ~/github/wallpaper/096.jpg
@@ -195,7 +200,10 @@ bind = , Print, exec, grim -g "$(slurp)"
 bind = ALT, Print, exec, grimblast --notify --cursor copysave output
     '';
   };
-  
+
+# This section is necessary to use external color files. Create home file, and source it above
+##
+##Catppuccin Mocha
   home.file.".config/hypr/colors".text = ''
 $rosewaterAlpha = f5e0dc
 $flamingoAlpha  = f2cdcd
