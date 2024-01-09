@@ -55,7 +55,7 @@
     "hyprland/scratchpad" = {
         "format" = "{icon} {count}";
         "show-empty" = "false";
-        "format-icons" = ["", ""];
+        "format-icons" = ["" ""];
         "tooltip" = "true";
         "tooltip-format" = "{app}: {title}";
     };
