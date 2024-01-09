@@ -79,11 +79,11 @@
      executable = true;
      };
   #hyprland
-     home.file.".config/hypr" = {
-     source = home-manager/dotfiles/hypr;
-     recursive = true;
-     executable = true;
-     };
+  #  home.file.".config/hypr" = {
+  #   source = home-manager/dotfiles/hypr;
+  #   recursive = true;
+  #   executable = true;
+  #   };
   #waybar
      home.file.".config/waybar" = {
      source = home-manager/dotfiles/waybar;
