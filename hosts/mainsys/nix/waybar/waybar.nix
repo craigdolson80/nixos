@@ -146,7 +146,6 @@
 };
 
 style = ''
-@import "themes/mocha.css";
     * {
     border: none;
     border-radius: 0;
@@ -412,5 +411,6 @@ tooltip {
 }
 
 '';
+};
 };
 }
