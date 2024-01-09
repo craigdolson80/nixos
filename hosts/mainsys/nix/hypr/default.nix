@@ -7,7 +7,7 @@
     systemd.enable = true;
     extraConfig = ''
 
-source = themes/mocha.conf
+#source = themes/mocha.conf
 # See https://wiki.hyprland.org/Configuring/Monitors/
 #monitor=,preferred,auto,auto
 monitor=DP-1, 1920x1080, 0x0, 1
