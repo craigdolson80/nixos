@@ -1,6 +1,8 @@
 # default.nix
 { config, inputs, pkgs, ... }:
 
+{
+
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
@@ -194,6 +196,6 @@ bind = , Print, exec, grim -g "$(slurp)"
 bind = ALT, Print, exec, grimblast --notify --cursor copysave output
     '';
   };
-
+}
 
 #test note
