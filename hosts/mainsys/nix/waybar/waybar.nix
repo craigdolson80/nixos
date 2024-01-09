@@ -145,8 +145,7 @@
     };      
 };
 
-style = {
-    description = ''
+style = ''
     @import "themes/mocha.css";
     * {
     border: none;
