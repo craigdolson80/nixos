@@ -31,7 +31,7 @@ workspace=DP-2,0
 exec-once = waybar &
 exec-once = nm-applet &
 exec-once = ~/swayidle/lockscreen.sh &
-exec-once = hyprpaper &
+#exec-once = hyprpaper &
 exec-once = hyprctl dispatch exec "sleep 5s && udiskie -t"
 
 # Source a file (multi-file configs)

@@ -9,6 +9,8 @@ in
     swaylock
     swaylock-effects
     swayidle
+    swww
+    waypaper
     hyprpaper
     xdg-desktop-portal-hyprland
     wofi
