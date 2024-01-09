@@ -1,13 +1,12 @@
 # default.nix
 { config, inputs, pkgs, ... }:
 {
-
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = true;
     extraConfig = ''
 
-source = themes/mocha.conf
+source=~/.config/hypr/themes/mocha.conf
 # See https://wiki.hyprland.org/Configuring/Monitors/
 #monitor=,preferred,auto,auto
 monitor=DP-1, 1920x1080, 0x0, 1
@@ -28,11 +27,7 @@ workspace=DP-2,0
 
 # Execute your favorite apps at launch
 
-exec-once = waybar &
-exec-once = nm-applet &
-exec-once = ~/swayidle/lockscreen.sh &
-exec-once = hyprpaper &
-exec-once = hyprctl dispatch exec "sleep 5s && udiskie -t"
+exec-once = ~/.config/hypr/scripts/autostart.sh &
 
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
@@ -196,5 +191,3 @@ bind = ALT, Print, exec, grimblast --notify --cursor copysave output
     '';
   };
 }
-
-#test note
