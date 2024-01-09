@@ -85,11 +85,11 @@
      executable = true;
      };
   #waybar
-     home.file.".config/waybar" = {
-     source = home-manager/dotfiles/waybar;
-     recursive = true;
-     executable = true;
-     };   
+  #   home.file.".config/waybar" = {
+  #   source = home-manager/dotfiles/waybar;
+  #   recursive = true;
+  #   executable = true;
+  #   };   
   #swaylock
      home.file.".swaylock/" = {
      source = home-manager/dotfiles/swaylock;
