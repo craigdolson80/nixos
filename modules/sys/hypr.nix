@@ -4,27 +4,27 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    waybar
-    sway
-    swaylock
-    swaylock-effects
-    swayidle
-    swww
-    waypaper
-    xdg-desktop-portal-hyprland
-    wofi
-    nwg-look
-    wlogout
-    rofi-wayland
     grim
     grimblast
-    slurp
-    wl-clipboard
+    nwg-look
     pywal
-    wttrbar
+    rofi-wayland
+    slurp
+    sway
     swaybg
-    wlr-randr
+    swayidle
+    swaylock
+    swaylock-effects
+    swww
+    waybar
+    waypaper
     wdisplays
+    wl-clipboard
+    wlogout
+    wlr-randr
+    wofi
+    wttrbar
+    xdg-desktop-portal-hyprland
 
   ];
 }
