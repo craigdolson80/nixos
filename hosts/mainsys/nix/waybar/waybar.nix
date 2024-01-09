@@ -145,7 +145,8 @@
     };      
 };
 
-style = ''
+style = {
+    description = ''
     * {
     border: none;
     border-radius: 0;
@@ -411,6 +412,7 @@ tooltip {
 }
 
 '';
+};
 };
 };
 }
