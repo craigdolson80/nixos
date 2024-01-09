@@ -194,6 +194,6 @@ bind = , Print, exec, grim -g "$(slurp)"
 bind = ALT, Print, exec, grimblast --notify --cursor copysave output
     '';
   };
-}
+
 
 #test note
