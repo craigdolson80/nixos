@@ -5,7 +5,7 @@
   imports = [
     inputs.hyprland.homeManagerModules.default
     ./nix/hypr # points to ./nix/hypr/default.nix
-    ./nix/waybar/waybar.nix
+    #./nix/waybar/waybar.nix
     ../../modules/hm/zsh.nix
     ../../modules/hm/kitty.nix
     ../../modules/hm/github.nix
@@ -85,11 +85,11 @@
      executable = true;
      };
   #waybar
-  #   home.file.".config/waybar" = {
-  #   source = home-manager/dotfiles/waybar;
-  #   recursive = true;
-  #   executable = true;
-  #   };   
+     home.file.".config/waybar" = {
+     source = home-manager/dotfiles/waybar;
+     recursive = true;
+     executable = true;
+     };   
   #swaylock
      home.file.".swaylock/" = {
      source = home-manager/dotfiles/swaylock;
