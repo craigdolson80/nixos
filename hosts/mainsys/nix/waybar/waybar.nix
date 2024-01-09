@@ -147,6 +147,7 @@
 
 style = {
     description = ''
+    @import "themes/mocha.css";
     * {
     border: none;
     border-radius: 0;
