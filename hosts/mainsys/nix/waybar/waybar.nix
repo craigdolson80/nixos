@@ -143,10 +143,8 @@
         "exec" = "~/.config/waybar/scripts/waybar-wttr.py";
         "return-type" = "json";
     };      
-};
 
 style = ''
-    @import "themes/mocha.css";
     * {
     border: none;
     border-radius: 0;
@@ -412,7 +410,6 @@ tooltip {
 }
 
 '';
-};
 };
 };
 }
