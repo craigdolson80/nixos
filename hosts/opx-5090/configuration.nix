@@ -43,11 +43,11 @@ in
   networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
   networking.search = [ "tail72594.ts.net" ];
   
-  fileSystems."/home/craig/nfs" = {
-    device = "qnap:/craig";
-    fsType = "nfs";
-    options = [ "x-systemd.automount" "noauto" ];
-  };
+#  fileSystems."/home/craig/nfs" = {
+#    device = "qnap:/craig";
+#    fsType = "nfs";
+#    options = [ "x-systemd.automount" "noauto" ];
+#  };
     
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -75,7 +75,6 @@ in
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
-  #programs.hyprland.enable  = true;
   programs.hyprland.xwayland.enable = true;
   programs.sway.enable = true;
   #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
