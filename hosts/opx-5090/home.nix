@@ -1,8 +1,11 @@
-{config, pkgs, ...}:
+{inputs, config, pkgs, ...}:
 
 {
   
   imports = [
+    inputs.hyprland.homeManagerModules.default
+    ./nix/hypr # points to ./nix/hypr/default.nix
+    #./nix/waybar/waybar.nix
     ../../modules/hm/zsh.nix
     ../../modules/hm/kitty.nix
     ../../modules/hm/github.nix
@@ -49,6 +52,7 @@
       theme_background = false;
       show_uptime = true;
       temp_scale = "fahrenheit";
+      net_iface = "enp0s31f6";
     };
   };
 
@@ -75,11 +79,11 @@
      executable = true;
      };
   #hyprland
-     home.file.".config/hypr" = {
-     source = home-manager/dotfiles/hypr;
-     recursive = true;
-     executable = true;
-     };
+  #  home.file.".config/hypr" = {
+  #   source = home-manager/dotfiles/hypr;
+  #   recursive = true;
+  #   executable = true;
+  #   };
   #waybar
      home.file.".config/waybar" = {
      source = home-manager/dotfiles/waybar;
