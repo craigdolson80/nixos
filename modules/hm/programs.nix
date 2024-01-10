@@ -17,7 +17,6 @@
      galculator
      geany
      gimp-with-plugins
-     #github-desktop
      glances
      google-chrome
      hplipWithPlugin
@@ -36,6 +35,7 @@
      polybar
      remmina
      signal-desktop
+     sparrow
      telegram-desktop
      tor
      tor-browser-bundle-bin
