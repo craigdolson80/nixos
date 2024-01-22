@@ -30,7 +30,7 @@
      networkmanagerapplet
      nitrogen
      oh-my-zsh
-     pcmanfm
+     #pcmanfm
      picom
      polkit_gnome
      polybar
