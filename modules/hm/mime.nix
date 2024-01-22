@@ -18,7 +18,7 @@
       "application/xhtml+xml" = ["firefox.desktop"];
       "application/x-extension-xhtml" = ["firefox.desktop"];
       "application/x-extension-xht" = ["firefox.desktop"];
-      "inode/directory" = "pcmanfm.desktop";
+      "inode/directory" = "thunar.desktop";
     };
     defaultApplications = {
       "application/pdf" = ["firefox.desktop"];
@@ -36,7 +36,7 @@
       "x-scheme-handler/unknown" = ["firefox.desktop"];
       "x-scheme-handler/sgnl" = ["signal-desktop.desktop"];
       "x-scheme-handler/signalcaptcha" = ["signal-desktop.desktop"];
-      "inode/directory" = "pcmanfm.desktop";
+      "inode/directory" = "thunar.desktop";
     };
   };
 }
