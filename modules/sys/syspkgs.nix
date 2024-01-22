@@ -14,6 +14,7 @@ in
     neovim
     killall
     eza
+    libvlc
     vimPlugins.dracula-vim
     vimPlugins.dracula-nvim
     vimPlugins.catppuccin-vim
