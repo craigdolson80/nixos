@@ -203,7 +203,7 @@
    },
    "custom/cycle_wall":{
     "format":" ",
-    "on-click": "~/.config/hypr/scripts/changeWallpaper",
+    "on-click": "waypaper",
     "tooltip-format": "Change wallpaper"
     },
     "custom/weather" : {
