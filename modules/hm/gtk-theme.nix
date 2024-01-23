@@ -13,14 +13,14 @@
         accents = [ "green" ];
         size = "compact";
         tweaks = [ "black" "rimless" ];
-        variant = "mocha";
+        variant = "latte";
       };
     };
   iconTheme = {
          name = "Papirus-Dark";
          package = pkgs.catppuccin-papirus-folders.override {
           accent = "sapphire";
-          flavor = "mocha";
+          flavor = "latte";
          };
     };
   };
