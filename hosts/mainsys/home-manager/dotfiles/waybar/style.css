@@ -33,7 +33,7 @@ tooltip {
 
 #workspaces button.active {
     color: @base;
-    background: @green;
+    background: @mauve;
     border-radius: 5px;
 }
 
@@ -50,7 +50,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: @sky;
+    background: @sapphire;
     color: #ffffff;
     border-radius: 5px;
 }
