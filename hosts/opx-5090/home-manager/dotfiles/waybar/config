@@ -24,7 +24,7 @@
                     //"battery", 
                     //"battery#bat2", 
                     "clock", 
-                    "tray"
+                    "tray",
                     "custom/lock"
                      ],
 
