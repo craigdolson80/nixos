@@ -26,7 +26,7 @@
                     "clock", 
                     "tray",
                     "custom/lock"
-                     ],
+                    ],
 
     // Modules configuration
      "hyprland/workspaces": {
@@ -215,9 +215,9 @@
         "return-type" : "json"
     },  
     "custom/lock":{
-        "format":"󰌾 ",
+        "format":"󰌾",
         "on-click": "swaylock -i ~/github/wallpaper/091.jpg",
         "tooltip-format": "Lock System"
-        },    
+    },    
 }
 

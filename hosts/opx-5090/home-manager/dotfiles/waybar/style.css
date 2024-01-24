@@ -60,6 +60,7 @@ tooltip {
 #custom-caffeine,
 #custom-weather,
 #custom-cycle_wall,
+#custom-lock,
 #custom-launcher,
 #window,
 #cpu,
@@ -253,10 +254,11 @@ tooltip {
 }
 
 #custom-lock {
-    color: @text;
-    background: @red;
+    font-size: 15px;
+    background: rgb(116, 1, 1);
     border-radius: 5px 5px 5px 5px;
-    margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     border-right: 0px solid transparent;
