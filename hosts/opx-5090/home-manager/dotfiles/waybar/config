@@ -216,7 +216,7 @@
     },  
     "custom/lock":{
         "format":"󰌾",
-        "on-click": "swaylock -i ~/github/wallpaper/091.jpg",
+        "on-click": "swaylock -f -i $HOME/github/wallpaper/065.jpg",
         "tooltip-format": "Lock System"
     },    
 }

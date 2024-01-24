@@ -1,7 +1,6 @@
 #Note
 daemonize
 show-failed-attempts
-clock
 effect-blur=5x5
 color=1f1d2e80
 font="Inter"
