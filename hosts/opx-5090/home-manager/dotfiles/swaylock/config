@@ -1,5 +1,6 @@
 #Note
 daemonize
+clock
 show-failed-attempts
 effect-blur=5x5
 color=1f1d2e80

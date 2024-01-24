@@ -13,7 +13,6 @@ in
     sway
     swaybg
     swayidle
-    swaylock
     swaylock-effects
     swww
     waybar
