@@ -132,6 +132,7 @@ windowrule = float, ^(galculator)$
 windowrule = float, ^(pavucontrol)$
 windowrule = float, ^(virt-manager)$
 windowrule = float, ^(waypaper)$
+windowrule = float, ^(Bitwarden)$
 
 # Example windowrule v2
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
