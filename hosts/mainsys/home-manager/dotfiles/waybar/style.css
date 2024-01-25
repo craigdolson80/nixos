@@ -60,6 +60,7 @@ tooltip {
 #custom-caffeine,
 #custom-weather,
 #custom-cycle_wall,
+#custom-lock,
 #custom-launcher,
 #window,
 #cpu,
@@ -225,7 +226,7 @@ tooltip {
 #custom-cycle_wall {
     background: rgba(25, 25, 25, 0.65);
     border-radius: 5px 5px 5px 5px;
-    margin-right: 5px;
+    margin-right: 10px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     border-right: 0px solid transparent;
@@ -246,6 +247,19 @@ tooltip {
     border-radius: 5px;
     margin-right: 5px;
     background: rgba(25, 25, 25, 0.65);
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+
+#custom-lock {
+    color: @base;
+    font-size: 15px;
+    background: @green;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     border-right: 0px solid transparent;

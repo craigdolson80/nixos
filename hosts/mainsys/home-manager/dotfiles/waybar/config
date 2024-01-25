@@ -24,8 +24,9 @@
                     //"battery", 
                     //"battery#bat2", 
                     "clock", 
-                    "tray"
-                     ],
+                    "tray",
+                    "custom/lock"
+                    ],
 
     // Modules configuration
      "hyprland/workspaces": {
@@ -212,6 +213,11 @@
         "interval" : 30,
         "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
         "return-type" : "json"
-    },      
+    },  
+    "custom/lock":{
+        "format":"󰌾",
+        "on-click": "swaylock -f -i $HOME/github/wallpaper/065.jpg",
+        "tooltip-format": "Lock System"
+    },    
 }
 
