@@ -16,6 +16,7 @@ monitor=,preferred,auto,auto
 
 # Execute your favorite apps at launch
 
+exec-once = polkit-gnome &
 exec-once = waybar &
 exec-once = nm-applet &
 exec-once = swww init &
