@@ -12,6 +12,7 @@ in
     pavucontrol
     neofetch
     neovim
+    nfs-utils
     killall
     eza
     libvlc
