@@ -10,7 +10,7 @@ in
       # Include modules
       ../../modules/sys/fonts.nix
       ../../modules/sys/vm.nix
-      ../../modules/sys/polkit.nix
+      ../../modules/sys/polkit-kde.nix
       ../../modules/sys/syspkgs.nix
       ../../modules/sys/hypr.nix
     ];
