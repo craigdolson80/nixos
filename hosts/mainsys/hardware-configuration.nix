@@ -29,7 +29,7 @@
     [ { device = "/dev/disk/by-uuid/1101ae11-0725-4fb3-be5d-21bba953bb68"; }
     ];
 
-  filesystems."/run/media/craig/Data" =
+  fileSystems."/run/media/craig/Data" =
     { device = "/dev/disk/by-uuid/4fe9bc28-f6b7-49fe-8978-538d76999402"; 
     fsType = "ext4";
     };
