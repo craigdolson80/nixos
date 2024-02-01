@@ -58,7 +58,7 @@ in
   device = "//synology/craig";
   fsType = "cifs";
   options = [ "username=craig" "password=10dollarz2mucH" "x-systemd.automount" "noauto" ];
-  }
+  };
       
   # Set your time zone.
   time.timeZone = "America/Chicago";
