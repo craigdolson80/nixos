@@ -13,6 +13,7 @@ in
     neofetch
     neovim
     nfs-utils
+    rpcbind
     killall
     eza
     libvlc
