@@ -18,7 +18,7 @@ in
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.supportedFilesystems = [ "nfs" ];
+  #boot.supportedFilesystems = [ "nfs" ];
 
   # Setup keyfile
   boot.initrd.secrets = {
@@ -52,6 +52,15 @@ in
   #  fsType = "nfs";
   #  options = [ "x-systemd.automount" "noauto" ];
   #};
+
+ # Mount SMB / CIFS 
+  fileSystems."/home/craig/nfs" = {
+  device = "//synology/craig";
+  fsType = "cifs";
+  options = [ "username=craig" "password=10dollarz2mucH" "x-systemd.automount" "noauto" ];
+
+3
+
       
   # Set your time zone.
   time.timeZone = "America/Chicago";
