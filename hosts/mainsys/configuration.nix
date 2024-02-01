@@ -138,6 +138,7 @@ in
     shell = pkgs.zsh;
   };
 
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
  
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
