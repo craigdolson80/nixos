@@ -45,11 +45,11 @@ in
   networking.search = [ "tail72594.ts.net" ];
   
   # NAS Connect
-  fileSystems."/home/${user}/nfs" = {
-    device = "synology:/volume1/${user}";
-    fsType = "nfs";
-    options = [ "x-systemd.automount" "noauto" ];
-  };
+  #fileSystems."/home/${user}/nfs" = {
+  #  device = "synology:/volume1/${user}";
+  #  fsType = "nfs";
+  #  options = [ "x-systemd.automount" "noauto" ];
+  #};
       
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -138,7 +138,7 @@ in
     shell = pkgs.zsh;
   };
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+#  environment.sessionVariables.NIXOS_OZONE_WL = "1";
  
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
