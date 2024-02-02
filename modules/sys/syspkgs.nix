@@ -21,6 +21,7 @@ in
     vimPlugins.catppuccin-vim
     vimPlugins.catppuccin-nvim
     traceroute
+    tigervnc
     inetutils
 ## Virtual Support Packages ##
     virt-manager
