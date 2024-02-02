@@ -38,6 +38,7 @@ in
   #networking.wireless.enable = true;
   networking.hosts = {
   "10.0.1.2" = [ "synology" ];
+  "10.0.1.140" = [ "btcnode" ];
   };
 
  # Enable Tailscale
