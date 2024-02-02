@@ -35,6 +35,7 @@
      polkit_gnome
      polybar
      remmina
+     rpi-imager
      signal-desktop
      sparrow
      telegram-desktop
