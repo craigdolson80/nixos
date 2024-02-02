@@ -53,13 +53,7 @@ in
   #  options = [ "x-systemd.automount" "noauto" ];
   #};
 
- # Mount SMB / CIFS 
-  fileSystems."/home/craig/nfs" = {
-  device = "//synology/craig";
-  fsType = "cifs";
-  options = [ "username=craig" "password=10dollarz2mucH" "x-systemd.automount" "noauto" ];
-  };
-      
+    
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
@@ -83,11 +77,11 @@ in
 
   # Enable the Desktop Environment.
     # KDE Plasma
-  #services.xserver.displayManager.sddm.enable = true;
-  #services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
     # Gnome
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
     # Window Managers
   services.xserver.windowManager.bspwm.enable = true;
   #services.xserver.windowManager.qtile.enable = true;
