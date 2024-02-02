@@ -47,6 +47,7 @@ in
 #    device = "qnap:/craig";
 #    fsType = "nfs";
 #    options = [ "x-systemd.automount" "noauto" ];
+#
 #  };
     
   # Set your time zone.
