@@ -99,7 +99,7 @@ in
   services.flatpak.enable = true;
   xdg.portal = {
      enable = true;
-     extraPortals = [ pkgs.xdg-desktop-portal-kde ];
+     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
   services.onedrive.enable = true;
   virtualisation.podman.enable = true;
