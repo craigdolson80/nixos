@@ -43,14 +43,14 @@ in
   networking.nameservers = [ "100.100.100.100" "8.8.8.8" "1.1.1.1" ];
   networking.search = [ "tail72594.ts.net" ];
   
-  # NAS Connect
-  fileSystems."/home/${user}/nfs" = {
-    device = "synology:/volume1/${user}";
-    fsType = "nfs";
-    options = [ "x-systemd.automount" "noauto" ];
-  };
+#1# NAS Connect
+ # fileSystems."/home/${user}/nfs" = {
+ #   device = "synology:/volume1/${user}";
+ #   fsType = "nfs";
+ #   options = [ "x-systemd.automount" "noauto" ];
+ # };
 
-    
+
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
