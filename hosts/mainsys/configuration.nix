@@ -36,10 +36,6 @@ in
   services.sshd.enable = true;
   services.rpcbind.enable = true;
   #networking.wireless.enable = true;
-  networking.hosts = {
-  "10.0.1.2" = [ "synology" ];
-  "10.0.1.140" = [ "btcnode" ];
-  };
 
  # Enable Tailscale
   services.tailscale.enable = true;
@@ -114,8 +110,8 @@ in
   
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # Enable CUPS to print documents.
