@@ -104,6 +104,13 @@ in
   };
   services.onedrive.enable = true;
   virtualisation.podman.enable = true;
+    services = {
+    udev.packages = with pkgs; [ 
+        ledger-udev-rules
+        trezor-udev-rules
+        # potentially even more if you need them
+    ];
+  };
   
   # Configure keymap in X11
   services.xserver = {

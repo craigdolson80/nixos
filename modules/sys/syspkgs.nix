@@ -39,7 +39,6 @@ in
     pcsclite
     pcsctools
     ccid
-    trezor-udev-rules
 ##-------------------------##    
 
 #Ledger Live
