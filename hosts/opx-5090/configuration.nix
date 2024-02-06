@@ -51,7 +51,7 @@ in
 #  };
 
 #  # Enable SMB Share
-   {
+   
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = [ pkgs.cifs-utils ];
   fileSystems."/mnt/share" = {
@@ -63,7 +63,7 @@ in
 
     in ["${automount_opts},credentials=/etc/nixos/smb-secrets"];
   };
-   };
+   
     
   # Set your time zone.
   time.timeZone = "America/Chicago";
