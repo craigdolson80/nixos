@@ -54,7 +54,7 @@ in
    
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = [ pkgs.cifs-utils ];
-  fileSystems."/mnt/share" = {
+  fileSystems."/home/craig/smb-share" = {
     device = "//100.84.38.63/craig";
     fsType = "cifs";
     options = let
