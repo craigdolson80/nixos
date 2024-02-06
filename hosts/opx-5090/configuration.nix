@@ -50,7 +50,7 @@ in
 #
 #  };
 
-#  # Enable SMB Share
+# # Enable SMB Share
    
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = [ pkgs.cifs-utils ];
