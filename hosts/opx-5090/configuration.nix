@@ -13,7 +13,7 @@ in
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
       ../../modules/sys/hypr.nix
-    ];
+      ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -49,6 +49,21 @@ in
 #    options = [ "x-systemd.automount" "noauto" ];
 #
 #  };
+
+#  # Enable SMB Share
+   {
+  # For mount.cifs, required unless domain name resolution is not needed.
+  environment.systemPackages = [ pkgs.cifs-utils ];
+  fileSystems."/mnt/share" = {
+    device = "//100.84.38.63/craig";
+    fsType = "cifs";
+    options = let
+      # this line prevents hanging on network split
+      automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+    in ["${automount_opts},credentials=/etc/nixos/smb-secrets"];
+  };
+   };
     
   # Set your time zone.
   time.timeZone = "America/Chicago";
