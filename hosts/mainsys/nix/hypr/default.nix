@@ -136,7 +136,7 @@ windowrule = float, ^(Bitwarden)$
 
 # Example windowrule v2
 #windowrulev2 = float,class:(firefox)$,title:(.*)(Extension)$
-windowrulev2 = float,instance:^(?i)Bitwarden.*$
+#windowrulev2 = float,instance:^(?i)Bitwarden.*$
 
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
 
