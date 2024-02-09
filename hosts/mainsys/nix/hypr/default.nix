@@ -135,7 +135,7 @@ windowrule = float, ^(waypaper)$
 windowrule = float, ^(Bitwarden)$
 
 # Example windowrule v2
-# windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
+# windowrulev2 = float,class:^(Bitwarden)$,title:^(Extension: (Bitwarden - Free Password Manager) - Bitwarden — Mozilla Firefox)$
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
 
 
@@ -147,7 +147,7 @@ bind = $mainMod, Return, exec, kitty
 bind = $mainMod, Q, killactive, 
 #bind = $mainMod, escape, exit, 
 bind = $mainMod, F, exec, thunar
-bind = $mainMod, B, exec, brave
+bind = $mainMod, B, exec, firefox
 bind = $mainMod, V, togglefloating, 
 bind = $mainMod, P, pseudo, # dwindle
 bind = $mainMod, J, togglesplit, # dwindle
