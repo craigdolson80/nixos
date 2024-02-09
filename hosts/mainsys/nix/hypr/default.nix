@@ -132,10 +132,10 @@ windowrule = float, ^(galculator)$
 windowrule = float, ^(pavucontrol)$
 windowrule = float, ^(virt-manager)$
 windowrule = float, ^(waypaper)$
-#windowrule = float, ^(Bitwarden)$
+windowrule = float, ^(Bitwarden)$
 
 # Example windowrule v2
-windowrulev2 = float,title:(.*)(Bitwarden)$
+#windowrulev2 = float,title:(.*)(Bitwarden)$
 #windowrulev2 = float,instance:^(?i)Bitwarden.*$
 
 # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
