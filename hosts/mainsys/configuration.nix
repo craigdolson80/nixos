@@ -87,11 +87,11 @@ in
 
   # Enable the Desktop Environment.
     # KDE Plasma
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  #  services.xserver.displayManager.sddm.enable = true;
+  #  services.xserver.desktopManager.plasma5.enable = true;
     # Gnome
-  #services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
     # Window Managers
   services.xserver.windowManager.bspwm.enable = true;
   #services.xserver.windowManager.qtile.enable = true;
@@ -107,9 +107,9 @@ in
   programs.dconf.enable = true;
   services.trezord.enable = true;
   services.flatpak.enable = true;
-  xdg.portal = {
-     enable = true;
-     extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+ # xdg.portal = {
+    # enable = true;
+    # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
   services.onedrive.enable = true;
   virtualisation.podman.enable = true;
