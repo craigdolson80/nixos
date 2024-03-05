@@ -110,8 +110,9 @@ gestures {
 
 # Example per-device config
 # See https://wiki.hyprland.org/Configuring/Keywords/#executing for more
-device:epic-mouse-v1 {        
-    sensitivity = -0.5
+device { 
+    name = epic-mouse-v1
+   sensitivity = -0.5
 }
 
 # Example windowrule v1
@@ -191,8 +192,8 @@ bind = ALT, Print, exec, grimblast --notify --cursor copysave output
   };
 
 # This section is necessary to use external color files. Create home file, and source it above
-##
-##Catppuccin Mocha
+#
+#Catppuccin Mocha
   home.file.".config/hypr/colors".text = ''
 $rosewaterAlpha = f5e0dc
 $flamingoAlpha  = f2cdcd
