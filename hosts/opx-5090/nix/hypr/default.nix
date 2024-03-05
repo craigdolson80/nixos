@@ -18,6 +18,7 @@ monitor=,preferred,auto,auto
 
 exec-once = waybar &
 exec-once = nm-applet &
+exec-once = trayscale &
 exec-once = swww init &
 exec-once = ~/swayidle/lockscreen.sh &
 exec-once = hyprctl dispatch exec "sleep 5s && udiskie -t"
