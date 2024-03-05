@@ -6,6 +6,7 @@ in
   environment.systemPackages = with pkgs; [
     bat
     trash-cli
+    trayscale
     gvfs
     vim
     wget
