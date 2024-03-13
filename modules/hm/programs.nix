@@ -16,7 +16,7 @@
      font-manager 
      galculator
      geany
-     gimp-with-plugins
+#     gimp-with-plugins
      glances
      google-chrome
      hplipWithPlugin
