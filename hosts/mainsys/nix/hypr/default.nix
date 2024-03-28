@@ -31,6 +31,7 @@ workspace=DP-2,0
 
 exec-once = waybar &
 exec-once = nm-applet &
+exec-once = trayscale &
 exec-once = swww init &
 exec-once = ~/swayidle/lockscreen.sh &
 exec-once = hyprctl dispatch exec "sleep 5s && udiskie -t"
@@ -123,8 +124,9 @@ gestures {
 
 # Example per-device config
 # See https://wiki.hyprland.org/Configuring/Keywords/#executing for more
-device:epic-mouse-v1 {        
-    sensitivity = -0.5
+device { 
+    name = epic-mouse-v1
+   sensitivity = -0.5
 }
 
 # Example windowrule v1
