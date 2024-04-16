@@ -87,7 +87,7 @@ in
 
   # Enable the Desktop Environment.
     # KDE Plasma
-    services.xserver.displayManager.sddm.enable = true;
+    services.displayManager.sddm.enable = true;
     services.xserver.desktopManager.plasma5.enable = true;
     # Gnome
   #services.xserver.displayManager.gdm.enable = true;
