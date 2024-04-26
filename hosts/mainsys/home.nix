@@ -37,6 +37,13 @@
      icon = "/home/craig/nixos/modules/icons/Trezor.png";
      terminal = false;
   };
+    xdg.desktopEntries.Beeper = {
+     name = "Beeper";
+     genericName = "Beeper";
+     exec = "beeper.sh";
+     icon = "/home/craig/nixos/modules/icons/Beeper.png";
+     terminal = false;
+  };
 
 # Programs with options (removed from programs.nix)
 

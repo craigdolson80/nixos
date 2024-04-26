@@ -50,6 +50,10 @@ in
  (writeShellScriptBin "trezor.sh" ''
    appimage-run "/home/${user}/Applications/Trezor.AppImage";
 '')
+#Beeper
+ (writeShellScriptBin "beeper.sh" ''
+   appimage-run "/home/${user}/Applications/Beeper.AppImage";
+'')
 
   ];
 }
