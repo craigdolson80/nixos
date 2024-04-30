@@ -30,11 +30,18 @@
      icon = "/home/craig/nixos/modules/icons/Ledger.png";
      terminal = false;
   };
-   xdg.desktopEntries.Trezor = {
+  xdg.desktopEntries.Trezor = {
      name = "Trezor Suite";
      genericName = "Trezor Suite";
      exec = "trezor.sh";
      icon = "/home/craig/nixos/modules/icons/Trezor.png";
+     terminal = false;
+  };
+  xdg.desktopEntries.Beeper = {
+     name = "Beeper";
+     genericName = "Beeper";
+     exec = "beeper.sh";
+     icon = "/home/craig/nixos/modules/icons/Beeper.png";
      terminal = false;
   };   
  
