@@ -22,7 +22,7 @@
      hplipWithPlugin
      htop
      keepassxc
-     #kleopatra
+     kleopatra
      imagemagick
      libreoffice
      lxappearance
