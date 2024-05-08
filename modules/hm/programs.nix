@@ -8,7 +8,7 @@
      brave
      discord
      dmenu #optional for ytfzf
-     electrum
+     #electrum
      element-desktop
      feh
      firefox
