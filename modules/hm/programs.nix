@@ -13,7 +13,7 @@
      feh
      firefox
      flameshot
-     font-manager 
+     #font-manager 
      galculator
      geany
 #     gimp-with-plugins
