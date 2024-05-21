@@ -87,7 +87,7 @@ in
   services.xserver.enable = true;
 
   # Enable the Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
+  services.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
@@ -116,7 +116,7 @@ in
   # Enable CUPS to print documents.
   services.printing.enable = true;
   services.avahi.enable = true;
-  services.avahi.nssmdns = true;
+  services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
   # Enable sound with pipewire.
