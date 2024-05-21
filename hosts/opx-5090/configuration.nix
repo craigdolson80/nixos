@@ -92,6 +92,7 @@ in
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
   programs.hyprland.xwayland.enable = true;
+  programs.hyprland.enabled = true;
   programs.sway.enable = true;
   #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 

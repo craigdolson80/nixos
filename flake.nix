@@ -30,12 +30,12 @@
       opx-5090 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          hyprland.nixosModules.default
-          { programs.hyprland.enable = true; }
+          #hyprland.nixosModules.default
+          #{ programs.hyprland.enable = true; }
           hosts/opx-5090/configuration.nix
           home-manager.nixosModules.home-manager
           {
-            home-manager.extraSpecialArgs = { inherit inputs; };
+            #home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.craig = import hosts/opx-5090/home.nix;
