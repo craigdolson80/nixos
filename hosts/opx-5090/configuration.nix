@@ -87,7 +87,7 @@ in
   services.xserver.enable = true;
 
   # Enable the Desktop Environment.
-  services.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
   services.xserver.windowManager.qtile.enable = true;
