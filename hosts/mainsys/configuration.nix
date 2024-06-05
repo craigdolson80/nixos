@@ -55,7 +55,7 @@ in
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = [ pkgs.cifs-utils ];
   fileSystems."/home/craig/synology" = {
-    device = "//synology/craig";
+    device = "//100.84.38.63/craig";
     fsType = "cifs";
     options = let
       # this line prevents hanging on network split
