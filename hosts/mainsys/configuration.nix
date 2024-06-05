@@ -97,6 +97,7 @@ in
   #services.xserver.windowManager.qtile.enable = true;
   #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
   programs.hyprland.xwayland.enable = true;
+  programs.hyprland.enable = true;
   programs.sway.enable = true;
   
 
