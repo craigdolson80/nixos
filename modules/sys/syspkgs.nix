@@ -5,41 +5,41 @@ in
 {
   environment.systemPackages = with pkgs; [
     bat
-    trash-cli
-    trayscale
+    eza
     gvfs
-    vim
-    wget
-    pavucontrol
+    inetutils
+    killall
+    libvlc
     neofetch
     neovim
     nfs-utils
-    killall
-    eza
-    libvlc
-    vimPlugins.dracula-vim
-    vimPlugins.dracula-nvim
-    vimPlugins.catppuccin-vim
-    vimPlugins.catppuccin-nvim
-    traceroute
+    pavucontrol
     tigervnc
-    inetutils
+    traceroute
+    trash-cli
+    trayscale
+    vim
+    vimPlugins.catppuccin-nvim
+    vimPlugins.catppuccin-vim
+    vimPlugins.dracula-nvim
+    vimPlugins.dracula-vim
+    wget
 ## Virtual Support Packages ##
-    virt-manager
-    virt-viewer
-    spice spice-gtk
-    spice-protocol
-    win-virtio
-    win-spice
     distrobox
     podman-desktop
+    spice spice-gtk
+    spice-protocol
+    virt-manager
+    virt-viewer
+    win-spice
+    win-virtio
 ##-------------------------##
-    pciutils
-    usbutils
+    ccid
     lm_sensors
+    pciutils
     pcsclite
     pcsctools
-    ccid
+    usbutils
 ##-------------------------##    
 
 #Ledger Live
