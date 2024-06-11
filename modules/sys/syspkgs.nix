@@ -6,6 +6,7 @@ in
   environment.systemPackages = with pkgs; [
     bat
     eza
+    gnupg
     gvfs
     inetutils
     killall
