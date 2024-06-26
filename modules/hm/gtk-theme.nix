@@ -43,5 +43,6 @@
 #    iconTheme.name = "Dracula";
 #    };  
 #randomSHIT
+#trying to fix my gtk themes
 
 }
