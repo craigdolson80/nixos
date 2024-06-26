@@ -94,7 +94,7 @@ in
   programs.hyprland.xwayland.enable = true;
   programs.hyprland.enable = true;
   programs.sway.enable = true;
-  #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+  services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
   services.pcscd.enable = true;
