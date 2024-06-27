@@ -86,20 +86,14 @@ in
   services.xserver.enable = true;
 
   # Enable the Desktop Environment.
-    # KDE Plasma
-    services.displayManager.sddm.enable = true;
-    services.desktopManager.plasma6.enable = true;
-    # Gnome
-  #services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.desktopManager.gnome.enable = true;
-    # Window Managers
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
   services.xserver.windowManager.bspwm.enable = true;
-  #services.xserver.windowManager.qtile.enable = true;
-  #services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+  services.xserver.windowManager.qtile.enable = true;
   programs.hyprland.xwayland.enable = true;
   programs.hyprland.enable = true;
   programs.sway.enable = true;
-  
+  services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
   hardware.bluetooth.enable = true;
