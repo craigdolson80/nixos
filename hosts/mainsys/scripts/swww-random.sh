@@ -1,5 +1,7 @@
 #!/bin/sh
 
+swww-daemon
+
 # Directory containing wallpapers
 WALLPAPER_DIR="$HOME/github/wallpaper"
 
