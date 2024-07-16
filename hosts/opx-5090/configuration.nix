@@ -97,6 +97,8 @@ in
   services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
 
   # MISC Services to enable
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
   services.pcscd.enable = true;
   programs.dconf.enable = true;
   services.flatpak.enable = true;
