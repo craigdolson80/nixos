@@ -135,10 +135,10 @@ in
     extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" ];
     packages = with pkgs; [
     # firefox
-      git
-      neovim
-      vim
-      meld
+    #  git
+    #  neovim
+    #  vim
+    #  meld
     ];
     shell = pkgs.zsh;
   };
