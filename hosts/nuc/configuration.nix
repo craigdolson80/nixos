@@ -129,7 +129,17 @@ in
     pulse.enable = true;
   };
   
-  # User Config
+services.logind = {
+  extraConfig = ''
+    IdleAction=ignore
+    IdleActionSec=0
+    HandleLidSwitch=ignore
+    HandleLidSwitchDocked=ignore
+  '';
+};
+
+
+# User Config
   users.users.craig = {
     isNormalUser = true;
     description = "${user}";
