@@ -117,21 +117,6 @@ in
   services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
-powerManagement = {
-  enable = true;
-  onACPower = {
-    enable = true;
-    suspend = false;
-    hibernate = false;
-    hybridSleep = false;
-  };
-  onBatteryPower = {
-    enable = true;
-    suspend = false;
-    hibernate = false;
-    hybridSleep = false;
-  };
-};
 
 # Enable sound with pipewire.
   #sound.enable = true;
