@@ -117,7 +117,23 @@ in
   services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
-  # Enable sound with pipewire.
+powerManagement = {
+  enable = true;
+  onACPower = {
+    enable = true;
+    suspend = false;
+    hibernate = false;
+    hybridSleep = false;
+  };
+  onBatteryPower = {
+    enable = true;
+    suspend = false;
+    hibernate = false;
+    hybridSleep = false;
+  };
+};
+
+# Enable sound with pipewire.
   #sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
