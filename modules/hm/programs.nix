@@ -9,7 +9,7 @@
      discord
      dmenu #optional for ytfzf
      #electrum
-     element-desktop
+     #element-desktop
      feh
      firefox
      flameshot
