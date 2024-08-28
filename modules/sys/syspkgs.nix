@@ -15,6 +15,9 @@ in
     neovim
     nfs-utils
     pavucontrol
+    protonmail-desktop
+    proton-pass
+    protonvpn-gui
     tigervnc
     traceroute
     trash-cli
