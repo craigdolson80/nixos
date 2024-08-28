@@ -34,6 +34,9 @@
      picom
      polkit_gnome
      polybar
+     protonmail-desktop
+     proton-pass
+     protonvpn-gui
      remmina
      rpi-imager
      signal-desktop
