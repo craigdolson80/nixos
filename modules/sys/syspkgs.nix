@@ -5,6 +5,7 @@ in
 {
   environment.systemPackages = with pkgs; [
     bat
+    celeste
     eza
     gnupg
     gvfs
@@ -15,7 +16,6 @@ in
     neovim
     nfs-utils
     pavucontrol
-    protonmail-desktop
     proton-pass
     protonvpn-gui
     tigervnc
