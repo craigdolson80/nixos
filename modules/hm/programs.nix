@@ -39,6 +39,7 @@
      signal-desktop
      sparrow
      telegram-desktop
+     thunderbird
      tor
      tor-browser-bundle-bin
      torsocks
