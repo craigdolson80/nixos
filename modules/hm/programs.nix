@@ -52,9 +52,9 @@
      volumeicon
      yt-dlp #optional for ytfzf
      ytfzf
-     #yubikey-agent
-     #yubikey-manager
-     #yubioath-flutter
+     yubikey-agent
+     yubikey-manager
+     yubioath-flutter
      xfce.thunar
      xfce.thunar-volman
      xfce.thunar-archive-plugin
