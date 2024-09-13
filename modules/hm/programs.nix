@@ -64,6 +64,7 @@
  #Themes
      dracula-theme
      dracula-icon-theme
+     dracula-qt5-theme
      catppuccin-gtk 
      catppuccin-kde
      catppuccin
