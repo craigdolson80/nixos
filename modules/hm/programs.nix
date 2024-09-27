@@ -39,7 +39,7 @@
      signal-desktop
      sparrow
      telegram-desktop
-     thunderbird
+     #thunderbird
      tor
      tor-browser-bundle-bin
      torsocks

@@ -106,7 +106,7 @@ in
      enable = true;
      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
-  services.onedrive.enable = true;
+  #services.onedrive.enable = true;
   virtualisation.podman.enable = true;
     services = {
     udev.packages = with pkgs; [ 
