@@ -5,7 +5,7 @@ in
 {
   environment.systemPackages = with pkgs; [
     bat
-    celeste
+    #celeste
     eza
     gnupg
     gvfs
