@@ -6,6 +6,7 @@
      betterlockscreen
      bitwarden
      brave
+     cubicsdr
      discord
      dmenu #optional for ytfzf
      #electrum
@@ -37,6 +38,7 @@
      polybar
      remmina
      rpi-imager
+     rtl-sdr
      signal-desktop
      sparrow
      telegram-desktop
