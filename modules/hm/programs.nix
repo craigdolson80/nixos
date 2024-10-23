@@ -27,6 +27,7 @@
      libreoffice
      lxappearance
      meld
+     mqtt-explorer
      networkmanagerapplet
      nitrogen
      oh-my-zsh
