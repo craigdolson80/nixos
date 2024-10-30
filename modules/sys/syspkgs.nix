@@ -17,7 +17,6 @@ in
     nfs-utils
     pavucontrol
     pmount
-    proton-pass
     protonvpn-gui
     tigervnc
     traceroute
