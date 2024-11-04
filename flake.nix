@@ -80,15 +80,15 @@
           }
         ];
       };
-       thinkpad-t430 = nixpkgs.lib.nixosSystem {
+       t480 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          hosts/thinkpad-t430/configuration.nix
+          hosts/t480/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.craig = import hosts/thinkpad-t430/home.nix;
+            home-manager.users.craig = import hosts/t480/home.nix;
           }
         ];
       };
