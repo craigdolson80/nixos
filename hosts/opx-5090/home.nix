@@ -43,7 +43,13 @@
      exec = "beeper.sh";
      icon = "/home/craig/nixos/modules/icons/Beeper.png";
      terminal = false;
-  };   
+  };
+    xdg.desktopEntries.RadarOmega = {
+     name = "RadarOmega";
+     genericName = "RadarOmega";
+     exec = "radaromega.sh";
+     icon = "/home/craig/nixos/modules/icons/omega.png";
+     terminal = false;   
  
 #Services 
   services.dunst.enable = true;

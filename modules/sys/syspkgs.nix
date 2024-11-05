@@ -58,6 +58,10 @@ in
  (writeShellScriptBin "beeper.sh" ''
    appimage-run "/home/${user}/Applications/Beeper.AppImage";
 '')
+#Radar Omega
+ (writeShellScriptBin "radaromega.sh" ''
+   appimage-run "/home/${user}/Applications/RadarOmega.AppImage";
+'')
 
   ];
 }
