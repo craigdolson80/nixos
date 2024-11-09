@@ -18,6 +18,8 @@ in
     pavucontrol
     pmount
     protonvpn-gui
+    rtl_433
+    rtl_sdr
     tigervnc
     traceroute
     trash-cli
