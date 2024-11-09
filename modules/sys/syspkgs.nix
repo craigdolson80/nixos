@@ -19,7 +19,7 @@ in
     pmount
     protonvpn-gui
     rtl_433
-    rtl_sdr
+    rtl-sdr
     tigervnc
     traceroute
     trash-cli
