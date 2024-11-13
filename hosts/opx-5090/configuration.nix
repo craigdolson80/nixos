@@ -165,6 +165,8 @@ in
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
+  systemd.network.wait-online.enable = false
+
   system.stateVersion = "23.05";
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
