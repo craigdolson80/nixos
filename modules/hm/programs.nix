@@ -4,7 +4,6 @@
      appimage-run
      arandr
      betterlockscreen
-     bitwarden
      brave
      cubicsdr
      discord
