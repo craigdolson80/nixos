@@ -177,6 +177,8 @@ polkitPolicyOwners = [ "craig" ];
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
+  systemd.network.wait-online.enable = false;
+
   #Enable Hyprland & Supporting Apps
   #programs.hyprland.enable = true;
   #programs.waybar.enable = true;
