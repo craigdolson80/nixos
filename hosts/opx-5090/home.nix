@@ -50,7 +50,7 @@
      exec = "radaromega.sh";
      icon = "/home/craig/nixos/modules/icons/omega.png";
      terminal = false;
-   };     
+  };     
  
 #Services 
   services.dunst.enable = true;
