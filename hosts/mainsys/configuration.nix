@@ -19,6 +19,7 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   #boot.supportedFilesystems = [ "nfs" ];
+  
 
   # Setup keyfile
   boot.initrd.secrets = {
@@ -28,6 +29,7 @@ in
   # Enable swap on luks
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".device = "/dev/disk/by-uuid/93e656e6-7c35-4c9e-9de4-0192c77c1b2c";
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".keyFile = "/crypto_keyfile.bin";
+  boot.initrd.systemd.network.wait-online.enable = false;
 
   networking.hostName = "mainsys"; # Define your hostname.
   
@@ -176,8 +178,6 @@ polkitPolicyOwners = [ "craig" ];
   #Set shell
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-
-  systemd.network.wait-online.enable = false;
 
   #Enable Hyprland & Supporting Apps
   #programs.hyprland.enable = true;
