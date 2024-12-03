@@ -27,7 +27,10 @@ in
   # Enable swap on luks
   boot.initrd.luks.devices."luks-d64fa5d6-bcbc-4582-97f4-2362aabb7a72".device = "/dev/disk/by-uuid/d64fa5d6-bcbc-4582-97f4-2362aabb7a72";
   boot.initrd.luks.devices."luks-d64fa5d6-bcbc-4582-97f4-2362aabb7a72".keyFile = "/crypto_keyfile.bin";
+  
+  # Additional Boot Variables
   boot.initrd.systemd.network.wait-online.enable = false;
+  boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "opx-5090"; # Define your hostname.
 
