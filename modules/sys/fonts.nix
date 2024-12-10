@@ -7,7 +7,7 @@
     font-awesome_5
     font-awesome_4
     jetbrains-mono
-    nerdfonts
+    nerd-fonts.iosevka
     meslo-lgs-nf
     ubuntu_font_family
     google-fonts
