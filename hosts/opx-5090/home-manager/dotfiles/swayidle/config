@@ -1,3 +1,4 @@
 #!/bin/sh
 
 swayidle -w timeout $timeswaylock 'swaylock -f' timeout $timeoff 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+for_window [class="^brave$"] inhibit_idle fullscreen
