@@ -5,6 +5,7 @@ in
 {
   environment.systemPackages = with pkgs; [
     bat
+    bridge-utils #for checking network manager bridge config
     #celeste
     eza
     gnupg
