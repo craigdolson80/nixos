@@ -13,6 +13,8 @@ in
     inetutils
     killall
     libvlc
+    logitech-udev-rules
+    ltwheelconf
     neofetch
     neovim
     nfs-utils
