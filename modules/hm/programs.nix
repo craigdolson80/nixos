@@ -30,6 +30,7 @@
      mqtt-explorer
      networkmanagerapplet
      nitrogen
+     obsidian
      oh-my-zsh
      picom
      polkit_gnome
