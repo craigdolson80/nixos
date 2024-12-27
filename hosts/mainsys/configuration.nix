@@ -31,6 +31,13 @@ in
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".keyFile = "/crypto_keyfile.bin";
   boot.initrd.systemd.network.wait-online.enable = false;
 
+  # Mount other filesystems
+  fileSystems."/mnt/windows-partition" = {
+  device = "/dev/disk/by-uuid/0x5002538d00000000-part1";
+  fsType = "ntfs-3g";
+  options = [ "rw" "uid=0x5002538d00000000-part1" ];
+};
+
   networking.hostName = "mainsys"; # Define your hostname.
   
   # Enable networking
