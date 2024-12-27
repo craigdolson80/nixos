@@ -165,7 +165,7 @@ polkitPolicyOwners = [ "craig" ];
   users.users.craig = {
     isNormalUser = true;
     description = "${user}";
-    extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" "ntfsuser" ];
     packages = with pkgs; [
      #firefox
     ];
