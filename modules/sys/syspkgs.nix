@@ -17,6 +17,7 @@ in
     ltwheelconf
     neofetch
     neovim
+    ntfs3g
     nfs-utils
     pavucontrol
     pmount
