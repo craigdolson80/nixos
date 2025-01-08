@@ -52,6 +52,7 @@
      viewnior
      vlc
      volumeicon
+     wasabiwallet
      yt-dlp #optional for ytfzf
      ytfzf
      yubikey-agent
