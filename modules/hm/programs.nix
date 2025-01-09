@@ -8,8 +8,6 @@
      cubicsdr
      discord
      dmenu #optional for ytfzf
-     #electrum
-     #element-desktop
      feh
      firefox
      font-manager 
@@ -40,7 +38,6 @@
      signal-desktop
      sparrow
      telegram-desktop
-     #thunderbird
      tor
      tor-browser-bundle-bin
      torsocks
