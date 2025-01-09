@@ -60,7 +60,7 @@
   };
  
 #Services 
-  services.dunst.enable = true;
+  #services.dunst.enable = true;
   nixpkgs.config.allowUnfree = true;
 
 #DOTFILE IMPORTS

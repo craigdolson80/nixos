@@ -29,7 +29,9 @@ in
   # Enable swap on luks
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".device = "/dev/disk/by-uuid/93e656e6-7c35-4c9e-9de4-0192c77c1b2c";
   boot.initrd.luks.devices."luks-93e656e6-7c35-4c9e-9de4-0192c77c1b2c".keyFile = "/crypto_keyfile.bin";
-  boot.initrd.systemd.network.wait-online.enable = false;
+  
+  # Disable this service, as it always fails to start during rebuild
+  systemd.services.NetworkManager-wait-online.enable = false;
 
   # Mount other filesystems
 
