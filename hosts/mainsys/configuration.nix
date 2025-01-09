@@ -183,6 +183,16 @@ polkitPolicyOwners = [ "craig" ];
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
+  #Set File Manager Options
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+  thunar-archive-plugin
+  thunar-volman
+     ];
+  services.gvfs.enable = true; # Mount, trash, and other functionalities
+  services.tumbler.enable = true; # Thumbnail support for images
+
   #Enable Hyprland & Supporting Apps
   #programs.hyprland.enable = true;
   #programs.waybar.enable = true;
