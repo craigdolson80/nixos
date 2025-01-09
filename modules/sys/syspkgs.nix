@@ -24,6 +24,7 @@ in
     protonvpn-gui
     rtl_433
     rtl-sdr
+    swaync
     tigervnc
     traceroute
     trash-cli
