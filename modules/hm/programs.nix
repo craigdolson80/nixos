@@ -12,7 +12,7 @@
      #element-desktop
      feh
      firefox
-     flameshot
+     (flameshot.override { enableWlrSupport = true; })
      font-manager 
      galculator
      geany
