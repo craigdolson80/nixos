@@ -194,7 +194,7 @@ polkitPolicyOwners = [ "craig" ];
   services.tumbler.enable = true; # Thumbnail support for images
 
   #Overlays
-  nixpkgs.overlays = [ (import overlays/flameshot-overlay.nix) ];
+  nixpkgs.overlays = [ (import ../../overlays/flameshot-overlay.nix) ];
 
   #Enable Hyprland & Supporting Apps
   #programs.hyprland.enable = true;
