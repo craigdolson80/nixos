@@ -10,6 +10,7 @@
      dmenu #optional for ytfzf
      feh
      firefox
+     flameshot
      font-manager 
      galculator
      geany

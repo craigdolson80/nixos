@@ -193,6 +193,9 @@ polkitPolicyOwners = [ "craig" ];
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
 
+  #Overlays
+  nixpkgs.overlays = [ (import ~/nixos/overlays/flameshot-overlay.nix) ];
+
   #Enable Hyprland & Supporting Apps
   #programs.hyprland.enable = true;
   #programs.waybar.enable = true;
