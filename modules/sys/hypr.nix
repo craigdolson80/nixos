@@ -6,6 +6,8 @@ in
   environment.systemPackages = with pkgs; [
     grim
     grimblast
+    hyprshot
+    hyprpicker
     nwg-look
     pywal
     rofi-wayland
