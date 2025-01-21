@@ -162,6 +162,8 @@ in
     shell = pkgs.zsh;
   };
 
+#  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+ 
   #Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
@@ -169,9 +171,31 @@ in
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
-  systemd.network.wait-online.enable = false;
+  #Set File Manager Options
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+  thunar-archive-plugin
+  thunar-volman
+     ];
+  services.gvfs.enable = true; # Mount, trash, and other functionalities
+  services.tumbler.enable = true; # Thumbnail support for images
 
-  system.stateVersion = "23.05";
+  #Overlays
+  nixpkgs.overlays = [ (import ../../overlays/flameshot-overlay.nix) ];
+
+  #Enable Hyprland & Supporting Apps
+  #programs.hyprland.enable = true;
+  #programs.waybar.enable = true;
+  #programs.hyprland.xwayland.enable = true;
+  
+  # This value determines the NixOS release from which the default
+  # settings for stateful data, like file locations and database versions
+  # on your system were taken. It‘s perfectly fine and recommended to leave
+  # this value at the release version of the first install of this system.
+  # Before changing this value read the documentation for this option
+  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+  system.stateVersion = "23.05"; # Did you read the comment?
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
