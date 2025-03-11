@@ -1,6 +1,6 @@
 # GTK Theme .NIX file
 
-{config, pkgs, ...}:
+#{config, pkgs, ...}:
 
 {
 
