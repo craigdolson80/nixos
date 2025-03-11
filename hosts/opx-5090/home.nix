@@ -54,7 +54,7 @@
  
 #Services 
   services.dunst.enable = true;
-  #nixpkgs.config.allowUnfree = true;
+  
 
   # Programs with options (removed from programs.nix)
 
