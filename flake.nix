@@ -36,7 +36,7 @@
           home-manager.nixosModules.home-manager
           {
             #home-manager.extraSpecialArgs = { inherit inputs; };
-            #home-manager.useGlobalPkgs = true;
+            home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.craig = import hosts/opx-5090/home.nix;
 
