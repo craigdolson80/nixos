@@ -61,7 +61,7 @@
  
 #Services 
   #services.dunst.enable = true; - Replaced with SWAYNC
-  nixpkgs.config.allowUnfree = true;
+  
 
 #DOTFILE IMPORTS
   #qtile
