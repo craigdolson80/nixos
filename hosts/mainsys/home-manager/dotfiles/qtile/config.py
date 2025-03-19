@@ -80,9 +80,9 @@ keys = [
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
-    #Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "space", lazy.spawn(mymenu), desc="Run Rofi"),
-    Key([mod, "control"], "q", lazy.spawn(powermenu), desc="Powermenu"),
+    #Key([mod, "control"], "q", lazy.spawn(powermenu), desc="Powermenu"),
     
        
    #Custom Key Combinations
