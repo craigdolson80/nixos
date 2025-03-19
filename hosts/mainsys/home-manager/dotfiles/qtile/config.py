@@ -86,9 +86,9 @@ keys = [
     
        
    #Custom Key Combinations
-    Key([mod], "b", lazy.spawn("firefox"), desc="Launch Firefox"),
+    Key([mod], "b", lazy.spawn("brave"), desc="Launch Brave"),
     Key([mod], "g", lazy.spawn("geany"), desc="Launch Geany"),
-    Key([mod], "f", lazy.spawn("pcmanfm"), desc="Launch PCManFM"),
+    Key([mod], "f", lazy.spawn("thunar"), desc="Launch Thunar"),
    
    #Custom DMENU Launcher
    Key([mod, "control"], "Return", lazy.run_extension(extension.DmenuRun(
@@ -113,7 +113,7 @@ groups = [
                
     Group("2", label="2",
         matches=[
-            Match(wm_class=["firefox","Google-chrome"]),
+            Match(wm_class=["firefox","Google-chrome","brave"]),
         ]
           ),
 
@@ -137,7 +137,7 @@ groups = [
 
     Group("6", label="6",
         matches=[
-            Match(wm_class=["pcmanfm"]),
+            Match(wm_class=["pcmanfm","thunar"]),
         ]
           ),
     Group("7", label="7",
