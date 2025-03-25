@@ -17,7 +17,7 @@
 #     gimp-with-plugins
      glances
      google-chrome
-     hplipWithPlugin
+#     hplipWithPlugin
      htop
      keepassxc
      imagemagick
