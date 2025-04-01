@@ -24,7 +24,7 @@
      libreoffice
      lxappearance
      meld
-     mqtt-explorer
+     #mqtt-explorer
      networkmanagerapplet
      nitrogen
      obsidian

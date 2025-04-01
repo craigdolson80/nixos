@@ -5,7 +5,7 @@ in
 {
   environment.systemPackages = with pkgs; [
     bat
-    bridge-utils #for checking network manager bridge config
+    #bridge-utils #for checking network manager bridge config
     #celeste
     eza
     gnupg
@@ -22,8 +22,8 @@ in
     pavucontrol
 #    pmount
     protonvpn-gui
-    rtl_433
-    rtl-sdr
+    #rtl_433
+    #rtl-sdr
     swaynotificationcenter
     tigervnc
     traceroute
