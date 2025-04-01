@@ -14,17 +14,17 @@
      font-manager 
      galculator
      geany
-#     gimp-with-plugins
+#    gimp-with-plugins
      glances
      google-chrome
-#     hplipWithPlugin
+#    hplipWithPlugin
      htop
      keepassxc
      imagemagick
      libreoffice
      lxappearance
      meld
-     #mqtt-explorer
+#    mqtt-explorer
      networkmanagerapplet
      nitrogen
      obsidian
@@ -34,7 +34,7 @@
      polybar
      remmina
      rpi-imager
-     rtl-sdr
+#    rtl-sdr
      signal-desktop
      sparrow
      telegram-desktop
