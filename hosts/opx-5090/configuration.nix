@@ -198,7 +198,7 @@ in
   system.stateVersion = "23.05"; # Did you read the comment?
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nix.download-buffer-size = "500M";
+  
 
 ### HOME MANAGER MODULE - MOVED TO FLAKE ###
   
