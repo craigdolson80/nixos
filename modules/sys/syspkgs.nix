@@ -14,7 +14,7 @@ in
     killall
     libvlc
     logitech-udev-rules
-    ltwheelconf
+    #ltwheelconf
     neofetch
     neovim
     ntfs3g
