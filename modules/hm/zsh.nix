@@ -10,7 +10,7 @@
       plugins = [ "ssh-agent" "git" ];
       theme = "powerlevel10k";
     };
-    initExtra = ''
+    initContent = ''
     [[ ! -f $HOME/nixos/modules/hm/commonfiles/p10k/.p10k.zsh ]] || source $HOME/nixos/modules/hm/commonfiles/p10k/.p10k.zsh
     
       bindkey '^f' autosuggest-accept
