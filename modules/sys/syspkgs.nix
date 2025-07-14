@@ -8,6 +8,7 @@ in
 #   bridge-utils #for checking network manager bridge config
 #   celeste
     eza
+    gemini-cli
     gnupg
     gvfs
     inetutils
@@ -19,7 +20,7 @@ in
     ntfs3g
     nfs-utils
     pavucontrol
-#    pmount
+#   pmount
     protonvpn-gui
 #   rtl_433
 #   rtl-sdr
