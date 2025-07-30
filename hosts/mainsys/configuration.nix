@@ -210,6 +210,9 @@ polkitPolicyOwners = [ "craig" ];
   system.stateVersion = "23.05"; # Did you read the comment?
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    download-buffer-size = 33554432; # 32 MiB, default is 1048576 (1 MiB)
+  };
 
 ### HOME MANAGER MODULE - MOVED TO FLAKE ###
   
