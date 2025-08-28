@@ -21,7 +21,6 @@ in
     nfs-utils
     pavucontrol
 #   pmount
-    proton-authenticator
     protonvpn-gui
 #   rtl_433
 #   rtl-sdr
