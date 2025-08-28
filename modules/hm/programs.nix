@@ -32,7 +32,6 @@
      picom
      polkit_gnome
      polybar
-     proton-authenticator
      remmina
      rpi-imager
 #    rtl-sdr
