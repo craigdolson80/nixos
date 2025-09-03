@@ -2,8 +2,8 @@
   #SSH
   programs.ssh = {
    enable = true;
-   forwardAgent = true;
-   hashKnownHosts = true;
+   matchBlocks.*.forwardAgent = true;
+   matchBlocks.*.hashKnownHosts = true;
    };
 
 }
