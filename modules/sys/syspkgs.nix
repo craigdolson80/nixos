@@ -28,7 +28,7 @@ in
     tigervnc
     traceroute
     trash-cli
-    trayscale
+    #trayscale
     vim
     vimPlugins.catppuccin-nvim
     vimPlugins.catppuccin-vim
