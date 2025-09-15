@@ -18,6 +18,7 @@ in
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [ "radeon.si_support=1" "amdgpu.si_support=0" ];
   #boot.supportedFilesystems = [ "nfs" ];
   
 
