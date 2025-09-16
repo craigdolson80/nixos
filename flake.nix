@@ -41,7 +41,7 @@
                     unstable._1password
                ];
       
-      };
+        }
       opx-5090 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
