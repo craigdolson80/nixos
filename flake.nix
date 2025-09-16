@@ -39,6 +39,9 @@
           }
 
         ];
+
+        nixpkgs.config.allowUnfree = true;
+        
       };
       opx-5090 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
