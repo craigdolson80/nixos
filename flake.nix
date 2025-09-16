@@ -24,6 +24,8 @@
           home-manager.nixosModules.home-manager
 
           {
+            
+            nixpkgs.config.allowUnfree = true;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.craig = import hosts/mainsys/home.nix;
@@ -39,9 +41,7 @@
           }
 
         ];
-
-        nixpkgs.config.allowUnfree = true;
-        
+      
       };
       opx-5090 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
