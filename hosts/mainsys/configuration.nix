@@ -152,7 +152,7 @@ in
 # in NixOS at https://search.nixos.org/options
 
 # Enables the 1Password CLI
-rograms._1password = { enable = true; };
+programs._1password = { enable = true; };
 
 # Enables the 1Password desktop app
 programs._1password-gui = {
