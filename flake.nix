@@ -24,7 +24,7 @@
           home-manager.nixosModules.home-manager
 
           {
-            home-managere-manager.useGlobalPkgs = true;
+            home-manager-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.craig = import hosts/mainsys/home.nix;
 
