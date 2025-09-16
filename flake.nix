@@ -39,9 +39,7 @@
             in [
                     unstable._1password-gui
                     unstable._1password
-            }
-
-        ];
+               ];
       
       };
       opx-5090 = nixpkgs.lib.nixosSystem {
