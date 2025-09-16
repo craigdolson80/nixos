@@ -37,7 +37,6 @@
             ];
           }
 
-          }
         ];
       };
       opx-5090 = nixpkgs.lib.nixosSystem {
