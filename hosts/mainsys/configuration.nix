@@ -159,6 +159,7 @@ in
 
   nixpkgs.overlays = [
     (import ../../overlays/1password-unstable.nix)
+    (import ../../overlays/flameshot-overlay.nix)
   ];
 
   environment.systemPackages = with pkgs; [
