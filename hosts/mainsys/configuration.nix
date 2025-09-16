@@ -151,27 +151,16 @@ in
 # it work nicely. You can search what options exist
 # in NixOS at https://search.nixos.org/options
 
-security.polkit.extraConfig = ''
-  polkit.addRule(function(action, subject) {
-    if (
-      action.id == "com.1password.1Password" &&
-      subject.isInGroup("wheel")
-    ) {
-      return polkit.Result.YES;
-    }
-  });
-'';
-
 
 # Enables the 1Password CLI
-#programs._1password = { enable = true; };
+programs._1password = { enable = true; };
 
 # Enables the 1Password desktop app
-#programs._1password-gui = {
-#enable = true;
+programs._1password-gui = {
+enable = true;
 # this makes system auth etc. work properly
-#polkitPolicyOwners = [ "craig" ];
-#};
+polkitPolicyOwners = [ "craig" ];
+};
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
