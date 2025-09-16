@@ -32,13 +32,14 @@
 
             # Pull only 1Password from unstable
             environment.systemPackages = let
-              unstable = import nixpkgs-unstable { system = "x86_64-linux"; };
+              unstable = import nixpkgs-unstable {
+              system = "x86_64-linux";
               config.allowUnfree = true;
+                    };
             in [
-              unstable._1password-gui
-              unstable._1password
-            ];
-          }
+                    unstable._1password-gui
+                    unstable._1password
+            }
 
         ];
       
