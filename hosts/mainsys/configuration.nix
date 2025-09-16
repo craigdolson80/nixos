@@ -135,8 +135,6 @@ in
   services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
-  # Enable sound with pipewire.
-  #sound.enable = true;
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -151,8 +149,7 @@ in
 # it work nicely. You can search what options exist
 # in NixOS at https://search.nixos.org/options
 
-
-# Enables the 1Password unstable version
+#Enables the 1Password unstable version
 
  #Allow unfree packages  
   nixpkgs.config.allowUnfree = true;
@@ -163,7 +160,7 @@ in
   ];
 
   environment.systemPackages = with pkgs; [
-    _1password
+    _1password-cli
     _1password-gui
   ];
 
@@ -176,22 +173,16 @@ in
     });
   '';
 
-
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.craig = {
     isNormalUser = true;
     description = "${user}";
     extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" "ntfsuser" ];
     packages = with pkgs; [
-     #firefox
-    ];
+        ];
     shell = pkgs.zsh;
   };
 
-#  environment.sessionVariables.NIXOS_OZONE_WL = "1";
- 
-   
   #Set shell
   programs.zsh.enable = true;
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
@@ -206,13 +197,7 @@ in
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
 
-  #Overlays
-  #nixpkgs.overlays = [ (import ../../overlays/flameshot-overlay.nix) ];
 
-  #Enable Hyprland & Supporting Apps
-  #programs.hyprland.enable = true;
-  #programs.waybar.enable = true;
-  #programs.hyprland.xwayland.enable = true;
   
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
