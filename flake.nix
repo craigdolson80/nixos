@@ -4,25 +4,38 @@
   inputs = {
     #hyprland.url = "github:hyprwm/Hyprland";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, ... }: {
     nixosConfigurations = {
       mainsys = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        
+        # Define pkgs sets
+        specialArgs = {
+          inherit nixpkgs-unstable;
+        };
+
         modules = [
-          #hyprland.nixosModules.default
-          #{ programs.hyprland.enable = true; }
           hosts/mainsys/configuration.nix
           home-manager.nixosModules.home-manager
+
           {
-            
-            #home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.useGlobalPkgs = true;
+            home-managere-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.craig = import hosts/mainsys/home.nix;
+
+            # Pull only 1Password from unstable
+            environment.systemPackages = let
+              unstable = import nixpkgs-unstable { system = "x86_64-linux"; };
+            in [
+              unstable._1password-gui
+              unstable._1password
+            ];
+          }
 
           }
         ];
