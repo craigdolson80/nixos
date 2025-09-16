@@ -2,46 +2,59 @@
   description = "NixOS configuration";
 
   inputs = {
-    #hyprland.url = "github:hyprwm/Hyprland";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, ... }: {
+  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, ... }: let
+    system = "x86_64-linux";
+
+    # Import stable pkgs with allowUnfree enabled
+    pkgs = import nixpkgs {
+      inherit system;
+      config = { allowUnfree = true; };
+    };
+
+    # Import unstable pkgs with allowUnfree enabled (for 1Password)
+    pkgsUnstable = import nixpkgs-unstable {
+      inherit system;
+      config = { allowUnfree = true; };
+    };
+  in {
     nixosConfigurations = {
-      mainsys = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        
-        # Define pkgs sets
+
+      # mainsys using pkgs.lib.nixosSystem (pkgs has allowUnfree)
+      mainsys = pkgs.lib.nixosSystem {
+        inherit system;
+
+        # make pkgsUnstable available inside the NixOS modules as "pkgsUnstable"
         specialArgs = {
-          inherit nixpkgs-unstable;
+          inherit pkgsUnstable;
         };
 
         modules = [
-          hosts/mainsys/configuration.nix
+          # your existing modules
+          ./hosts/mainsys/configuration.nix
           home-manager.nixosModules.home-manager
 
+          # small inline module adding the unstable-packages
           {
-            
-            nixpkgs.config.allowUnfree = true;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.craig = import hosts/mainsys/home.nix;
+            home-manager.users.craig = import ./hosts/mainsys/home.nix;
 
-            # Pull only 1Password from unstable
-            environment.systemPackages = let
-              unstable = import nixpkgs-unstable { system = "x86_64-linux"; };
-              config.allowUnfree = true;
-            in [
-              unstable._1password-gui
-              unstable._1password
-            ];
+            # Use the unstable pkgs that we passed in specialArgs
+            # Note: inside the module, refer to "pkgsUnstable" (from specialArgs)
+            environment.systemPackages = with pkgs; ([
+              # stable packages here...
+            ] ++ (with pkgsUnstable; [
+              _1password
+              _1password-gui
+            ]));
           }
-
         ];
-      
       };
       opx-5090 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
