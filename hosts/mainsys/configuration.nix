@@ -154,7 +154,6 @@ in
 
 # Enables the 1Password unstable version
 
-{
   nixpkgs.config.allowUnfree = true;
 
   nixpkgs.overlays = [
@@ -174,7 +173,7 @@ in
       }
     });
   '';
-}
+
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
