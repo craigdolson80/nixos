@@ -2,57 +2,28 @@
   description = "NixOS configuration";
 
   inputs = {
+    #hyprland.url = "github:hyprwm/Hyprland";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, nixpkgs-unstable, home-manager, ... }: let
-    system = "x86_64-linux";
-
-    # Import stable pkgs with allowUnfree enabled
-    pkgs = import nixpkgs {
-      inherit system;
-      config = { allowUnfree = true; };
-    };
-
-    # Import unstable pkgs with allowUnfree enabled (for 1Password)
-    pkgsUnstable = import nixpkgs-unstable {
-      inherit system;
-      config = { allowUnfree = true; };
-    };
-  in {
+  outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-
-      # mainsys using pkgs.lib.nixosSystem (pkgs has allowUnfree)
-      mainsys = pkgs.lib.nixosSystem {
-        inherit system;
-
-        # make pkgsUnstable available inside the NixOS modules as "pkgsUnstable"
-        specialArgs = {
-          inherit pkgsUnstable;
-        };
-
+      mainsys = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
         modules = [
-          # your existing modules
-          ./hosts/mainsys/configuration.nix
+          #hyprland.nixosModules.default
+          #{ programs.hyprland.enable = true; }
+          hosts/mainsys/configuration.nix
           home-manager.nixosModules.home-manager
-
-          # small inline module adding the unstable-packages
           {
+            
+            #home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.craig = import ./hosts/mainsys/home.nix;
+            home-manager.users.craig = import hosts/mainsys/home.nix;
 
-            # Use the unstable pkgs that we passed in specialArgs
-            # Note: inside the module, refer to "pkgsUnstable" (from specialArgs)
-            environment.systemPackages = with pkgs; ([
-              # stable packages here...
-            ] ++ (with pkgsUnstable; [
-              _1password
-              _1password-gui
-            ]));
           }
         ];
       };
