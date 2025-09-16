@@ -7,6 +7,6 @@ final: prev: let
     config.allowUnfree = true;
   };
 in {
-  _1password = unstable._1password;
+  _1password-cli = unstable._1password-cli;
   _1password-gui = unstable._1password-gui;
 }
