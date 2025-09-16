@@ -152,18 +152,30 @@ in
 # in NixOS at https://search.nixos.org/options
 
 
-# Enables the 1Password CLI
-programs._1password = { enable = true; };
+# Enables the 1Password unstable version
 
-# Enables the 1Password desktop app
-programs._1password-gui = {
-enable = true;
-# this makes system auth etc. work properly
-polkitPolicyOwners = [ "craig" ];
-};
+{
+  nixpkgs.config.allowUnfree = true;
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  nixpkgs.overlays = [
+    (import ../../overlays/1password-unstable.nix)
+  ];
+
+  environment.systemPackages = with pkgs; [
+    _1password
+    _1password-gui
+  ];
+
+  security.polkit.extraConfig = ''
+    polkit.addRule(function(action, subject) {
+      if (action.id == "com.1password.1Password" &&
+          subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+      }
+    });
+  '';
+}
+
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.craig = {
