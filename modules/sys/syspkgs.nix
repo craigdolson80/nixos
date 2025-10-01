@@ -12,6 +12,7 @@ in
     gnupg
     gvfs
     inetutils
+    ivpn
     killall
     libvlc
     logitech-udev-rules
