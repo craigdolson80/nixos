@@ -13,6 +13,7 @@ in
       ../../modules/sys/polkit.nix
       ../../modules/sys/syspkgs.nix
       ../../modules/sys/hypr.nix
+      ../../modules/sys/clamav.nix
     ];
 
   # Bootloader.
