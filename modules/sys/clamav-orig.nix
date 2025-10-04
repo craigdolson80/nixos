@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  options = { };
+  options = { }; # no special options exposed, just a drop-in
 
   config = {
     environment.systemPackages = with pkgs; [ clamav ];
@@ -40,18 +40,6 @@
       timerConfig = {
         OnCalendar = "weekly";
         Persistent = true;
-      };
-    };
-
-    # on-demand templated scan
-    systemd.services."clamav-scan@" = {
-      description = "On-demand ClamAV scan of %I";
-      serviceConfig = {
-        Type = "oneshot";
-        ExecStart = ''
-          ${pkgs.clamav}/bin/clamscan -r -i %I \
-            --log=/var/log/clamav/on-demand-%I.log
-        '';
       };
     };
   };
