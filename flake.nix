@@ -13,8 +13,7 @@
       mainsys = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          #hyprland.nixosModules.default
-          #{ programs.hyprland.enable = true; }
+          ./modules/sys/clamav.nix
           hosts/mainsys/configuration.nix
           home-manager.nixosModules.home-manager
           {
