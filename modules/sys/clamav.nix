@@ -1,14 +1,29 @@
 { config, pkgs, ... }:
 
 # imported into configuration.nix
+{ config, pkgs, ... }:
+
 {
-  services.clamav = {
-    enable = true;           # installs base tools
-    daemon.enable = true;    # runs clamd for faster scans
-    updater.enable = true;   # runs freshclam automatically
+  environment.systemPackages = with pkgs; [ clamav ];
+
+  # Systemd service for updating virus definitions
+  systemd.services.freshclam = {
+    description = "ClamAV virus database updater";
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = "${pkgs.clamav}/bin/freshclam --quiet";
+    };
   };
 
-  # systemd timer for weekly scan
+  systemd.timers.freshclam = {
+    wantedBy = [ "timers.target" ];
+    timerConfig = {
+      OnCalendar = "daily";
+      Persistent = true;
+    };
+  };
+
+  # Weekly scan job
   systemd.services.clamav-weekly-scan = {
     description = "Weekly ClamAV Full Scan";
     serviceConfig = {
@@ -21,11 +36,11 @@
   };
 
   systemd.timers.clamav-weekly-scan = {
-    description = "Weekly ClamAV Full Scan Timer";
     wantedBy = [ "timers.target" ];
     timerConfig = {
-      OnCalendar = "weekly";   # adjust to daily if you prefer
+      OnCalendar = "weekly";
       Persistent = true;
     };
   };
 }
+
