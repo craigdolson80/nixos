@@ -33,7 +33,7 @@
      polkit_gnome
      polybar
      remmina
-     rpi-imager
+#    rpi-imager
 #    rtl-sdr
      signal-desktop
      sparrow
