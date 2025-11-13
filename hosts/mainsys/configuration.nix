@@ -135,6 +135,7 @@ in
   services.avahi.nssmdns4 = true;
   services.avahi.openFirewall = true;
 
+  # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
