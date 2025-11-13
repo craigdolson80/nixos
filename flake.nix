@@ -12,16 +12,19 @@
     nixosConfigurations = {
       mainsys = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [
-          hosts/mainsys/configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            
-            #home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.craig = import hosts/mainsys/home.nix;
+modules = [
+  ./hosts/mainsys/configuration.nix
+  home-manager.nixosModules.home-manager
+  {
+    # home-manager module settings (system-level)
+    home-manager.useGlobalPkgs = true;
+    home-manager.useUserPackages = true;
 
+    # 🔹 this is the important line:
+    home-manager.backupFileExtension = "hm-bak";
+
+    # user-level config lives in home.nix
+    home-manager.users.craig = import ./hosts/mainsys/home.nix;
           }
         ];
       };
