@@ -90,7 +90,7 @@ in
    # enable = true;
    # extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
  # };
- virtualisation.podman.enable = true;
+    virtualisation.libvirtd.enable = true;
     services = {
     udev.packages = with pkgs; [ 
         ledger-udev-rules
@@ -163,10 +163,7 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    git
-    meld
+    #neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     _1password-cli
     _1password-gui
   ];
