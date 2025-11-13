@@ -13,7 +13,6 @@
       mainsys = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./modules/sys/clamav.nix
           hosts/mainsys/configuration.nix
           home-manager.nixosModules.home-manager
           {
