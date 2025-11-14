@@ -78,6 +78,7 @@ in
   programs.hyprland.enable = true;
   programs.sway.enable = true;
   services.xserver.windowManager.qtile.extraPackages = p: with p; [ qtile-extras ];
+  hardware.graphics.enable = true;
 
   # MISC Services to enable
   hardware.bluetooth.enable = true;
