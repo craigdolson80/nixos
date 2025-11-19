@@ -183,6 +183,21 @@ in
 
   # List services that you want to enable:
 
+  {
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
+
+  # Old-style FUSE compatibility (if not already)
+  boot.kernelModules = [ "fuse" ];
+  boot.extraModulePackages = [ ];
+
+  # Let user run FUSE
+  users.users.craig.extraGroups = [ "fuse" ]; # adjust user name
+}
+
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 

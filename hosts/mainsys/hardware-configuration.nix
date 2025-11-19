@@ -26,7 +26,7 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-    fileSystems."/run/media/craig/Data" =
+  fileSystems."/run/media/craig/Data" =
     { device = "/dev/disk/by-uuid/4fe9bc28-f6b7-49fe-8978-538d76999402"; 
     fsType = "ext4";
     };
