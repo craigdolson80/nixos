@@ -99,6 +99,8 @@ in
         # potentially even more if you need them
     ];
   };
+
+  virtualisation.podman.enable = true;
   
   # Configure keymap in X11
   services.xserver.xkb = {
