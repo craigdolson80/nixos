@@ -1,7 +1,7 @@
 {config, pkgs, ...}:
 {
   home.packages = with pkgs; [
-     #appimage-run
+     appimage-run
      arandr
      betterlockscreen
      brave
