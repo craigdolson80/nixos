@@ -135,7 +135,7 @@ in
   users.users.craig = {
     isNormalUser = true;
     description = "Craig Olson";
-    extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" "ntfsuser" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "video" "lpd" "libvirtd" "users" "ntfsuser" "fuse" ];
     packages = with pkgs; [
         ];
     shell = pkgs.zsh;
@@ -183,7 +183,7 @@ in
 
   # List services that you want to enable:
 
-  {
+  
   programs.appimage = {
     enable = true;
     binfmt = true;
@@ -192,10 +192,6 @@ in
   # Old-style FUSE compatibility (if not already)
   boot.kernelModules = [ "fuse" ];
   boot.extraModulePackages = [ ];
-
-  # Let user run FUSE
-  users.users.craig.extraGroups = [ "fuse" ]; # adjust user name
-}
 
 
   # Enable the OpenSSH daemon.
