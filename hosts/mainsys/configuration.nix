@@ -175,11 +175,11 @@ in
     });
   '';
 
-  {
+  #Temporary
               nixpkgs.config.permittedInsecurePackages = [
                 "python3.12-ecdsa-0.19.1"
               ];
-            }
+            
 
   # List services that you want to enable:
 
