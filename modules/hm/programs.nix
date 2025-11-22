@@ -19,6 +19,7 @@
      google-chrome
 #    hplipWithPlugin
      htop
+     ivpn
      keepassxc
      imagemagick
      libreoffice
