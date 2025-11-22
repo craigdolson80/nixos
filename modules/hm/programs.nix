@@ -25,6 +25,7 @@
      lxappearance
      meld
 #    mqtt-explorer
+     mullvad-vpn
      networkmanagerapplet
      nitrogen
      obsidian
