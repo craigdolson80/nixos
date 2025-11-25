@@ -187,15 +187,6 @@ in
 
   #Overlays
   nixpkgs.overlays = [ (import ../../overlays/flameshot-overlay.nix) ];
-    (final: prev: {
-      python3Packages = prev.python3Packages // {
-        qtile-extras = prev.python3Packages.qtile-extras.overridePythonAttrs (old: {
-          doCheck = false;  # disable tests
-        });
-      };
-    })
-
-
 
 
   #Enable Hyprland & Supporting Apps
