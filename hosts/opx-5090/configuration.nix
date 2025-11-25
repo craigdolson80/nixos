@@ -181,6 +181,10 @@ in
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
 
+  nixpkgs.config.permittedInsecurePackages = [
+                "python3.12-ecdsa-0.19.1"
+              ];
+
   #Overlays
   nixpkgs.overlays = [ (import ../../overlays/flameshot-overlay.nix) ];
 
