@@ -256,7 +256,7 @@ screens = [
                            padding = 6,
                            ),
                 widget.Image(
-                             filename = "~/.config/qtile/icons/python.png",
+                             filename = "~/.config/qtile/icons/nixos_logo_icon_blue.png",
                              mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(mymenu)},
                              scale = "False"
                             ),
