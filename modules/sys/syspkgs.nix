@@ -8,7 +8,6 @@ in
 #   bridge-utils #for checking network manager bridge config
 #   celeste
     eza
-    gemini-cli
     gnupg
     gvfs
     inetutils
@@ -26,7 +25,6 @@ in
 #   rtl_433
 #   rtl-sdr
     swaynotificationcenter
-    tigervnc
     traceroute
     trash-cli
     trayscale

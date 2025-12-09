@@ -19,14 +19,12 @@
      google-chrome
 #    hplipWithPlugin
      htop
-     ivpn
      keepassxc
      imagemagick
      libreoffice
      lxappearance
      meld
 #    mqtt-explorer
-     mullvad-vpn
      networkmanagerapplet
      nitrogen
      obsidian
@@ -35,7 +33,6 @@
      polkit_gnome
      polybar
      remmina
-#    rpi-imager
 #    rtl-sdr
      signal-desktop
      sparrow
@@ -50,7 +47,6 @@
      viewnior
      vlc
      volumeicon
-     wasabiwallet
      yt-dlp #optional for ytfzf
      ytfzf
      yubikey-agent
