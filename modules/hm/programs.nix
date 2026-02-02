@@ -37,9 +37,6 @@
      signal-desktop
      sparrow
      telegram-desktop
-     tor
-     tor-browser-bundle-bin
-     torsocks
      ueberzugpp #required for ytfzf
      udiskie
      udisks
