@@ -19,6 +19,7 @@ in
     neovim
     ntfs3g
     nfs-utils
+    niri
     pavucontrol
 #   pmount
     protonvpn-gui
