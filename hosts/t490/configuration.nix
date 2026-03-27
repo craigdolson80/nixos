@@ -112,6 +112,8 @@
     vim
     btop
     brave
+    dms-shell
+    niri
   ];
 
   hardware.bluetooth.enable = true;
