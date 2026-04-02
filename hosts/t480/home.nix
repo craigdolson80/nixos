@@ -20,7 +20,7 @@
 
   home.username = "craig";
   home.homeDirectory = "/home/craig";
-  home.stateVersion = "23.05";
+  home.stateVersion = "26.05";
 
 #Creating Desktop Entries Rofi can present
   xdg.desktopEntries.Ledger = {
