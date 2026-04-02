@@ -6,6 +6,9 @@
      fuzzel
 ];
 
+ {
+  home.file.".config/niri/config.kdl".source = ../../modules/hm/niri/config.kdl;
+}
 
 
 
