@@ -4,7 +4,7 @@
      appimage-run
      alacritty
      fuzzel
-
+];
 
 
 
