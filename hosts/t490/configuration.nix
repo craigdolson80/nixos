@@ -54,7 +54,7 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   programs.niri.enable = true;
-  programs.dms-shell.enable = true;
+  #programs.dms-shell.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -115,7 +115,7 @@
     btop
     brave
     dms-shell
-    niri
+    xwayland-satellite
   ];
 
   hardware.bluetooth.enable = true;
