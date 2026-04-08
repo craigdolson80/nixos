@@ -99,7 +99,7 @@
       "ntfsuser"
       "fuse"
     ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
     shell    = pkgs.zsh;
   };
 
