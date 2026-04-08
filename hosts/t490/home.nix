@@ -1,9 +1,16 @@
 {config, pkgs, ...}:
 {
- home.packages = with pkgs; [
-     appimage-run
+
+imports = [
+	../../modules/hm/kitty.nix
+        ../../modules/hm/programs.nix
+  ]; 
+
+
+home.packages = with pkgs; [
      alacritty
      fuzzel
+     kitty
 ];
 
   home.file.".config/niri/config.kdl".source = ../../modules/hm/niri/config.kdl;
