@@ -14,7 +14,7 @@
     [[ ! -f $HOME/nixos/modules/hm/commonfiles/p10k/.p10k.zsh ]] || source $HOME/nixos/modules/hm/commonfiles/p10k/.p10k.zsh
     
       bindkey '^f' autosuggest-accept
-      neofetch
+      fastfetch
       alias vim="nvim"
       alias ls="eza -la --group-directories-first"
       alias cat="bat"
