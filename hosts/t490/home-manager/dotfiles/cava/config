@@ -288,7 +288,7 @@
 
 # use theme file instead of defining colors in this file
 # themes are located in $HOME/.config/cava/themes
- theme = '/home/craig/nixos/hosts/t490/home-manager/dotfiles/cava/themes/mocha.cava'
+ theme = './themes/mocha.cava'
 
 
 [smoothing]
