@@ -15,7 +15,7 @@ home.packages = with pkgs; [
 ];
 
   home.file.".config/niri/config.kdl".source = ../../modules/hm/niri/config.kdl;
-  home.file."config/cava/config.txt".source = ./home-manager/dotfiles/cava/config;
+  home.file.".config/cava/config".source = home-manager/dotfiles/cava/config;
 
 
 
