@@ -133,6 +133,12 @@
     noctalia-shell
     fastfetch
     eza
+    ccid
+    lm_sensors
+    pciutils
+    pcsclite
+    pcsctools
+    usbutils
   ];
 
   hardware.bluetooth.enable = true;
