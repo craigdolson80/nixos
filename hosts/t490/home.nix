@@ -3,14 +3,15 @@
 
 imports = [
 	../../modules/hm/kitty.nix
-        ../../modules/hm/programs.nix
+    ../../modules/hm/programs.nix
+    ../../modules/hm/zsh.nix
   ]; 
 
 
 home.packages = with pkgs; [
      alacritty
      fuzzel
-     kitty
+
 ];
 
   home.file.".config/niri/config.kdl".source = ../../modules/hm/niri/config.kdl;
