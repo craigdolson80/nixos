@@ -5,6 +5,7 @@
      arandr
      betterlockscreen
      brave
+     cava
      cubicsdr
      discord
      dmenu #optional for ytfzf
