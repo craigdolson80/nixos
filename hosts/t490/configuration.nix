@@ -137,7 +137,7 @@
     lm_sensors
     pciutils
     pcsclite
-    pcsctools
+    pcsc-tools
     usbutils
   ];
 
