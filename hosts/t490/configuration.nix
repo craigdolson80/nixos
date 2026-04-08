@@ -99,7 +99,7 @@
       "ntfsuser"
       "fuse"
     ];
-    packages = with pkgs; [ ];
+    packages = with pkgs; [];
     shell    = pkgs.zsh;
   };
 
@@ -130,6 +130,8 @@
     xwayland-satellite
     dms-shell
     quickshell
+    noctalia-shell
+    fastfetch
   ];
 
   hardware.bluetooth.enable = true;

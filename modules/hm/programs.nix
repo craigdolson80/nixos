@@ -12,7 +12,7 @@
      firefox
      flameshot
      font-manager 
-     galculator
+#     galculator
      geany
 #    gimp-with-plugins
      glances
