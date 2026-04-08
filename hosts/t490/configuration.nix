@@ -116,6 +116,7 @@
     brave
     xwayland-satellite
     dms-shell
+    quickshell
   ];
 
   hardware.bluetooth.enable = true;
