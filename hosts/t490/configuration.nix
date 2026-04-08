@@ -85,10 +85,20 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.craig = {
+ users.users.craig = {
     isNormalUser = true;
-    description = "craig";
-    extraGroups = [ "networkmanager" "wheel" ];
+    description  = "Craig Olson";
+    extraGroups  = [
+      "networkmanager"
+      "wheel"
+      "audio"
+      "video"
+      "lpd"
+      "libvirtd"
+      "users"
+      "ntfsuser"
+      "fuse"
+    ];
     packages = with pkgs; [ ];
     shell    = pkgs.zsh;
   };
@@ -97,8 +107,6 @@
   programs.zsh.enable = true;
   programs.zsh.promptInit =
     "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-    ];
-  };
 
   # Install firefox.
   programs.firefox.enable = true;
