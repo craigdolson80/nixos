@@ -89,9 +89,14 @@
     isNormalUser = true;
     description = "craig";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
+    packages = with pkgs; [ ];
+    shell    = pkgs.zsh;
+  };
+
+  # Shell configuration
+  programs.zsh.enable = true;
+  programs.zsh.promptInit =
+    "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     ];
   };
 
