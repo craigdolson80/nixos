@@ -132,6 +132,7 @@
     quickshell
     noctalia-shell
     fastfetch
+    eza
   ];
 
   hardware.bluetooth.enable = true;
