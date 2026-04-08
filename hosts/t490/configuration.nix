@@ -53,9 +53,8 @@
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
-  programs.niri.enable = true;
-  programs.dms-shell.enable = true;
-  programs.niri.config = null;
+  #programs.niri.enable = true;
+  #programs.dms-shell.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -111,6 +110,7 @@
     meld
     blueman
     neovim
+    niri
     helix
     vim
     btop
