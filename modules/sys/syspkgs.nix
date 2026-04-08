@@ -15,11 +15,10 @@ in
     killall
     libvlc
     logitech-udev-rules
-    neofetch
     neovim
     ntfs3g
     nfs-utils
-    niri
+#    niri
     pavucontrol
 #   pmount
     protonvpn-gui
