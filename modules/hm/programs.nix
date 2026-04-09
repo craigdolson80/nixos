@@ -44,7 +44,7 @@
      veracrypt
      viewnior
      vlc
-     volumeicon
+     webcamoid
      yt-dlp #optional for ytfzf
      ytfzf
      yubikey-agent
