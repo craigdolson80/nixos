@@ -118,13 +118,32 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    bat
+    eza
+    gnupg
+    gvfs
+    inetutils
+    killall
+    libvlc
+    logitech-udev-rules
+    neovim
+    ntfs3g
+    nfs-utils
+    pavucontrol
+    protonvpn-gui
+    traceroute
+    trash-cli
+    trayscale
+    vim
+    vimPlugins.catppuccin-nvim
+    vimPlugins.catppuccin-vim
+    vimPlugins.dracula-nvim
+    vimPlugins.dracula-vim
     wget
     git
     meld
     blueman
-    neovim
     helix
-    vim
     btop
     brave
     xwayland-satellite
@@ -132,7 +151,6 @@
     quickshell
     noctalia-shell
     fastfetch
-    eza
     ccid
     lm_sensors
     pciutils
@@ -152,7 +170,7 @@
 
   # List services that you want to enable:
 
-  # Enable the OpenSSH daemon.
+  #Enable Services
    services.openssh.enable = true;
    services.pcscd.enable = true;
 
