@@ -28,6 +28,18 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+    # DNS & search domain
+  networking.nameservers = [
+    "100.100.100.100"
+    "8.8.8.8"
+    "1.1.1.1"
+  ];
+  networking.search = [ "tail72594.ts.net" ];
+
+  # Tailscale
+  services.tailscale.enable = true;
+  services.tailscale.useRoutingFeatures = "both";
+
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
