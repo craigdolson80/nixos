@@ -130,7 +130,7 @@
     ntfs3g
     nfs-utils
     pavucontrol
-    protonvpn-gui
+    proton-vpn
     traceroute
     trash-cli
     trayscale
