@@ -2,11 +2,12 @@
 #GITHUB
   programs.git = {
     enable = true;
-    userEmail = "craigdolson@gmail.com";
-    userName = "Craig Olson";
-    difftastic.enable = true;
-    difftastic.background = "dark";
-    difftastic.color = "always";
-    difftastic.display = "inline";
+    settings.user.email = "craigdolson@gmail.com";
+    settings.user.name = "Craig Olson";
+    difftastic.options.background = "dark";
+    difftastic.options.color = "always";
+    difftastic.options.display = "inline";
 	};
+  programs.difftastic.git.enable = true;
 }
+
