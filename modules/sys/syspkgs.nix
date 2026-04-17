@@ -7,6 +7,7 @@ in
     bat
 #   bridge-utils #for checking network manager bridge config
 #   celeste
+    bind
     eza
     gnupg
     gvfs
