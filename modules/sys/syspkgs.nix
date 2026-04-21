@@ -22,7 +22,7 @@ in
 #    niri
     pavucontrol
 #   pmount
-    protonvpn-gui
+    proton-gui
 #   rtl_433
 #   rtl-sdr
     swaynotificationcenter
