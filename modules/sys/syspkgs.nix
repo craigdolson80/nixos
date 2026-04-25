@@ -20,7 +20,7 @@ in
     ntfs3g
     nfs-utils
 #    niri
-    openssl
+    openssl_4_0
     pavucontrol
 #   pmount
     proton-gui
