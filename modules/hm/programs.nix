@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
      appimage-run
-     arandr
+#     arandr
      betterlockscreen
      brave
      cava
