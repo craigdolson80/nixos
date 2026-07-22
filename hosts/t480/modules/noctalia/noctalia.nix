@@ -69,9 +69,9 @@
           recursive = true;
         };
 
-        default.path = "/home/craig/Pictures/wallpaper/031.jpg";
-        last.path = "/home/craig/Pictures/wallpaper/031.jpg";
-        monitors."eDP-1".path = "/home/craig/Pictures/wallpaper/031.jpg";
+        default.path = "/home/craig/Pictures/wallpaper/021.jpg";
+        last.path = "/home/craig/Pictures/wallpaper/021.jpg";
+        monitors."eDP-1".path = "/home/craig/Pictures/wallpaper/021.jpg";
       };
 
       theme = {
@@ -253,11 +253,11 @@
         ];
         center = [ "workspaces" ];
         end = [
+          "battery"
           "tray"
           "notifications"
           "network"
           "bluetooth"
-          "battery"
           "volume"
           "control-center"
         ];

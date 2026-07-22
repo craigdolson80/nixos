@@ -54,6 +54,9 @@
   # Niri Wayland compositor
   programs.niri.enable = true;
 
+  # Password Manager
+  programs._1password.enable = true;
+
   # Noctalia shell/bar
   programs.noctalia.enable = true;
   programs.noctalia.systemd.enable = true;

@@ -18,7 +18,7 @@ capsule_padding = 4.0
 capsule_thickness = 0.64999998919665813
 center = [ "workspaces" ]
 concave_edge_corners = false
-end = [ "tray", "notifications", "network", "bluetooth", "battery", "volume", "control-center" ]
+end = [ "battery", "tray", "notifications", "network", "bluetooth", "volume", "control-center" ]
 margin_edge = 5
 margin_ends = 10
 margin_h = 1000
@@ -207,13 +207,13 @@ transition_on_startup = false
     recursive = true
 
     [wallpaper.default]
-    path = "/home/craig/Pictures/wallpaper/031.jpg"
+    path = "/home/craig/Pictures/wallpaper/021.jpg"
 
     [wallpaper.last]
-    path = "/home/craig/Pictures/wallpaper/031.jpg"
+    path = "/home/craig/Pictures/wallpaper/021.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/craig/Pictures/wallpaper/031.jpg"
+    path = "/home/craig/Pictures/wallpaper/021.jpg"
 
 [weather]
 effects = true
