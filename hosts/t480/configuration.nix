@@ -56,6 +56,7 @@
 
   # Password Manager
   programs._1password.enable = true;
+  programs._1password-gui.enable = true;
 
   # Noctalia shell/bar
   programs.noctalia.enable = true;
