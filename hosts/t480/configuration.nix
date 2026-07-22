@@ -29,11 +29,20 @@
   options = "--delete-older-than 7d";
 };   
 
+  # DNS & search domain
+  networking.nameservers = [
+    "100.100.100.100"
+    "1.1.1.1"
+    "9.9.9.9"
+  ];
+
   networking.hostName = "t480";
   networking.networkmanager.enable = true;
+
   # Tailscale
   services.tailscale.enable = true;
   services.tailscale.useRoutingFeatures = "both";
+  networking.search = [ "t480.tail72594.ts.net" ];
 
   time.timeZone = "America/Chicago";
 
