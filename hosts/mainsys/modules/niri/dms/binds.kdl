@@ -1,0 +1,4 @@
+binds {
+    Super+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Super+space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+}
