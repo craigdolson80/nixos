@@ -62,11 +62,6 @@
   programs.noctalia.enable = true;
   programs.noctalia.systemd.enable = true;
 
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-  };
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
