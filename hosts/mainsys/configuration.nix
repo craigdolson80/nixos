@@ -94,7 +94,6 @@
   services.printing.enable = true;
 
   # Virtualbox Components
-  virtualisation.virtualbox.host.enableKvm = true;
   virtualisation.virtualbox.host.enable = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
 
