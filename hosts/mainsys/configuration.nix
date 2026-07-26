@@ -93,6 +93,12 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Udev rules for hardware wallets
+  services.udev.packages = with pkgs; [
+    ledger-udev-rules
+    trezor-udev-rules
+  ];
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
