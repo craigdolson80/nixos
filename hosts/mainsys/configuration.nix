@@ -16,6 +16,8 @@
 
   # Firmware and BIOS updates through LVFS/fwupd
   services.fwupd.enable = true;
+  hardware.enableRedistributableFirmware = true;
+  hardware.cpu.amd.updateMicrocode = true;
 
   # Garbage Collection
   nix.gc = {
