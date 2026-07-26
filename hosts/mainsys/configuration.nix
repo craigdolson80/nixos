@@ -93,11 +93,18 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Virtualbox Components
+  virtualisation.virtualbox.host.enableKvm = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+
   # Udev rules for hardware wallets
   services.udev.packages = with pkgs; [
     ledger-udev-rules
     trezor-udev-rules
   ];
+  
+  # PCSCD service for yubikey
   services.pcscd.enable = true;
 
   # Enable sound with pipewire.
@@ -150,13 +157,8 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    git
-    meld
-    vscode
-  ];
+  
+  environment.systemPackages = with pkgs; [];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
