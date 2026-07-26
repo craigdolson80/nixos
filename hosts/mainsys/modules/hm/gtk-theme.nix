@@ -1,18 +1,22 @@
-# GTK Theme .NIX file
-
-{config, pkgs, ...}:
+{ config, pkgs, ... }:
 
 {
+  gtk = {
+    enable = true;
 
-#  Dracula
- gtk = {
-   enable = true;
-   theme = {
-     name = "Dracula";
-     package = pkgs.dracula-theme;
+    theme = {
+      name = "Dracula";
+      package = pkgs.dracula-theme;
+    };
+
+    iconTheme = {
+      name = "Dracula";
+      package = pkgs.dracula-icon-theme;
+    };
+
+    cursorTheme = {
+      name = "Dracula-cursors";
+      package = pkgs.dracula-icon-theme;
+    };
   };
-   cursorTheme.name = "Dracula-cursors";
-   iconTheme.name = "Dracula";
-   };  
-
 }
