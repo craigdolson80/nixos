@@ -38,7 +38,7 @@
   # Tailscale
   services.tailscale.enable = true;
   services.tailscale.useRoutingFeatures = "both";
-  #networking.search = [ "mainsys.tail72594.ts.net" ];
+  networking.search = [ "mainsys.tail72594.ts.net" ];
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
