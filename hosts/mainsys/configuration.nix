@@ -98,6 +98,7 @@
     ledger-udev-rules
     trezor-udev-rules
   ];
+  services.pcscd.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
