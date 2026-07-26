@@ -139,6 +139,7 @@
       "users"
       "ntfsuser"
       "fuse"
+      "vboxusers"
     ];
  
     packages = with pkgs; [ ];
