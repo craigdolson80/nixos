@@ -28,7 +28,7 @@
      imagemagick
      libreoffice
      lxappearance
-     protonmail-desktop
+     pkgs-unstable.protonmail-desktop
      signal-desktop
      sparrow
      telegram-desktop
