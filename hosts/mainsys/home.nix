@@ -28,6 +28,7 @@
      imagemagick
      libreoffice
      lxappearance
+     protonmail-desktop
      signal-desktop
      sparrow
      telegram-desktop
@@ -39,14 +40,6 @@
      yubikey-manager
      yubioath-flutter
      zsh-powerlevel10k
-
- #Themes
-     dracula-theme
-     dracula-icon-theme
-     dracula-qt5-theme
-     catppuccin-kde
-     catppuccin
-     catppuccin-cursors.mochaDark
   ];
 
 }
