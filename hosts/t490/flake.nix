@@ -17,7 +17,7 @@
       t490 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 modules = [
-  ./hosts/t490/configuration.nix
+  ./configuration.nix
   home-manager.nixosModules.home-manager
   {
     # home-manager module settings (system-level)
@@ -28,7 +28,7 @@ modules = [
     home-manager.backupFileExtension = "hm-bak";
 
     # user-level config lives in home.nix
-    home-manager.users.craig = import ./hosts/t490/home.nix;
+    home-manager.users.craig = import ./home.nix;
           }
         ];
       };
