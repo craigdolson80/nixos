@@ -16,7 +16,7 @@
 #     galculator
      geany
 #    gimp-with-plugins
-     glances
+#     glances
      google-chrome
 #    hplipWithPlugin
      htop
