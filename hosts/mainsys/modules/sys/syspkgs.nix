@@ -1,10 +1,44 @@
 { config, pkgs, pkgs-unstable, inputs, ... }:
+
 let
-  user="craig";
+  user = "craig";
+
+  ledgerLive = pkgs.writeShellScriptBin "ledger-live" ''
+    exec ${pkgs.appimage-run}/bin/appimage-run \
+      "/home/${user}/Applications/Ledger.AppImage"
+  '';
+
+  trezorSuite = pkgs.writeShellScriptBin "trezor-suite" ''
+    exec ${pkgs.appimage-run}/bin/appimage-run \
+      "/home/${user}/Applications/Trezor.AppImage"
+  '';
+
+  ledgerLiveDesktop = pkgs.makeDesktopItem {
+    name = "ledger-live";
+    desktopName = "Ledger Live";
+    genericName = "Cryptocurrency Wallet";
+    comment = "Manage Ledger hardware wallets";
+    exec = "${ledgerLive}/bin/ledger-live";
+    terminal = false;
+    categories = [ "Finance" ];
+    keywords = [ "Ledger" "Wallet" "Bitcoin" "Crypto" ];
+  };
+
+  trezorSuiteDesktop = pkgs.makeDesktopItem {
+    name = "trezor-suite";
+    desktopName = "Trezor Suite";
+    genericName = "Cryptocurrency Wallet";
+    comment = "Manage Trezor hardware wallets";
+    exec = "${trezorSuite}/bin/trezor-suite";
+    terminal = false;
+    categories = [ "Finance" ];
+    keywords = [ "Trezor" "Wallet" "Bitcoin" "Crypto" ];
+  };
 in
 {
   environment.systemPackages = with pkgs; [
     alacritty
+    appimage-run
     bat
     bind
     brightnessctl
@@ -45,35 +79,34 @@ in
     wl-clipboard
     xdg-utils
     xwayland-satellite
-    
-## Virtual Support Packages ##
+
+    ## Virtual Support Packages ##
     distrobox
     podman-desktop
-    spice spice-gtk
+    spice
+    spice-gtk
     spice-protocol
     virt-manager
     virt-viewer
     win-spice
     virtio-win
-##-------------------------##
+    ## ------------------------ ##
+
     ccid
     lm_sensors
     pciutils
     pcsclite
     pcsc-tools
     usbutils
-##-------------------------##  
 
-## System Themes
-  catppuccin-gtk
+    ## System Themes ##
+    catppuccin-gtk
 
-#Ledger Live
- (writeShellScriptBin "ledger.sh" ''
-   appimage-run "/home/${user}/Applications/Ledger.AppImage";
-'')
-#Trezor Suite
- (writeShellScriptBin "trezor.sh" ''
-   appimage-run "/home/${user}/Applications/Trezor.AppImage";
-'')
+    ## AppImage applications ##
+    ledgerLive
+    ledgerLiveDesktop
+
+    trezorSuite
+    trezorSuiteDesktop
   ];
 }
