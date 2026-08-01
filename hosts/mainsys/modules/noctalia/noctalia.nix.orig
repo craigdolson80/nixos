@@ -36,11 +36,10 @@
           borders = false;
           shadow = true;
           launcher_placement = "attached";
-          clipboard_placement = "floating";
-          clipboard_position = "center";
+          clipboard_placement = "centered";
           control_center_placement = "attached";
           wallpaper_placement = "attached";
-          session_placement = "floating";
+          session_placement = "centered";
           open_near_click_control_center = false;
         };
 
@@ -65,7 +64,7 @@
 
         automation = {
           enabled = false;
-          interval_seconds = 300;
+          interval_minutes = 5;
           order = "random";
           recursive = true;
         };
@@ -166,6 +165,7 @@
             show_caps_lock = true;
             show_keyboard_layout = true;
             show_login_button = true;
+            show_password_hint = true;
           };
         };
       };
@@ -230,6 +230,8 @@
         concave_edge_corners = false;
         margin_edge = 5;
         margin_ends = 10;
+        margin_h = 1000;
+        margin_v = 5;
         padding = 6;
         thickness = 30;
         widget_spacing = 2;
