@@ -66,5 +66,14 @@ in
 
 ## System Themes
   catppuccin-gtk
+
+#Ledger Live
+ (writeShellScriptBin "ledger.sh" ''
+   appimage-run "/home/${user}/Applications/Ledger.AppImage";
+'')
+#Trezor Suite
+ (writeShellScriptBin "trezor.sh" ''
+   appimage-run "/home/${user}/Applications/Trezor.AppImage";
+'')
   ];
 }
