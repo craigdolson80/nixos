@@ -51,6 +51,7 @@ in
     gnupg
     grim
     gvfs
+    hplip
     inetutils
     ivpn
     killall
