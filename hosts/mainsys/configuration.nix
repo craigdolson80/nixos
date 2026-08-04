@@ -35,6 +35,22 @@
   networking.hostName = "mainsys";
   networking.networkmanager.enable = true;
 
+   networking.hosts = {
+    "10.0.2.170" = [
+      "umbrel"
+      "umbrel.local"
+    ];
+
+    "10.0.0.10" = [
+      "homemanager"
+    ];
+
+    "10.0.0.1" = [
+      "opnsense"
+      "opnsense.local"
+    ];
+  };
+
   # Tailscale
   services.tailscale.enable = true;
   services.tailscale.useRoutingFeatures = "both";

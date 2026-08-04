@@ -16,8 +16,8 @@
   home.stateVersion = "26.05";
 
   home.packages = with pkgs; [
-     appimage-run
      brave
+     btop
      cava
      chatgpt-cli
      claude-code
