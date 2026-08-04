@@ -19,6 +19,9 @@
      appimage-run
      brave
      cava
+     chatgpt
+     chatgpt-cli
+     claude-code
      discord
      font-manager 
      geany
