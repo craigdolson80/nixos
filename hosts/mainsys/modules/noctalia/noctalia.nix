@@ -304,7 +304,10 @@
           title_scroll = "on_hover";
         };
 
-        workspaces.display = "none";
+        workspaces = {
+          label_source = "name";
+          show_labels = false;
+        };
 
         battery.display_mode = "graphic";
         brightness.show_label = false;
