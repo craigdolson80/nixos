@@ -49,8 +49,8 @@
 
       wallpaper = {
         enabled = true;
-        directory = "/home/craig/Pictures/wallpaper";
-        fill_mode = "fit";
+        directory = "/home/craig/git/wallpaper";
+        fill_mode = "crop";
         fill_color = "#000000";
         transition = [
           "fade"
@@ -64,14 +64,16 @@
         transition_on_startup = false;
 
         automation = {
-          enabled = false;
-          interval_seconds = 300;
+          enabled = true;
+          interval_seconds = 900;
           order = "random";
           recursive = true;
         };
 
-        default.path = "/home/craig/Pictures/wallpaper/021.jpg";
-        last.path = "/home/craig/Pictures/wallpaper/021.jpg";
+        default.path = "/home/craig/git/wallpaper/129.jpg";
+        last.path = "/home/craig/git/wallpaper/129.jpg";
+        monitors."DP-1".path = "/home/craig/git/wallpaper/129.jpg";
+        monitors."DP-2".path = "/home/craig/git/wallpaper/129.jpg";
         monitors."eDP-1".path = "/home/craig/Pictures/wallpaper/021.jpg";
       };
 
@@ -115,6 +117,8 @@
 
       control_center.width = 800;
 
+      hooks.started = "trayscale";
+
       plugins.enabled = [ "noctalia/translator" ];
 
       osd = {
@@ -139,12 +143,56 @@
       lockscreen_widgets = {
         enabled = false;
         schema_version = 2;
-        widget_order = [ "lockscreen-login-box@eDP-1" ];
+        widget_order = [ "lockscreen-login-box@DP-2" "lockscreen-login-box@DP-1" "lockscreen-login-box@eDP-1" ];
 
         grid = {
           cell_size = 16;
           major_interval = 4;
           visible = true;
+        };
+
+        widget."lockscreen-login-box@DP-1" = {
+          box_height = 70.0;
+          box_width = 400.0;
+          cx = 2560.0;
+          cy = 1321.0;
+          output = "DP-1";
+          rotation = 0.0;
+          type = "login_box";
+
+          settings = {
+            background_color = "surface_variant";
+            background_opacity = 0.88;
+            background_radius = 12.0;
+            center_password_text = false;
+            input_opacity = 1.0;
+            input_radius = 6.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
+            show_login_button = true;
+          };
+        };
+
+        widget."lockscreen-login-box@DP-2" = {
+          box_height = 70.0;
+          box_width = 400.0;
+          cx = 960.0;
+          cy = 961.0;
+          output = "DP-2";
+          rotation = 0.0;
+          type = "login_box";
+
+          settings = {
+            background_color = "surface_variant";
+            background_opacity = 0.88;
+            background_radius = 12.0;
+            center_password_text = false;
+            input_opacity = 1.0;
+            input_radius = 6.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
+            show_login_button = true;
+          };
         };
 
         widget."lockscreen-login-box@eDP-1" = {
@@ -196,16 +244,19 @@
         address = "Rockford, IL";
       };
 
-      idle.behavior = {
-        lock = {
-          timeout = 660;
-          action = "lock";
-          enabled = false;
-        };
-        screen-off = {
-          timeout = 600;
-          action = "screen_off";
-          enabled = false;
+      idle = {
+        behavior_order = [ "lock" "screen-off" ];
+        behavior = {
+          lock = {
+            timeout = 660;
+            action = "lock";
+            enabled = true;
+          };
+          screen-off = {
+            timeout = 600;
+            action = "screen_off";
+            enabled = true;
+          };
         };
       };
 
@@ -229,7 +280,7 @@
         radius_top_right = 12;
         concave_edge_corners = false;
         margin_edge = 5;
-        margin_ends = 10;
+        margin_ends = 500;
         padding = 6;
         thickness = 30;
         widget_spacing = 2;
@@ -239,7 +290,7 @@
         show_on_workspace_switch = true;
         reserve_space = true;
         capsule = true;
-        capsule_opacity = 0.9;
+        capsule_opacity = 1.0;
         capsule_padding = 4.0;
         capsule_thickness = 0.65;
 
@@ -278,9 +329,9 @@
       widget = {
         launcher = {
           capsule = true;
-          capsule_opacity = 0.35;
+          capsule_opacity = 0.0;
           capsule_padding = 2;
-          custom_image = "/home/craig/Pictures/NixOS.png";
+          custom_image = "/home/craig/nixos/hosts/mainsys/modules/icons/NixOS.png";
           custom_image_colorize = false;
           scale = 1.15;
         };
