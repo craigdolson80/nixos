@@ -13,7 +13,7 @@ enabled = true
 auto_hide = false
 background_opacity = 0.75
 capsule = true
-capsule_opacity = 0.99999997764825821
+capsule_opacity = 0.0
 capsule_padding = 4.0
 capsule_thickness = 0.65000000000000002
 center = [ "workspaces" ]
@@ -251,19 +251,19 @@ transition_on_startup = false
     recursive = true
 
     [wallpaper.default]
-    path = "/home/craig/git/wallpaper/129.jpg"
+    path = "/home/craig/git/wallpaper/080.jpg"
 
     [wallpaper.last]
-    path = "/home/craig/git/wallpaper/129.jpg"
+    path = "/home/craig/git/wallpaper/080.jpg"
 
     [wallpaper.monitor.DP-1]
     fill_color = "primary"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/craig/git/wallpaper/129.jpg"
+    path = "/home/craig/git/wallpaper/080.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/craig/git/wallpaper/129.jpg"
+    path = "/home/craig/git/wallpaper/080.jpg"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/craig/Pictures/wallpaper/021.jpg"

@@ -70,10 +70,10 @@
           recursive = true;
         };
 
-        default.path = "/home/craig/git/wallpaper/129.jpg";
-        last.path = "/home/craig/git/wallpaper/129.jpg";
-        monitors."DP-1".path = "/home/craig/git/wallpaper/129.jpg";
-        monitors."DP-2".path = "/home/craig/git/wallpaper/129.jpg";
+        default.path = "/home/craig/git/wallpaper/080.jpg";
+        last.path = "/home/craig/git/wallpaper/080.jpg";
+        monitors."DP-1".path = "/home/craig/git/wallpaper/080.jpg";
+        monitors."DP-2".path = "/home/craig/git/wallpaper/080.jpg";
         monitors."eDP-1".path = "/home/craig/Pictures/wallpaper/021.jpg";
       };
 
@@ -143,7 +143,7 @@
       lockscreen_widgets = {
         enabled = false;
         schema_version = 2;
-        widget_order = [ "lockscreen-login-box@DP-2" "lockscreen-login-box@DP-1" "lockscreen-login-box@eDP-1" ];
+        widget_order = [ "lockscreen-login-box@DP-2" "lockscreen-login-box@DP-1" ];
 
         grid = {
           cell_size = 16;
@@ -290,7 +290,7 @@
         show_on_workspace_switch = true;
         reserve_space = true;
         capsule = true;
-        capsule_opacity = 1.0;
+        capsule_opacity = 0.0;
         capsule_padding = 4.0;
         capsule_thickness = 0.65;
 
