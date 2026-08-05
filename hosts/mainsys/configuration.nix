@@ -122,6 +122,18 @@
   # PCSCD service for yubikey
   services.pcscd.enable = true;
 
+  # nix-ld for running unpatched dynamic binaries
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc
+      openssl
+      zlib
+      pcsclite
+      libusb1
+    ];
+  };
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
