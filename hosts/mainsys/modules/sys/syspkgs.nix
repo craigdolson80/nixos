@@ -42,10 +42,8 @@ in
     bat
     bind
     brightnessctl
-    claude-code
     curl
     eza
-    fastfetch
     fuzzel
     git
     gnupg
@@ -55,7 +53,6 @@ in
     inetutils
     ivpn
     killall
-    kitty
     libvlc
     logitech-udev-rules
     meld
@@ -70,11 +67,6 @@ in
     traceroute
     trash-cli
     trayscale
-    vim
-    vimPlugins.catppuccin-nvim
-    vimPlugins.catppuccin-vim
-    vimPlugins.dracula-nvim
-    vimPlugins.dracula-vim
     vscode
     wget
     wl-clipboard

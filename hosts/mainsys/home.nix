@@ -25,7 +25,6 @@
      font-manager 
      geany
      glances
-     htop
      keepassxc
      imagemagick
      libreoffice
