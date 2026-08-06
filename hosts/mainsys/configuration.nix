@@ -119,6 +119,19 @@
     ledger-udev-rules
     trezor-udev-rules
   ];
+
+  # Clear NTFS dirty flag on plug-in so udisks2 can automount
+  services.udev.extraRules = ''
+    ACTION=="add", SUBSYSTEM=="block", ENV{ID_FS_TYPE}=="ntfs|ntfs-3g", \
+      RUN+="${pkgs.ntfs3g}/bin/ntfsfix -d /dev/%k"
+  '';
+
+  # Allow udisks2 to mount NTFS volumes even if dirty flag remains
+  environment.etc."udisks2/mount_options.conf".text = ''
+    [defaults]
+    ntfs_defaults=uid=$UID,gid=$GID,nofail,remove_hiberfile
+    ntfs3_defaults=uid=$UID,gid=$GID,nofail,force
+  '';
   
   # PCSCD service for yubikey
   services.pcscd.enable = true;
