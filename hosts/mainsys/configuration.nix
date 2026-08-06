@@ -13,7 +13,7 @@
   
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.supportedFilesystems = [ "ntfs3" ];
+  boot.supportedFilesystems = [ "ntfs" ];
 
   # Firmware and BIOS updates through LVFS/fwupd
   services.fwupd.enable = true;
