@@ -132,7 +132,7 @@
       zlib
       pcsclite
       libusb1
-      xorg.libxcb
+      libxcb
     ];
   };
 
