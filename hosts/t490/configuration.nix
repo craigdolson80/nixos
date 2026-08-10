@@ -150,8 +150,6 @@
     vim
     vimPlugins.catppuccin-nvim
     vimPlugins.catppuccin-vim
-    vimPlugins.dracula-nvim
-    vimPlugins.dracula-vim
     wget
     git
     meld
