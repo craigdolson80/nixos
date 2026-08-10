@@ -13,6 +13,11 @@ let
       "/home/${user}/Applications/Trezor.AppImage"
   '';
 
+  radarOmega = pkgs.writeShellScriptBin "RadarOmega" ''
+   exec ${pkgs.appimage-run}/bin/appimage-run \
+     "/home/${user}/Applications/RadarOmega.AppImage"
+  '';
+
   ledgerLiveDesktop = pkgs.makeDesktopItem {
     name = "ledger-live";
     desktopName = "Ledger Live";
@@ -33,6 +38,17 @@ let
     terminal = false;
     categories = [ "Finance" ];
     keywords = [ "Trezor" "Wallet" "Bitcoin" "Crypto" ];
+  };
+
+    radarOmega = pkgs.makeDesktopItem {
+    name = "RadarOmega";
+    desktopName = "Radar Omega";
+    genericName = "Weather Radar";
+    comment = "Launch Radar";
+    exec = "${RadarOmega}/bin/trezor-suite";
+    terminal = false;
+    categories = [ "Tools" ];
+    keywords = [ "Weather" ];
   };
 in
 {
