@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -66,6 +66,7 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   programs.niri.enable = true;
+  services.displayManager.defaultSession = lib.mkForce "niri";
   #programs.dms-shell.enable = true;
 
   # Configure keymap in X11
