@@ -40,15 +40,15 @@ let
     keywords = [ "Trezor" "Wallet" "Bitcoin" "Crypto" ];
   };
 
-    radarOmega = pkgs.makeDesktopItem {
-    name = "RadarOmega";
+  radarOmegaDesktop = pkgs.makeDesktopItem {
+    name = "radaromega";
     desktopName = "Radar Omega";
     genericName = "Weather Radar";
-    comment = "Launch Radar";
-    exec = "${RadarOmega}/bin/trezor-suite";
+    comment = "View live weather radar";
+    exec = "${radarOmega}/bin/RadarOmega";
     terminal = false;
-    categories = [ "Tools" ];
-    keywords = [ "Weather" ];
+    categories = [ "Science" "Utility" ];
+    keywords = [ "Weather" "Radar" ];
   };
 in
 {
@@ -117,5 +117,8 @@ in
 
     trezorSuite
     trezorSuiteDesktop
+
+    radarOmega
+    radarOmegaDesktop
   ];
 }
