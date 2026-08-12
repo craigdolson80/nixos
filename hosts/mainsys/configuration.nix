@@ -15,6 +15,11 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.supportedFilesystems = [ "ntfs" ];
 
+  boot.kernelParams = [
+  "video=DP-1:5120x1440@240"
+  "video=DP-2:1920x1080@60"
+];
+
   # Firmware and BIOS updates through LVFS/fwupd
   services.fwupd.enable = true;
   hardware.enableRedistributableFirmware = true;
