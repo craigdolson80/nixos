@@ -6,6 +6,12 @@
     ./modules/sys/syspkgs.nix
   ];
 
+  fileSystems."/run/media/craig/Data" = {
+    device = "/dev/disk/by-uuid/4fe9bc28-f6b7-49fe-8978-538d76999402";
+    fsType = "ext4";
+    options = [ "defaults" "nofail" ];
+  };
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 10;
