@@ -13,6 +13,11 @@ let
       "/home/${user}/Applications/Trezor.AppImage"
   '';
 
+  satochipUtils = pkgs.writeShellScriptBin "satochip-utils" ''
+    export LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [ pkgs.zlib ]}''${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+    exec "/home/${user}/Applications/satochip/satochip-utils" "$@"
+  '';
+
   radarOmega = pkgs.writeShellScriptBin "RadarOmega" ''
    exec ${pkgs.appimage-run}/bin/appimage-run \
      "/home/${user}/Applications/RadarOmega.AppImage"
@@ -38,6 +43,18 @@ let
     terminal = false;
     categories = [ "Finance" ];
     keywords = [ "Trezor" "Wallet" "Bitcoin" "Crypto" ];
+  };
+
+  satochipUtilsDesktop = pkgs.makeDesktopItem {
+    name = "satochip-utils";
+    desktopName = "Satochip Utils";
+    genericName = "Hardware Wallet Manager";
+    comment = "Manage Satochip hardware wallets";
+    exec = "${satochipUtils}/bin/satochip-utils";
+    icon = "application-x-executable";
+    terminal = false;
+    categories = [ "Finance" "Utility" ];
+    keywords = [ "Satochip" "Wallet" "Bitcoin" "Crypto" ];
   };
 
   radarOmegaDesktop = pkgs.makeDesktopItem {
@@ -117,6 +134,9 @@ in
 
     trezorSuite
     trezorSuiteDesktop
+
+    satochipUtils
+    satochipUtilsDesktop
 
     radarOmega
     radarOmegaDesktop
