@@ -27,7 +27,7 @@
      meld
 #    mqtt-explorer
      networkmanagerapplet
-     nitrogen
+#     nitrogen
      obsidian
      oh-my-zsh
      picom
