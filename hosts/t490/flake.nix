@@ -22,6 +22,7 @@
         system = "x86_64-linux";
 modules = [
   ./configuration.nix
+  noctalia.nixosModules.default
   home-manager.nixosModules.home-manager
   {
     # home-manager module settings (system-level)

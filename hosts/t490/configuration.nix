@@ -68,6 +68,10 @@
   programs.niri.enable = true;
   services.displayManager.defaultSession = lib.mkForce "niri";
   #programs.dms-shell.enable = true;
+  programs.noctalia = {
+  enable = true;
+  systemd.enable = true;
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -159,8 +163,8 @@
     brave
     xwayland-satellite
     dms-shell
-    quickshell
-    noctalia-shell
+    #quickshell
+    #noctalia-shell
     fastfetch
     ccid
     lm_sensors
