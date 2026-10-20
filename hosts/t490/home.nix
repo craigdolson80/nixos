@@ -2,7 +2,7 @@
 {
 
 imports = [
-    ./modules/noctalia/noctalia.nix
+    ./modules/noctalia.nix
 	  ../../modules/hm/kitty.nix
     ../../modules/hm/programs.nix
     ../../modules/hm/zsh.nix
