@@ -96,11 +96,13 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
-    box_height = 70.0
-    box_width = 400.0
+    box_height = 196.0
+    box_width = 720.0
     cx = 2560.0
     cy = 1321.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 5120.0
     rotation = 0.0
     type = "login_box"
 
@@ -111,16 +113,23 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
         center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        layout = "regular"
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
-    box_height = 70.0
-    box_width = 400.0
+    box_height = 196.0
+    box_width = 720.0
     cx = 960.0
     cy = 961.0
     output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -131,9 +140,14 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
         center_password_text = false
         input_opacity = 1.0
         input_radius = 6.0
+        layout = "regular"
         show_caps_lock = true
         show_keyboard_layout = true
         show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 70.0
@@ -251,19 +265,19 @@ transition_on_startup = false
     recursive = true
 
     [wallpaper.default]
-    path = "/home/craig/git/wallpaper/080.jpg"
+    path = "/home/craig/git/wallpaper/125.jpg"
 
     [wallpaper.last]
-    path = "/home/craig/git/wallpaper/080.jpg"
+    path = "/home/craig/git/wallpaper/125.jpg"
 
     [wallpaper.monitor.DP-1]
     fill_color = "primary"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/craig/git/wallpaper/080.jpg"
+    path = "/home/craig/git/wallpaper/125.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/craig/git/wallpaper/080.jpg"
+    path = "/home/craig/git/wallpaper/125.jpg"
 
     [wallpaper.monitors.eDP-1]
     path = "/home/craig/Pictures/wallpaper/021.jpg"
