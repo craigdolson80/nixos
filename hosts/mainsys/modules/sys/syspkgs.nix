@@ -75,6 +75,7 @@ in
     bat
     bind
     brightnessctl
+    cifs-utils
     curl
     eza
     fuzzel
