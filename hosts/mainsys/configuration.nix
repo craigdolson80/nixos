@@ -63,6 +63,25 @@
     ];
   };
 
+fileSystems."/mnt/Craig" = {
+  device = "//10.0.0.5/Craig";
+  fsType = "cifs";
+
+  options = [
+    "credentials=/etc/nixos/secrets/synology-smb"
+    "vers=3.0"
+    "rw"
+    "uid=1000"
+    "gid=100"
+    "file_mode=0664"
+    "dir_mode=0775"
+    "_netdev"
+    "nofail"
+    "x-systemd.automount"
+    "x-systemd.mount-timeout=15s"
+  ];
+};
+
   # Tailscale
   services.tailscale.enable = true;
   services.tailscale.useRoutingFeatures = "both";
@@ -212,7 +231,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    cifs-utils
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
