@@ -109,7 +109,6 @@ in
 
     ## Virtual Support Packages ##
     distrobox
-    podman-desktop
     spice
     spice-gtk
     spice-protocol
