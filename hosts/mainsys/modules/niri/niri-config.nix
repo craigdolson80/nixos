@@ -87,7 +87,7 @@ in {
       "Super+Alt+L" = { action = actions.spawn "swaylock"; hotkey-overlay.title = "Lock the Screen: swaylock"; };
       "Super+Return" = { action = actions.spawn "kitty"; hotkey-overlay.title = "Open a Terminal: kitty"; };
       "Super+space" = { action = actions.spawn "fuzzel"; hotkey-overlay.title = "Run an Application: fuzzel"; };
-      "Super+Slash" = { action = actions.spawn "~/.config/niri/dms/keybindings.sh"; hotkey-overlay.title = "Keybindings Help"; };
+      "Super+Slash" = { action = actions.spawn "/home/craig/.config/niri/dms/keybindings.sh"; hotkey-overlay.title = "Keybindings Help"; };
       "Super+Alt+S" = lockedSh "pkill orca || exec orca" // { hotkey-overlay.hidden = true; };
       "XF86AudioRaiseVolume" = lockedSh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0";
       "XF86AudioLowerVolume" = lockedSh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-";

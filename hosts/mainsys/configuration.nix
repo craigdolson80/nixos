@@ -112,9 +112,11 @@ fileSystems."/mnt/Craig" = {
   programs._1password.enable = true;
   programs._1password-gui.enable = true;
 
-  # Noctalia shell/bar
-  programs.noctalia.enable = true;
-  programs.noctalia.systemd.enable = true;
+  # DUX Shell (systemd-managed; do not also spawn from Niri)
+  programs.dank-material-shell = {
+    enable = true;
+    systemd.enable = true;
+  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;

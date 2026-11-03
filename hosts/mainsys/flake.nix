@@ -11,11 +11,11 @@
     niri.url = "github:sodiboo/niri-flake";
     niri.inputs.nixpkgs.follows = "nixpkgs";
 
-    noctalia.url = "github:noctalia-dev/noctalia";
-    noctalia.inputs.nixpkgs.follows = "nixpkgs-unstable";
+    dms.url = "github:duxlabs-dev/dux-shell/stable";
+    dms.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, niri, noctalia, ... } @ inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, niri, dms, ... } @ inputs:
   let
     system = "x86_64-linux";
 
@@ -31,7 +31,7 @@
       modules = [
         ./configuration.nix
         ./hardware-configuration.nix
-        noctalia.nixosModules.default
+        dms.nixosModules.dank-material-shell
         niri.nixosModules.niri
         home-manager.nixosModules.home-manager
         {

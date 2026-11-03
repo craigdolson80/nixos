@@ -2,8 +2,6 @@
 
 {
   imports = [
-    inputs.noctalia.homeModules.default
-    ./modules/noctalia/noctalia.nix
     ./modules/niri/niri-config.nix
     ./modules/hm/fastfetch.nix
     ./modules/hm/gtk-theme.nix

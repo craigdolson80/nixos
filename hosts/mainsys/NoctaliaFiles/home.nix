@@ -1,0 +1,46 @@
+{ config, pkgs, pkgs-unstable, inputs, ... }:
+
+{
+  imports = [
+    inputs.noctalia.homeModules.default
+    ./modules/noctalia/noctalia.nix
+    ./modules/niri/niri-config.nix
+    ./modules/hm/fastfetch.nix
+    ./modules/hm/gtk-theme.nix
+    ./modules/hm/zsh.nix
+    ./modules/hm/kitty.nix
+  ];
+
+  home.username = "craig";
+  home.homeDirectory = "/home/craig";
+  home.stateVersion = "26.05";
+
+  home.packages = with pkgs; [
+     brave
+     btop
+     cava
+     chatgpt-cli
+     claude-code
+     discord
+     font-manager 
+     geany
+     glances
+     keepassxc
+     imagemagick
+     libreoffice
+     lxappearance
+     pkgs-unstable.protonmail-desktop
+     signal-desktop
+     sparrow
+     telegram-desktop
+     udiskie
+     udisks
+     veracrypt
+     viewnior
+     yubikey-agent
+     yubikey-manager
+     yubioath-flutter
+     zsh-powerlevel10k
+  ];
+
+}
