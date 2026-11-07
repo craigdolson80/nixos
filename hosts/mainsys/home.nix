@@ -19,6 +19,7 @@
      cava
      chatgpt-cli
      claude-code
+     digikam
      discord
      font-manager 
      geany
@@ -27,6 +28,7 @@
      imagemagick
      libreoffice
      lxappearance
+     obsidian
      pkgs-unstable.protonmail-desktop
      signal-desktop
      sparrow
