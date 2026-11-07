@@ -12,17 +12,18 @@
     niri.url = "github:sodiboo/niri-flake";
     niri.inputs.nixpkgs.follows = "nixpkgs";
 
-    noctalia.url = "github:noctalia-dev/noctalia";
-    noctalia.inputs.nixpkgs.follows = "nixpkgs";
+    dms.url = "github:duxlabs-dev/dux-shell/stable";
+    dms.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, noctalia, niri, ... }: {
+  outputs = inputs@{ nixpkgs, home-manager, dms, niri, ... }: {
     nixosConfigurations = {
       t490 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 modules = [
   ./configuration.nix
-  noctalia.nixosModules.default
+  dms.nixosModules.dank-material-shell
+  niri.nixosModules.niri
   home-manager.nixosModules.home-manager
   {
     # home-manager module settings (system-level)

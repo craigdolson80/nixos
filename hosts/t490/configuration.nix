@@ -66,11 +66,14 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   programs.niri.enable = true;
+  # Use the compositor from this host's nixpkgs with the flake's settings module.
+  programs.niri.package = pkgs.niri;
+  security.pam.services.swaylock = {};
   services.displayManager.defaultSession = lib.mkForce "niri";
-  #programs.dms-shell.enable = true;
-  programs.noctalia = {
-  enable = true;
-  systemd.enable = true;
+  # DUX Shell (systemd-managed; do not also spawn from Niri)
+  programs.dank-material-shell = {
+    enable = true;
+    systemd.enable = true;
   };
 
   # Configure keymap in X11
@@ -162,9 +165,9 @@
     btop
     brave
     xwayland-satellite
-    dms-shell
-    #quickshell
-    #noctalia-shell
+    brightnessctl
+    playerctl
+    swaylock
     fastfetch
     ccid
     lm_sensors

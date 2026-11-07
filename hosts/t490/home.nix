@@ -2,7 +2,7 @@
 {
 
 imports = [
-    ./modules/noctalia.nix
+    ./modules/niri/niri-config.nix
 	  ../../modules/hm/kitty.nix
     ../../modules/hm/programs.nix
     ../../modules/hm/zsh.nix
@@ -18,7 +18,6 @@ home.packages = with pkgs; [
 
 ];
 
-  home.file.".config/niri/config.kdl".source = ../../modules/hm/niri/config.kdl;
   home.file.".config/cava/config".source = home-manager/dotfiles/cava/config;
 
 
