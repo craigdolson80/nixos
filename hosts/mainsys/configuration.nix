@@ -69,7 +69,7 @@
   };
 
 fileSystems."/mnt/Craig" = {
-  device = "//10.0.0.5/Craig";
+  device = "//synology/Craig";
   fsType = "cifs";
 
   options = [
