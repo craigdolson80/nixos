@@ -61,6 +61,11 @@
       "opnsense"
       "opnsense.local"
     ];
+    
+    "10.0.0.5" = [
+    "synology"
+    ];
+
   };
 
 fileSystems."/mnt/Craig" = {
